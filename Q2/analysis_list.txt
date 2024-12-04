@@ -1,1 +1,967 @@
-//
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+  0.00      0.00     0.00   613850     0.00     0.00  Point::getY() const
+  0.00      0.00     0.00   574048     0.00     0.00  Point::getX() const
+  0.00      0.00     0.00   366935     0.00     0.00  __gnu_cxx::__aligned_membuf<Point*>::_M_ptr()
+  0.00      0.00     0.00   366935     0.00     0.00  __gnu_cxx::__aligned_membuf<Point*>::_M_addr()
+  0.00      0.00     0.00   366935     0.00     0.00  std::_List_node<Point*>::_M_valptr()
+  0.00      0.00     0.00   326935     0.00     0.00  std::_List_iterator<Point*>::operator*() const
+  0.00      0.00     0.00   302080     0.00     0.00  std::operator!=(std::_List_iterator<Point*> const&, std::_List_iterator<Point*> const&)
+  0.00      0.00     0.00   247130     0.00     0.00  std::atan2(float, float)
+  0.00      0.00     0.00   169843     0.00     0.00  std::_List_iterator<Point*>::_List_iterator(std::__detail::_List_node_base*)
+  0.00      0.00     0.00   163576     0.00     0.00  std::_List_iterator<Point*>::operator++()
+  0.00      0.00     0.00   123565     0.00     0.00  comparePolar(Point*, Point*, Point&)
+  0.00      0.00     0.00   123565     0.00     0.00  convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}::operator()(Point*, Point*) const
+  0.00      0.00     0.00   120008     0.00     0.00  std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_get_Node_allocator()
+  0.00      0.00     0.00    89828     0.00     0.00  std::__cxx11::list<Point*, std::allocator<Point*> >::end()
+  0.00      0.00     0.00    73116     0.00     0.00  std::__cxx11::list<Point*, std::allocator<Point*> >::_M_transfer(std::_List_iterator<Point*>, std::_List_iterator<Point*>, std::_List_iterator<Point*>)
+  0.00      0.00     0.00    69996     0.00     0.00  std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_get_size() const
+  0.00      0.00     0.00    59692     0.00     0.00  std::_List_iterator<Point*>::operator--()
+  0.00      0.00     0.00    50016     0.00     0.00  std::_List_const_iterator<Point*>::_List_const_iterator(std::_List_iterator<Point*> const&)
+  0.00      0.00     0.00    50000     0.00     0.00  std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_set_size(unsigned long)
+  0.00      0.00     0.00    40021     0.00     0.00  std::__cxx11::list<Point*, std::allocator<Point*> >::begin()
+  0.00      0.00     0.00    40008     0.00     0.00  std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_inc_size(unsigned long)
+  0.00      0.00     0.00    40000     0.00     0.00  Point*&& std::forward<Point*>(std::remove_reference<Point*>::type&)
+  0.00      0.00     0.00    40000     0.00     0.00  Point* const& std::forward<Point* const&>(std::remove_reference<Point* const&>::type&)
+  0.00      0.00     0.00    30008     0.00     0.00  std::operator==(std::_List_const_iterator<Point*> const&, std::_List_const_iterator<Point*> const&)
+  0.00      0.00     0.00    30000     0.00     0.00  std::_List_const_iterator<Point*>::_M_const_cast() const
+  0.00      0.00     0.00    29981     0.00     0.00  std::__cxx11::list<Point*, std::allocator<Point*> >::empty() const
+  0.00      0.00     0.00    20008     0.00     0.00  std::__alloc_neq<std::allocator<std::_List_node<Point*> >, true>::_S_do_it(std::allocator<std::_List_node<Point*> > const&, std::allocator<std::_List_node<Point*> > const&)
+  0.00      0.00     0.00    20008     0.00     0.00  std::__cxx11::list<Point*, std::allocator<Point*> >::_M_check_equal_allocators(std::__cxx11::list<Point*, std::allocator<Point*> >&)
+  0.00      0.00     0.00    20008     0.00     0.00  std::__cxx11::list<Point*, std::allocator<Point*> >* std::__addressof<std::__cxx11::list<Point*, std::allocator<Point*> > >(std::__cxx11::list<Point*, std::allocator<Point*> >&)
+  0.00      0.00     0.00    20008     0.00     0.00  std::remove_reference<std::__cxx11::list<Point*, std::allocator<Point*> >&>::type&& std::move<std::__cxx11::list<Point*, std::allocator<Point*> >&>(std::__cxx11::list<Point*, std::allocator<Point*> >&)
+  0.00      0.00     0.00    20000     0.00     0.00  __gnu_cxx::new_allocator<std::_List_node<Point*> >::deallocate(std::_List_node<Point*>*, unsigned long)
+  0.00      0.00     0.00    20000     0.00     0.00  void __gnu_cxx::new_allocator<std::_List_node<Point*> >::destroy<Point*>(Point**)
+  0.00      0.00     0.00    20000     0.00     0.00  __gnu_cxx::new_allocator<std::_List_node<Point*> >::allocate(unsigned long, void const*)
+  0.00      0.00     0.00    20000     0.00     0.00  __gnu_cxx::new_allocator<std::_List_node<Point*> >::_M_max_size() const
+  0.00      0.00     0.00    20000     0.00     0.00  std::__allocated_ptr<std::allocator<std::_List_node<Point*> > >::__allocated_ptr(std::allocator<std::_List_node<Point*> >&, std::_List_node<Point*>*)
+  0.00      0.00     0.00    20000     0.00     0.00  std::__allocated_ptr<std::allocator<std::_List_node<Point*> > >::~__allocated_ptr()
+  0.00      0.00     0.00    20000     0.00     0.00  std::__allocated_ptr<std::allocator<std::_List_node<Point*> > >::operator=(decltype(nullptr))
+  0.00      0.00     0.00    20000     0.00     0.00  std::allocator_traits<std::allocator<std::_List_node<Point*> > >::deallocate(std::allocator<std::_List_node<Point*> >&, std::_List_node<Point*>*, unsigned long)
+  0.00      0.00     0.00    20000     0.00     0.00  void std::allocator_traits<std::allocator<std::_List_node<Point*> > >::destroy<Point*>(std::allocator<std::_List_node<Point*> >&, Point**)
+  0.00      0.00     0.00    20000     0.00     0.00  std::allocator_traits<std::allocator<std::_List_node<Point*> > >::allocate(std::allocator<std::_List_node<Point*> >&, unsigned long)
+  0.00      0.00     0.00    20000     0.00     0.00  std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_get_node()
+  0.00      0.00     0.00    20000     0.00     0.00  std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_put_node(std::_List_node<Point*>*)
+  0.00      0.00     0.00    20000     0.00     0.00  std::allocator<std::_List_node<Point*> >* std::__addressof<std::allocator<std::_List_node<Point*> > >(std::allocator<std::_List_node<Point*> >&)
+  0.00      0.00     0.00    20000     0.00     0.00  operator new(unsigned long, void*)
+  0.00      0.00     0.00    19996     0.00     0.00  __gnu_cxx::__alloc_traits<std::allocator<std::_List_node<Point*> >, std::_List_node<Point*> >::_S_on_swap(std::allocator<std::_List_node<Point*> >&, std::allocator<std::_List_node<Point*> >&)
+  0.00      0.00     0.00    19996     0.00     0.00  std::__cxx11::list<Point*, std::allocator<Point*> >::_M_node_count() const
+  0.00      0.00     0.00    19996     0.00     0.00  std::__cxx11::list<Point*, std::allocator<Point*> >::size() const
+  0.00      0.00     0.00    19996     0.00     0.00  std::__cxx11::list<Point*, std::allocator<Point*> >::swap(std::__cxx11::list<Point*, std::allocator<Point*> >&)
+  0.00      0.00     0.00    19996     0.00     0.00  void std::__alloc_on_swap<std::allocator<std::_List_node<Point*> > >(std::allocator<std::_List_node<Point*> >&, std::allocator<std::_List_node<Point*> >&)
+  0.00      0.00     0.00    19994     0.00     0.00  std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_dec_size(unsigned long)
+  0.00      0.00     0.00    19898     0.00     0.00  std::__cxx11::list<Point*, std::allocator<Point*> >::back()
+  0.00      0.00     0.00    19897     0.00     0.00  std::reverse_iterator<std::_List_iterator<Point*> >::operator*() const
+  0.00      0.00     0.00    19897     0.00     0.00  std::reverse_iterator<std::_List_iterator<Point*> >::reverse_iterator(std::reverse_iterator<std::_List_iterator<Point*> > const&)
+  0.00      0.00     0.00    19897     0.00     0.00  std::reverse_iterator<std::_List_iterator<Point*> >::reverse_iterator(std::_List_iterator<Point*>)
+  0.00      0.00     0.00    19897     0.00     0.00  std::reverse_iterator<std::_List_iterator<Point*> >::operator++()
+  0.00      0.00     0.00    19897     0.00     0.00  std::__cxx11::list<Point*, std::allocator<Point*> >::rbegin()
+  0.00      0.00     0.00    19897     0.00     0.00  std::iterator_traits<std::reverse_iterator<std::_List_iterator<Point*> > >::iterator_category std::__iterator_category<std::reverse_iterator<std::_List_iterator<Point*> > >(std::reverse_iterator<std::_List_iterator<Point*> > const&)
+  0.00      0.00     0.00    19897     0.00     0.00  std::reverse_iterator<std::_List_iterator<Point*> > std::next<std::reverse_iterator<std::_List_iterator<Point*> > >(std::reverse_iterator<std::_List_iterator<Point*> >, std::iterator_traits<std::reverse_iterator<std::_List_iterator<Point*> > >::difference_type)
+  0.00      0.00     0.00    19897     0.00     0.00  void std::advance<std::reverse_iterator<std::_List_iterator<Point*> >, long>(std::reverse_iterator<std::_List_iterator<Point*> >&, long)
+  0.00      0.00     0.00    19897     0.00     0.00  void std::__advance<std::reverse_iterator<std::_List_iterator<Point*> >, long>(std::reverse_iterator<std::_List_iterator<Point*> >&, long, std::bidirectional_iterator_tag)
+  0.00      0.00     0.00    10009     0.00     0.00  std::iterator_traits<std::_List_iterator<Point*> >::iterator_category std::__iterator_category<std::_List_iterator<Point*> >(std::_List_iterator<Point*> const&)
+  0.00      0.00     0.00    10008     0.00     0.00  std::_List_const_iterator<Point*>::operator++()
+  0.00      0.00     0.00    10008     0.00     0.00  std::__cxx11::list<Point*, std::allocator<Point*> >::_Finalize_merge::_Finalize_merge(std::__cxx11::list<Point*, std::allocator<Point*> >&, std::__cxx11::list<Point*, std::allocator<Point*> >&, std::_List_iterator<Point*> const&)
+  0.00      0.00     0.00    10008     0.00     0.00  std::__cxx11::list<Point*, std::allocator<Point*> >::_Finalize_merge::~_Finalize_merge()
+  0.00      0.00     0.00    10008     0.00     0.00  void std::__cxx11::list<Point*, std::allocator<Point*> >::merge<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(std::__cxx11::list<Point*, std::allocator<Point*> >&&, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2})
+  0.00      0.00     0.00    10008     0.00     0.00  void std::__cxx11::list<Point*, std::allocator<Point*> >::merge<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(std::__cxx11::list<Point*, std::allocator<Point*> >&, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2})
+  0.00      0.00     0.00    10008     0.00     0.00  long std::__distance<Point*>(std::_List_iterator<Point*>, std::_List_iterator<Point*>, std::input_iterator_tag)
+  0.00      0.00     0.00    10008     0.00     0.00  long std::__distance<Point*>(std::_List_const_iterator<Point*>, std::_List_const_iterator<Point*>, std::input_iterator_tag)
+  0.00      0.00     0.00    10008     0.00     0.00  std::iterator_traits<std::_List_iterator<Point*> >::difference_type std::distance<std::_List_iterator<Point*> >(std::_List_iterator<Point*>, std::_List_iterator<Point*>)
+  0.00      0.00     0.00    10008     0.00     0.00  std::operator!=(std::_List_const_iterator<Point*> const&, std::_List_const_iterator<Point*> const&)
+  0.00      0.00     0.00    10001     0.00     0.00  Point::~Point()
+  0.00      0.00     0.00    10000     0.00     0.00  Point::Point(float, float)
+  0.00      0.00     0.00    10000     0.00     0.00  void __gnu_cxx::new_allocator<std::_List_node<Point*> >::construct<Point*, Point* const&>(Point**, Point* const&)
+  0.00      0.00     0.00    10000     0.00     0.00  void __gnu_cxx::new_allocator<std::_List_node<Point*> >::construct<Point*, Point*>(Point**, Point*&&)
+  0.00      0.00     0.00    10000     0.00     0.00  void std::allocator_traits<std::allocator<std::_List_node<Point*> > >::construct<Point*, Point* const&>(std::allocator<std::_List_node<Point*> >&, Point**, Point* const&)
+  0.00      0.00     0.00    10000     0.00     0.00  void std::allocator_traits<std::allocator<std::_List_node<Point*> > >::construct<Point*, Point*>(std::allocator<std::_List_node<Point*> >&, Point**, Point*&&)
+  0.00      0.00     0.00    10000     0.00     0.00  std::_List_node<Point*>* std::__cxx11::list<Point*, std::allocator<Point*> >::_M_create_node<Point* const&>(Point* const&)
+  0.00      0.00     0.00    10000     0.00     0.00  std::_List_node<Point*>* std::__cxx11::list<Point*, std::allocator<Point*> >::_M_create_node<Point*>(Point*&&)
+  0.00      0.00     0.00    10000     0.00     0.00  std::__cxx11::list<Point*, std::allocator<Point*> >::splice(std::_List_const_iterator<Point*>, std::__cxx11::list<Point*, std::allocator<Point*> >&&, std::_List_const_iterator<Point*>)
+  0.00      0.00     0.00    10000     0.00     0.00  std::__cxx11::list<Point*, std::allocator<Point*> >::splice(std::_List_const_iterator<Point*>, std::__cxx11::list<Point*, std::allocator<Point*> >&, std::_List_const_iterator<Point*>)
+  0.00      0.00     0.00    10000     0.00     0.00  void std::__cxx11::list<Point*, std::allocator<Point*> >::_M_insert<Point* const&>(std::_List_iterator<Point*>, Point* const&)
+  0.00      0.00     0.00    10000     0.00     0.00  void std::__cxx11::list<Point*, std::allocator<Point*> >::_M_insert<Point*>(std::_List_iterator<Point*>, Point*&&)
+  0.00      0.00     0.00    10000     0.00     0.00  std::__cxx11::list<Point*, std::allocator<Point*> >::push_back(Point*&&)
+  0.00      0.00     0.00    10000     0.00     0.00  std::__cxx11::list<Point*, std::allocator<Point*> >::push_back(Point* const&)
+  0.00      0.00     0.00    10000     0.00     0.00  std::remove_reference<Point*&>::type&& std::move<Point*&>(Point*&)
+  0.00      0.00     0.00     9999     0.00     0.00  bool __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>::operator()<std::_List_iterator<Point*>, std::_List_iterator<Point*> >(std::_List_iterator<Point*>, std::_List_iterator<Point*>)
+  0.00      0.00     0.00     9999     0.00     0.00  convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}::operator()(Point*, Point*) const
+  0.00      0.00     0.00     9994     0.00     0.00  std::__cxx11::list<Point*, std::allocator<Point*> >::_M_erase(std::_List_iterator<Point*>)
+  0.00      0.00     0.00     9994     0.00     0.00  std::__cxx11::list<Point*, std::allocator<Point*> >::pop_back()
+  0.00      0.00     0.00       68     0.00     0.00  __gnu_cxx::new_allocator<std::_List_node<Point*> >::~new_allocator()
+  0.00      0.00     0.00       68     0.00     0.00  std::allocator<std::_List_node<Point*> >::~allocator()
+  0.00      0.00     0.00       68     0.00     0.00  std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_impl::~_List_impl()
+  0.00      0.00     0.00       68     0.00     0.00  std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_clear()
+  0.00      0.00     0.00       68     0.00     0.00  std::__cxx11::_List_base<Point*, std::allocator<Point*> >::~_List_base()
+  0.00      0.00     0.00       68     0.00     0.00  std::__cxx11::list<Point*, std::allocator<Point*> >::~list()
+  0.00      0.00     0.00       68     0.00     0.00  std::__detail::_List_node_header::_M_init()
+  0.00      0.00     0.00       67     0.00     0.00  __gnu_cxx::new_allocator<std::_List_node<Point*> >::new_allocator()
+  0.00      0.00     0.00       67     0.00     0.00  std::allocator<std::_List_node<Point*> >::allocator()
+  0.00      0.00     0.00       67     0.00     0.00  std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_impl::_List_impl()
+  0.00      0.00     0.00       67     0.00     0.00  std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_base()
+  0.00      0.00     0.00       67     0.00     0.00  std::__cxx11::list<Point*, std::allocator<Point*> >::list()
+  0.00      0.00     0.00       67     0.00     0.00  std::__detail::_List_node_header::_List_node_header()
+  0.00      0.00     0.00        3     0.00     0.00  std::__detail::_List_node_header::_M_base()
+  0.00      0.00     0.00        2     0.00     0.00  std::remove_reference<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}&>::type&& std::move<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}&>(convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}&)
+  0.00      0.00     0.00        1     0.00     0.00  convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)
+  0.00      0.00     0.00        1     0.00     0.00  polygonArea(std::__cxx11::list<Point*, std::allocator<Point*> >&)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  Point::Point(Point const&)
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<std::_List_node<Point*> >::new_allocator(__gnu_cxx::new_allocator<std::_List_node<Point*> > const&)
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>::_Iter_comp_iter(convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1})
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}> __gnu_cxx::__ops::__iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>(convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1})
+  0.00      0.00     0.00        1     0.00     0.00  std::allocator<std::_List_node<Point*> >::allocator(std::allocator<std::_List_node<Point*> > const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_impl::_List_impl(std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_impl&&)
+  0.00      0.00     0.00        1     0.00     0.00  std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_base(std::__cxx11::_List_base<Point*, std::allocator<Point*> >&&)
+  0.00      0.00     0.00        1     0.00     0.00  void std::__cxx11::list<Point*, std::allocator<Point*> >::sort<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2})
+  0.00      0.00     0.00        1     0.00     0.00  std::__cxx11::list<Point*, std::allocator<Point*> >::front()
+  0.00      0.00     0.00        1     0.00     0.00  std::__cxx11::list<Point*, std::allocator<Point*> >::list(std::__cxx11::list<Point*, std::allocator<Point*> >&&)
+  0.00      0.00     0.00        1     0.00     0.00  std::__detail::_List_node_header::_List_node_header(std::__detail::_List_node_header&&)
+  0.00      0.00     0.00        1     0.00     0.00  std::_List_iterator<Point*> std::min_element<std::_List_iterator<Point*>, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>(std::_List_iterator<Point*>, std::_List_iterator<Point*>, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1})
+  0.00      0.00     0.00        1     0.00     0.00  std::_List_iterator<Point*> std::__min_element<std::_List_iterator<Point*>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}> >(std::_List_iterator<Point*>, std::_List_iterator<Point*>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>)
+  0.00      0.00     0.00        1     0.00     0.00  std::abs(float)
+  0.00      0.00     0.00        1     0.00     0.00  std::_List_iterator<Point*> std::next<std::_List_iterator<Point*> >(std::_List_iterator<Point*>, std::iterator_traits<std::_List_iterator<Point*> >::difference_type)
+  0.00      0.00     0.00        1     0.00     0.00  void std::advance<std::_List_iterator<Point*>, long>(std::_List_iterator<Point*>&, long)
+  0.00      0.00     0.00        1     0.00     0.00  void std::__advance<std::_List_iterator<Point*>, long>(std::_List_iterator<Point*>&, long, std::bidirectional_iterator_tag)
+  0.00      0.00     0.00        1     0.00     0.00  std::operator==(std::_List_iterator<Point*> const&, std::_List_iterator<Point*> const&)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2022 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) no time propagated
+
+index % time    self  children    called     name
+                0.00    0.00      12/613850      polygonArea(std::__cxx11::list<Point*, std::allocator<Point*> >&) [113]
+                0.00    0.00   39990/613850      convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}::operator()(Point*, Point*) const [94]
+                0.00    0.00   79588/613850      convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&) [112]
+                0.00    0.00  494260/613850      comparePolar(Point*, Point*, Point&) [18]
+[8]      0.0    0.00    0.00  613850         Point::getY() const [8]
+-----------------------------------------------
+                0.00    0.00      12/574048      polygonArea(std::__cxx11::list<Point*, std::allocator<Point*> >&) [113]
+                0.00    0.00     188/574048      convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}::operator()(Point*, Point*) const [94]
+                0.00    0.00   79588/574048      convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&) [112]
+                0.00    0.00  494260/574048      comparePolar(Point*, Point*, Point&) [18]
+[9]      0.0    0.00    0.00  574048         Point::getX() const [9]
+-----------------------------------------------
+                0.00    0.00  366935/366935      std::_List_node<Point*>::_M_valptr() [12]
+[10]     0.0    0.00    0.00  366935         __gnu_cxx::__aligned_membuf<Point*>::_M_ptr() [10]
+                0.00    0.00  366935/366935      __gnu_cxx::__aligned_membuf<Point*>::_M_addr() [11]
+-----------------------------------------------
+                0.00    0.00  366935/366935      __gnu_cxx::__aligned_membuf<Point*>::_M_ptr() [10]
+[11]     0.0    0.00    0.00  366935         __gnu_cxx::__aligned_membuf<Point*>::_M_addr() [11]
+-----------------------------------------------
+                0.00    0.00    9994/366935      std::__cxx11::list<Point*, std::allocator<Point*> >::_M_erase(std::_List_iterator<Point*>) [95]
+                0.00    0.00   10000/366935      std::_List_node<Point*>* std::__cxx11::list<Point*, std::allocator<Point*> >::_M_create_node<Point* const&>(Point* const&) [84]
+                0.00    0.00   10000/366935      std::_List_node<Point*>* std::__cxx11::list<Point*, std::allocator<Point*> >::_M_create_node<Point*>(Point*&&) [85]
+                0.00    0.00   10006/366935      std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_clear() [100]
+                0.00    0.00  326935/366935      std::_List_iterator<Point*>::operator*() const [13]
+[12]     0.0    0.00    0.00  366935         std::_List_node<Point*>::_M_valptr() [12]
+                0.00    0.00  366935/366935      __gnu_cxx::__aligned_membuf<Point*>::_M_ptr() [10]
+-----------------------------------------------
+                0.00    0.00       1/326935      std::__cxx11::list<Point*, std::allocator<Point*> >::front() [123]
+                0.00    0.00      10/326935      polygonArea(std::__cxx11::list<Point*, std::allocator<Point*> >&) [113]
+                0.00    0.00   10000/326935      main [6]
+                0.00    0.00   10001/326935      convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&) [112]
+                0.00    0.00   19897/326935      std::reverse_iterator<std::_List_iterator<Point*> >::operator*() const [59]
+                0.00    0.00   19898/326935      std::__cxx11::list<Point*, std::allocator<Point*> >::back() [58]
+                0.00    0.00   19998/326935      bool __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>::operator()<std::_List_iterator<Point*>, std::_List_iterator<Point*> >(std::_List_iterator<Point*>, std::_List_iterator<Point*>) [93]
+                0.00    0.00  247130/326935      void std::__cxx11::list<Point*, std::allocator<Point*> >::merge<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(std::__cxx11::list<Point*, std::allocator<Point*> >&&, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [72]
+[13]     0.0    0.00    0.00  326935         std::_List_iterator<Point*>::operator*() const [13]
+                0.00    0.00  326935/366935      std::_List_node<Point*>::_M_valptr() [12]
+-----------------------------------------------
+                0.00    0.00       6/302080      polygonArea(std::__cxx11::list<Point*, std::allocator<Point*> >&) [113]
+                0.00    0.00   10000/302080      std::_List_iterator<Point*> std::__min_element<std::_List_iterator<Point*>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}> >(std::_List_iterator<Point*>, std::_List_iterator<Point*>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>) [127]
+                0.00    0.00   10001/302080      convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&) [112]
+                0.00    0.00   10001/302080      main [6]
+                0.00    0.00  272072/302080      void std::__cxx11::list<Point*, std::allocator<Point*> >::merge<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(std::__cxx11::list<Point*, std::allocator<Point*> >&&, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [72]
+[14]     0.0    0.00    0.00  302080         std::operator!=(std::_List_iterator<Point*> const&, std::_List_iterator<Point*> const&) [14]
+-----------------------------------------------
+                0.00    0.00  247130/247130      comparePolar(Point*, Point*, Point&) [18]
+[15]     0.0    0.00    0.00  247130         std::atan2(float, float) [15]
+-----------------------------------------------
+                0.00    0.00    9994/169843      std::__cxx11::list<Point*, std::allocator<Point*> >::pop_back() [96]
+                0.00    0.00   30000/169843      std::_List_const_iterator<Point*>::_M_const_cast() const [32]
+                0.00    0.00   40021/169843      std::__cxx11::list<Point*, std::allocator<Point*> >::begin() [27]
+                0.00    0.00   89828/169843      std::__cxx11::list<Point*, std::allocator<Point*> >::end() [21]
+[16]     0.0    0.00    0.00  169843         std::_List_iterator<Point*>::_List_iterator(std::__detail::_List_node_base*) [16]
+-----------------------------------------------
+                0.00    0.00       1/163576      void std::__advance<std::_List_iterator<Point*>, long>(std::_List_iterator<Point*>&, long, std::bidirectional_iterator_tag) [131]
+                0.00    0.00      10/163576      polygonArea(std::__cxx11::list<Point*, std::allocator<Point*> >&) [113]
+                0.00    0.00   10000/163576      convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&) [112]
+                0.00    0.00   10000/163576      main [6]
+                0.00    0.00   10000/163576      std::_List_iterator<Point*> std::__min_element<std::_List_iterator<Point*>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}> >(std::_List_iterator<Point*>, std::_List_iterator<Point*>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>) [127]
+                0.00    0.00   10000/163576      std::__cxx11::list<Point*, std::allocator<Point*> >::splice(std::_List_const_iterator<Point*>, std::__cxx11::list<Point*, std::allocator<Point*> >&&, std::_List_const_iterator<Point*>) [86]
+                0.00    0.00  123565/163576      void std::__cxx11::list<Point*, std::allocator<Point*> >::merge<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(std::__cxx11::list<Point*, std::allocator<Point*> >&&, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [72]
+[17]     0.0    0.00    0.00  163576         std::_List_iterator<Point*>::operator++() [17]
+-----------------------------------------------
+                0.00    0.00  123565/123565      convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}::operator()(Point*, Point*) const [19]
+[18]     0.0    0.00    0.00  123565         comparePolar(Point*, Point*, Point&) [18]
+                0.00    0.00  494260/574048      Point::getX() const [9]
+                0.00    0.00  494260/613850      Point::getY() const [8]
+                0.00    0.00  247130/247130      std::atan2(float, float) [15]
+-----------------------------------------------
+                0.00    0.00  123565/123565      void std::__cxx11::list<Point*, std::allocator<Point*> >::merge<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(std::__cxx11::list<Point*, std::allocator<Point*> >&&, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [72]
+[19]     0.0    0.00    0.00  123565         convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}::operator()(Point*, Point*) const [19]
+                0.00    0.00  123565/123565      comparePolar(Point*, Point*, Point&) [18]
+-----------------------------------------------
+                0.00    0.00    9994/120008      std::__cxx11::list<Point*, std::allocator<Point*> >::_M_erase(std::_List_iterator<Point*>) [95]
+                0.00    0.00   10000/120008      std::_List_node<Point*>* std::__cxx11::list<Point*, std::allocator<Point*> >::_M_create_node<Point* const&>(Point* const&) [84]
+                0.00    0.00   10000/120008      std::_List_node<Point*>* std::__cxx11::list<Point*, std::allocator<Point*> >::_M_create_node<Point*>(Point*&&) [85]
+                0.00    0.00   10006/120008      std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_clear() [100]
+                0.00    0.00   39992/120008      std::__cxx11::list<Point*, std::allocator<Point*> >::swap(std::__cxx11::list<Point*, std::allocator<Point*> >&) [55]
+                0.00    0.00   40016/120008      std::__cxx11::list<Point*, std::allocator<Point*> >::_M_check_equal_allocators(std::__cxx11::list<Point*, std::allocator<Point*> >&) [35]
+[20]     0.0    0.00    0.00  120008         std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_get_Node_allocator() [20]
+-----------------------------------------------
+                0.00    0.00       1/89828       main [6]
+                0.00    0.00       2/89828       convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&) [112]
+                0.00    0.00       6/89828       polygonArea(std::__cxx11::list<Point*, std::allocator<Point*> >&) [113]
+                0.00    0.00   10000/89828       std::__cxx11::list<Point*, std::allocator<Point*> >::push_back(Point* const&) [91]
+                0.00    0.00   10000/89828       std::__cxx11::list<Point*, std::allocator<Point*> >::push_back(Point*&&) [90]
+                0.00    0.00   10008/89828       std::__cxx11::list<Point*, std::allocator<Point*> >::_Finalize_merge::~_Finalize_merge() [71]
+                0.00    0.00   19897/89828       std::__cxx11::list<Point*, std::allocator<Point*> >::rbegin() [63]
+                0.00    0.00   19898/89828       std::__cxx11::list<Point*, std::allocator<Point*> >::back() [58]
+                0.00    0.00   20016/89828       void std::__cxx11::list<Point*, std::allocator<Point*> >::merge<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(std::__cxx11::list<Point*, std::allocator<Point*> >&&, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [72]
+[21]     0.0    0.00    0.00   89828         std::__cxx11::list<Point*, std::allocator<Point*> >::end() [21]
+                0.00    0.00   89828/169843      std::_List_iterator<Point*>::_List_iterator(std::__detail::_List_node_base*) [16]
+-----------------------------------------------
+                0.00    0.00   10000/73116       std::__cxx11::list<Point*, std::allocator<Point*> >::splice(std::_List_const_iterator<Point*>, std::__cxx11::list<Point*, std::allocator<Point*> >&&, std::_List_const_iterator<Point*>) [86]
+                0.00    0.00   63116/73116       void std::__cxx11::list<Point*, std::allocator<Point*> >::merge<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(std::__cxx11::list<Point*, std::allocator<Point*> >&&, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [72]
+[22]     0.0    0.00    0.00   73116         std::__cxx11::list<Point*, std::allocator<Point*> >::_M_transfer(std::_List_iterator<Point*>, std::_List_iterator<Point*>, std::_List_iterator<Point*>) [22]
+-----------------------------------------------
+                0.00    0.00   10008/69996       std::__cxx11::list<Point*, std::allocator<Point*> >::_Finalize_merge::~_Finalize_merge() [71]
+                0.00    0.00   19996/69996       std::__cxx11::list<Point*, std::allocator<Point*> >::_M_node_count() const [53]
+                0.00    0.00   39992/69996       std::__cxx11::list<Point*, std::allocator<Point*> >::swap(std::__cxx11::list<Point*, std::allocator<Point*> >&) [55]
+[23]     0.0    0.00    0.00   69996         std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_get_size() const [23]
+-----------------------------------------------
+                0.00    0.00   19897/59692       std::reverse_iterator<std::_List_iterator<Point*> >::operator*() const [59]
+                0.00    0.00   19897/59692       std::reverse_iterator<std::_List_iterator<Point*> >::operator++() [62]
+                0.00    0.00   19898/59692       std::__cxx11::list<Point*, std::allocator<Point*> >::back() [58]
+[24]     0.0    0.00    0.00   59692         std::_List_iterator<Point*>::operator--() [24]
+-----------------------------------------------
+                0.00    0.00   10000/50016       std::__cxx11::list<Point*, std::allocator<Point*> >::splice(std::_List_const_iterator<Point*>, std::__cxx11::list<Point*, std::allocator<Point*> >&&, std::_List_const_iterator<Point*>) [86]
+                0.00    0.00   20000/50016       void std::__cxx11::list<Point*, std::allocator<Point*> >::sort<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [122]
+                0.00    0.00   20016/50016       long std::__distance<Point*>(std::_List_iterator<Point*>, std::_List_iterator<Point*>, std::input_iterator_tag) [74]
+[25]     0.0    0.00    0.00   50016         std::_List_const_iterator<Point*>::_List_const_iterator(std::_List_iterator<Point*> const&) [25]
+-----------------------------------------------
+                0.00    0.00   10008/50000       std::__cxx11::list<Point*, std::allocator<Point*> >::_Finalize_merge::~_Finalize_merge() [71]
+                0.00    0.00   39992/50000       std::__cxx11::list<Point*, std::allocator<Point*> >::swap(std::__cxx11::list<Point*, std::allocator<Point*> >&) [55]
+[26]     0.0    0.00    0.00   50000         std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_set_size(unsigned long) [26]
+-----------------------------------------------
+                0.00    0.00       1/40021       polygonArea(std::__cxx11::list<Point*, std::allocator<Point*> >&) [113]
+                0.00    0.00       1/40021       main [6]
+                0.00    0.00       1/40021       std::__cxx11::list<Point*, std::allocator<Point*> >::front() [123]
+                0.00    0.00       2/40021       convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&) [112]
+                0.00    0.00   20000/40021       void std::__cxx11::list<Point*, std::allocator<Point*> >::sort<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [122]
+                0.00    0.00   20016/40021       void std::__cxx11::list<Point*, std::allocator<Point*> >::merge<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(std::__cxx11::list<Point*, std::allocator<Point*> >&&, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [72]
+[27]     0.0    0.00    0.00   40021         std::__cxx11::list<Point*, std::allocator<Point*> >::begin() [27]
+                0.00    0.00   40021/169843      std::_List_iterator<Point*>::_List_iterator(std::__detail::_List_node_base*) [16]
+-----------------------------------------------
+                0.00    0.00   10000/40008       void std::__cxx11::list<Point*, std::allocator<Point*> >::_M_insert<Point* const&>(std::_List_iterator<Point*>, Point* const&) [88]
+                0.00    0.00   10000/40008       void std::__cxx11::list<Point*, std::allocator<Point*> >::_M_insert<Point*>(std::_List_iterator<Point*>, Point*&&) [89]
+                0.00    0.00   10000/40008       std::__cxx11::list<Point*, std::allocator<Point*> >::splice(std::_List_const_iterator<Point*>, std::__cxx11::list<Point*, std::allocator<Point*> >&&, std::_List_const_iterator<Point*>) [86]
+                0.00    0.00   10008/40008       std::__cxx11::list<Point*, std::allocator<Point*> >::_Finalize_merge::~_Finalize_merge() [71]
+[28]     0.0    0.00    0.00   40008         std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_inc_size(unsigned long) [28]
+-----------------------------------------------
+                0.00    0.00   10000/40000       void std::__cxx11::list<Point*, std::allocator<Point*> >::_M_insert<Point*>(std::_List_iterator<Point*>, Point*&&) [89]
+                0.00    0.00   10000/40000       std::_List_node<Point*>* std::__cxx11::list<Point*, std::allocator<Point*> >::_M_create_node<Point*>(Point*&&) [85]
+                0.00    0.00   10000/40000       void std::allocator_traits<std::allocator<std::_List_node<Point*> > >::construct<Point*, Point*>(std::allocator<std::_List_node<Point*> >&, Point**, Point*&&) [83]
+                0.00    0.00   10000/40000       void __gnu_cxx::new_allocator<std::_List_node<Point*> >::construct<Point*, Point*>(Point**, Point*&&) [81]
+[29]     0.0    0.00    0.00   40000         Point*&& std::forward<Point*>(std::remove_reference<Point*>::type&) [29]
+-----------------------------------------------
+                0.00    0.00   10000/40000       void std::__cxx11::list<Point*, std::allocator<Point*> >::_M_insert<Point* const&>(std::_List_iterator<Point*>, Point* const&) [88]
+                0.00    0.00   10000/40000       std::_List_node<Point*>* std::__cxx11::list<Point*, std::allocator<Point*> >::_M_create_node<Point* const&>(Point* const&) [84]
+                0.00    0.00   10000/40000       void std::allocator_traits<std::allocator<std::_List_node<Point*> > >::construct<Point*, Point* const&>(std::allocator<std::_List_node<Point*> >&, Point**, Point* const&) [82]
+                0.00    0.00   10000/40000       void __gnu_cxx::new_allocator<std::_List_node<Point*> >::construct<Point*, Point* const&>(Point**, Point* const&) [80]
+[30]     0.0    0.00    0.00   40000         Point* const& std::forward<Point* const&>(std::remove_reference<Point* const&>::type&) [30]
+-----------------------------------------------
+                0.00    0.00   10008/30008       long std::__distance<Point*>(std::_List_const_iterator<Point*>, std::_List_const_iterator<Point*>, std::input_iterator_tag) [75]
+                0.00    0.00   20000/30008       std::__cxx11::list<Point*, std::allocator<Point*> >::splice(std::_List_const_iterator<Point*>, std::__cxx11::list<Point*, std::allocator<Point*> >&&, std::_List_const_iterator<Point*>) [86]
+[31]     0.0    0.00    0.00   30008         std::operator==(std::_List_const_iterator<Point*> const&, std::_List_const_iterator<Point*> const&) [31]
+-----------------------------------------------
+                0.00    0.00   30000/30000       std::__cxx11::list<Point*, std::allocator<Point*> >::splice(std::_List_const_iterator<Point*>, std::__cxx11::list<Point*, std::allocator<Point*> >&&, std::_List_const_iterator<Point*>) [86]
+[32]     0.0    0.00    0.00   30000         std::_List_const_iterator<Point*>::_M_const_cast() const [32]
+                0.00    0.00   30000/169843      std::_List_iterator<Point*>::_List_iterator(std::__detail::_List_node_base*) [16]
+-----------------------------------------------
+                0.00    0.00   29981/29981       void std::__cxx11::list<Point*, std::allocator<Point*> >::sort<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [122]
+[33]     0.0    0.00    0.00   29981         std::__cxx11::list<Point*, std::allocator<Point*> >::empty() const [33]
+-----------------------------------------------
+                0.00    0.00   20008/20008       std::__cxx11::list<Point*, std::allocator<Point*> >::_M_check_equal_allocators(std::__cxx11::list<Point*, std::allocator<Point*> >&) [35]
+[34]     0.0    0.00    0.00   20008         std::__alloc_neq<std::allocator<std::_List_node<Point*> >, true>::_S_do_it(std::allocator<std::_List_node<Point*> > const&, std::allocator<std::_List_node<Point*> > const&) [34]
+-----------------------------------------------
+                0.00    0.00   10000/20008       std::__cxx11::list<Point*, std::allocator<Point*> >::splice(std::_List_const_iterator<Point*>, std::__cxx11::list<Point*, std::allocator<Point*> >&&, std::_List_const_iterator<Point*>) [86]
+                0.00    0.00   10008/20008       void std::__cxx11::list<Point*, std::allocator<Point*> >::merge<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(std::__cxx11::list<Point*, std::allocator<Point*> >&&, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [72]
+[35]     0.0    0.00    0.00   20008         std::__cxx11::list<Point*, std::allocator<Point*> >::_M_check_equal_allocators(std::__cxx11::list<Point*, std::allocator<Point*> >&) [35]
+                0.00    0.00   40016/120008      std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_get_Node_allocator() [20]
+                0.00    0.00   20008/20008       std::__alloc_neq<std::allocator<std::_List_node<Point*> >, true>::_S_do_it(std::allocator<std::_List_node<Point*> > const&, std::allocator<std::_List_node<Point*> > const&) [34]
+-----------------------------------------------
+                0.00    0.00   10000/20008       std::__cxx11::list<Point*, std::allocator<Point*> >::splice(std::_List_const_iterator<Point*>, std::__cxx11::list<Point*, std::allocator<Point*> >&&, std::_List_const_iterator<Point*>) [86]
+                0.00    0.00   10008/20008       void std::__cxx11::list<Point*, std::allocator<Point*> >::merge<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(std::__cxx11::list<Point*, std::allocator<Point*> >&&, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [72]
+[36]     0.0    0.00    0.00   20008         std::__cxx11::list<Point*, std::allocator<Point*> >* std::__addressof<std::__cxx11::list<Point*, std::allocator<Point*> > >(std::__cxx11::list<Point*, std::allocator<Point*> >&) [36]
+-----------------------------------------------
+                0.00    0.00   10000/20008       std::__cxx11::list<Point*, std::allocator<Point*> >::splice(std::_List_const_iterator<Point*>, std::__cxx11::list<Point*, std::allocator<Point*> >&, std::_List_const_iterator<Point*>) [87]
+                0.00    0.00   10008/20008       void std::__cxx11::list<Point*, std::allocator<Point*> >::merge<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(std::__cxx11::list<Point*, std::allocator<Point*> >&, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [73]
+[37]     0.0    0.00    0.00   20008         std::remove_reference<std::__cxx11::list<Point*, std::allocator<Point*> >&>::type&& std::move<std::__cxx11::list<Point*, std::allocator<Point*> >&>(std::__cxx11::list<Point*, std::allocator<Point*> >&) [37]
+-----------------------------------------------
+                0.00    0.00   20000/20000       std::allocator_traits<std::allocator<std::_List_node<Point*> > >::deallocate(std::allocator<std::_List_node<Point*> >&, std::_List_node<Point*>*, unsigned long) [45]
+[38]     0.0    0.00    0.00   20000         __gnu_cxx::new_allocator<std::_List_node<Point*> >::deallocate(std::_List_node<Point*>*, unsigned long) [38]
+-----------------------------------------------
+                0.00    0.00   20000/20000       void std::allocator_traits<std::allocator<std::_List_node<Point*> > >::destroy<Point*>(std::allocator<std::_List_node<Point*> >&, Point**) [46]
+[39]     0.0    0.00    0.00   20000         void __gnu_cxx::new_allocator<std::_List_node<Point*> >::destroy<Point*>(Point**) [39]
+-----------------------------------------------
+                0.00    0.00   20000/20000       std::allocator_traits<std::allocator<std::_List_node<Point*> > >::allocate(std::allocator<std::_List_node<Point*> >&, unsigned long) [47]
+[40]     0.0    0.00    0.00   20000         __gnu_cxx::new_allocator<std::_List_node<Point*> >::allocate(unsigned long, void const*) [40]
+                0.00    0.00   20000/20000       __gnu_cxx::new_allocator<std::_List_node<Point*> >::_M_max_size() const [41]
+-----------------------------------------------
+                0.00    0.00   20000/20000       __gnu_cxx::new_allocator<std::_List_node<Point*> >::allocate(unsigned long, void const*) [40]
+[41]     0.0    0.00    0.00   20000         __gnu_cxx::new_allocator<std::_List_node<Point*> >::_M_max_size() const [41]
+-----------------------------------------------
+                0.00    0.00   10000/20000       std::_List_node<Point*>* std::__cxx11::list<Point*, std::allocator<Point*> >::_M_create_node<Point* const&>(Point* const&) [84]
+                0.00    0.00   10000/20000       std::_List_node<Point*>* std::__cxx11::list<Point*, std::allocator<Point*> >::_M_create_node<Point*>(Point*&&) [85]
+[42]     0.0    0.00    0.00   20000         std::__allocated_ptr<std::allocator<std::_List_node<Point*> > >::__allocated_ptr(std::allocator<std::_List_node<Point*> >&, std::_List_node<Point*>*) [42]
+                0.00    0.00   20000/20000       std::allocator<std::_List_node<Point*> >* std::__addressof<std::allocator<std::_List_node<Point*> > >(std::allocator<std::_List_node<Point*> >&) [50]
+-----------------------------------------------
+                0.00    0.00   10000/20000       std::_List_node<Point*>* std::__cxx11::list<Point*, std::allocator<Point*> >::_M_create_node<Point* const&>(Point* const&) [84]
+                0.00    0.00   10000/20000       std::_List_node<Point*>* std::__cxx11::list<Point*, std::allocator<Point*> >::_M_create_node<Point*>(Point*&&) [85]
+[43]     0.0    0.00    0.00   20000         std::__allocated_ptr<std::allocator<std::_List_node<Point*> > >::~__allocated_ptr() [43]
+-----------------------------------------------
+                0.00    0.00   10000/20000       std::_List_node<Point*>* std::__cxx11::list<Point*, std::allocator<Point*> >::_M_create_node<Point* const&>(Point* const&) [84]
+                0.00    0.00   10000/20000       std::_List_node<Point*>* std::__cxx11::list<Point*, std::allocator<Point*> >::_M_create_node<Point*>(Point*&&) [85]
+[44]     0.0    0.00    0.00   20000         std::__allocated_ptr<std::allocator<std::_List_node<Point*> > >::operator=(decltype(nullptr)) [44]
+-----------------------------------------------
+                0.00    0.00   20000/20000       std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_put_node(std::_List_node<Point*>*) [49]
+[45]     0.0    0.00    0.00   20000         std::allocator_traits<std::allocator<std::_List_node<Point*> > >::deallocate(std::allocator<std::_List_node<Point*> >&, std::_List_node<Point*>*, unsigned long) [45]
+                0.00    0.00   20000/20000       __gnu_cxx::new_allocator<std::_List_node<Point*> >::deallocate(std::_List_node<Point*>*, unsigned long) [38]
+-----------------------------------------------
+                0.00    0.00    9994/20000       std::__cxx11::list<Point*, std::allocator<Point*> >::_M_erase(std::_List_iterator<Point*>) [95]
+                0.00    0.00   10006/20000       std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_clear() [100]
+[46]     0.0    0.00    0.00   20000         void std::allocator_traits<std::allocator<std::_List_node<Point*> > >::destroy<Point*>(std::allocator<std::_List_node<Point*> >&, Point**) [46]
+                0.00    0.00   20000/20000       void __gnu_cxx::new_allocator<std::_List_node<Point*> >::destroy<Point*>(Point**) [39]
+-----------------------------------------------
+                0.00    0.00   20000/20000       std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_get_node() [48]
+[47]     0.0    0.00    0.00   20000         std::allocator_traits<std::allocator<std::_List_node<Point*> > >::allocate(std::allocator<std::_List_node<Point*> >&, unsigned long) [47]
+                0.00    0.00   20000/20000       __gnu_cxx::new_allocator<std::_List_node<Point*> >::allocate(unsigned long, void const*) [40]
+-----------------------------------------------
+                0.00    0.00   10000/20000       std::_List_node<Point*>* std::__cxx11::list<Point*, std::allocator<Point*> >::_M_create_node<Point* const&>(Point* const&) [84]
+                0.00    0.00   10000/20000       std::_List_node<Point*>* std::__cxx11::list<Point*, std::allocator<Point*> >::_M_create_node<Point*>(Point*&&) [85]
+[48]     0.0    0.00    0.00   20000         std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_get_node() [48]
+                0.00    0.00   20000/20000       std::allocator_traits<std::allocator<std::_List_node<Point*> > >::allocate(std::allocator<std::_List_node<Point*> >&, unsigned long) [47]
+-----------------------------------------------
+                0.00    0.00    9994/20000       std::__cxx11::list<Point*, std::allocator<Point*> >::_M_erase(std::_List_iterator<Point*>) [95]
+                0.00    0.00   10006/20000       std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_clear() [100]
+[49]     0.0    0.00    0.00   20000         std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_put_node(std::_List_node<Point*>*) [49]
+                0.00    0.00   20000/20000       std::allocator_traits<std::allocator<std::_List_node<Point*> > >::deallocate(std::allocator<std::_List_node<Point*> >&, std::_List_node<Point*>*, unsigned long) [45]
+-----------------------------------------------
+                0.00    0.00   20000/20000       std::__allocated_ptr<std::allocator<std::_List_node<Point*> > >::__allocated_ptr(std::allocator<std::_List_node<Point*> >&, std::_List_node<Point*>*) [42]
+[50]     0.0    0.00    0.00   20000         std::allocator<std::_List_node<Point*> >* std::__addressof<std::allocator<std::_List_node<Point*> > >(std::allocator<std::_List_node<Point*> >&) [50]
+-----------------------------------------------
+                0.00    0.00   10000/20000       void __gnu_cxx::new_allocator<std::_List_node<Point*> >::construct<Point*, Point* const&>(Point**, Point* const&) [80]
+                0.00    0.00   10000/20000       void __gnu_cxx::new_allocator<std::_List_node<Point*> >::construct<Point*, Point*>(Point**, Point*&&) [81]
+[51]     0.0    0.00    0.00   20000         operator new(unsigned long, void*) [51]
+-----------------------------------------------
+                0.00    0.00   19996/19996       std::__cxx11::list<Point*, std::allocator<Point*> >::swap(std::__cxx11::list<Point*, std::allocator<Point*> >&) [55]
+[52]     0.0    0.00    0.00   19996         __gnu_cxx::__alloc_traits<std::allocator<std::_List_node<Point*> >, std::_List_node<Point*> >::_S_on_swap(std::allocator<std::_List_node<Point*> >&, std::allocator<std::_List_node<Point*> >&) [52]
+                0.00    0.00   19996/19996       void std::__alloc_on_swap<std::allocator<std::_List_node<Point*> > >(std::allocator<std::_List_node<Point*> >&, std::allocator<std::_List_node<Point*> >&) [56]
+-----------------------------------------------
+                0.00    0.00   19996/19996       std::__cxx11::list<Point*, std::allocator<Point*> >::size() const [54]
+[53]     0.0    0.00    0.00   19996         std::__cxx11::list<Point*, std::allocator<Point*> >::_M_node_count() const [53]
+                0.00    0.00   19996/69996       std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_get_size() const [23]
+-----------------------------------------------
+                0.00    0.00       1/19996       polygonArea(std::__cxx11::list<Point*, std::allocator<Point*> >&) [113]
+                0.00    0.00   19995/19996       convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&) [112]
+[54]     0.0    0.00    0.00   19996         std::__cxx11::list<Point*, std::allocator<Point*> >::size() const [54]
+                0.00    0.00   19996/19996       std::__cxx11::list<Point*, std::allocator<Point*> >::_M_node_count() const [53]
+-----------------------------------------------
+                0.00    0.00   19996/19996       void std::__cxx11::list<Point*, std::allocator<Point*> >::sort<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [122]
+[55]     0.0    0.00    0.00   19996         std::__cxx11::list<Point*, std::allocator<Point*> >::swap(std::__cxx11::list<Point*, std::allocator<Point*> >&) [55]
+                0.00    0.00   39992/69996       std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_get_size() const [23]
+                0.00    0.00   39992/50000       std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_set_size(unsigned long) [26]
+                0.00    0.00   39992/120008      std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_get_Node_allocator() [20]
+                0.00    0.00   19996/19996       __gnu_cxx::__alloc_traits<std::allocator<std::_List_node<Point*> >, std::_List_node<Point*> >::_S_on_swap(std::allocator<std::_List_node<Point*> >&, std::allocator<std::_List_node<Point*> >&) [52]
+-----------------------------------------------
+                0.00    0.00   19996/19996       __gnu_cxx::__alloc_traits<std::allocator<std::_List_node<Point*> >, std::_List_node<Point*> >::_S_on_swap(std::allocator<std::_List_node<Point*> >&, std::allocator<std::_List_node<Point*> >&) [52]
+[56]     0.0    0.00    0.00   19996         void std::__alloc_on_swap<std::allocator<std::_List_node<Point*> > >(std::allocator<std::_List_node<Point*> >&, std::allocator<std::_List_node<Point*> >&) [56]
+-----------------------------------------------
+                0.00    0.00    9994/19994       std::__cxx11::list<Point*, std::allocator<Point*> >::_M_erase(std::_List_iterator<Point*>) [95]
+                0.00    0.00   10000/19994       std::__cxx11::list<Point*, std::allocator<Point*> >::splice(std::_List_const_iterator<Point*>, std::__cxx11::list<Point*, std::allocator<Point*> >&&, std::_List_const_iterator<Point*>) [86]
+[57]     0.0    0.00    0.00   19994         std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_dec_size(unsigned long) [57]
+-----------------------------------------------
+                0.00    0.00       1/19898       polygonArea(std::__cxx11::list<Point*, std::allocator<Point*> >&) [113]
+                0.00    0.00   19897/19898       convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&) [112]
+[58]     0.0    0.00    0.00   19898         std::__cxx11::list<Point*, std::allocator<Point*> >::back() [58]
+                0.00    0.00   19898/89828       std::__cxx11::list<Point*, std::allocator<Point*> >::end() [21]
+                0.00    0.00   19898/59692       std::_List_iterator<Point*>::operator--() [24]
+                0.00    0.00   19898/326935      std::_List_iterator<Point*>::operator*() const [13]
+-----------------------------------------------
+                0.00    0.00   19897/19897       convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&) [112]
+[59]     0.0    0.00    0.00   19897         std::reverse_iterator<std::_List_iterator<Point*> >::operator*() const [59]
+                0.00    0.00   19897/59692       std::_List_iterator<Point*>::operator--() [24]
+                0.00    0.00   19897/326935      std::_List_iterator<Point*>::operator*() const [13]
+-----------------------------------------------
+                0.00    0.00   19897/19897       std::reverse_iterator<std::_List_iterator<Point*> > std::next<std::reverse_iterator<std::_List_iterator<Point*> > >(std::reverse_iterator<std::_List_iterator<Point*> >, std::iterator_traits<std::reverse_iterator<std::_List_iterator<Point*> > >::difference_type) [65]
+[60]     0.0    0.00    0.00   19897         std::reverse_iterator<std::_List_iterator<Point*> >::reverse_iterator(std::reverse_iterator<std::_List_iterator<Point*> > const&) [60]
+-----------------------------------------------
+                0.00    0.00   19897/19897       std::__cxx11::list<Point*, std::allocator<Point*> >::rbegin() [63]
+[61]     0.0    0.00    0.00   19897         std::reverse_iterator<std::_List_iterator<Point*> >::reverse_iterator(std::_List_iterator<Point*>) [61]
+-----------------------------------------------
+                0.00    0.00   19897/19897       void std::__advance<std::reverse_iterator<std::_List_iterator<Point*> >, long>(std::reverse_iterator<std::_List_iterator<Point*> >&, long, std::bidirectional_iterator_tag) [67]
+[62]     0.0    0.00    0.00   19897         std::reverse_iterator<std::_List_iterator<Point*> >::operator++() [62]
+                0.00    0.00   19897/59692       std::_List_iterator<Point*>::operator--() [24]
+-----------------------------------------------
+                0.00    0.00   19897/19897       convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&) [112]
+[63]     0.0    0.00    0.00   19897         std::__cxx11::list<Point*, std::allocator<Point*> >::rbegin() [63]
+                0.00    0.00   19897/89828       std::__cxx11::list<Point*, std::allocator<Point*> >::end() [21]
+                0.00    0.00   19897/19897       std::reverse_iterator<std::_List_iterator<Point*> >::reverse_iterator(std::_List_iterator<Point*>) [61]
+-----------------------------------------------
+                0.00    0.00   19897/19897       void std::advance<std::reverse_iterator<std::_List_iterator<Point*> >, long>(std::reverse_iterator<std::_List_iterator<Point*> >&, long) [66]
+[64]     0.0    0.00    0.00   19897         std::iterator_traits<std::reverse_iterator<std::_List_iterator<Point*> > >::iterator_category std::__iterator_category<std::reverse_iterator<std::_List_iterator<Point*> > >(std::reverse_iterator<std::_List_iterator<Point*> > const&) [64]
+-----------------------------------------------
+                0.00    0.00   19897/19897       convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&) [112]
+[65]     0.0    0.00    0.00   19897         std::reverse_iterator<std::_List_iterator<Point*> > std::next<std::reverse_iterator<std::_List_iterator<Point*> > >(std::reverse_iterator<std::_List_iterator<Point*> >, std::iterator_traits<std::reverse_iterator<std::_List_iterator<Point*> > >::difference_type) [65]
+                0.00    0.00   19897/19897       void std::advance<std::reverse_iterator<std::_List_iterator<Point*> >, long>(std::reverse_iterator<std::_List_iterator<Point*> >&, long) [66]
+                0.00    0.00   19897/19897       std::reverse_iterator<std::_List_iterator<Point*> >::reverse_iterator(std::reverse_iterator<std::_List_iterator<Point*> > const&) [60]
+-----------------------------------------------
+                0.00    0.00   19897/19897       std::reverse_iterator<std::_List_iterator<Point*> > std::next<std::reverse_iterator<std::_List_iterator<Point*> > >(std::reverse_iterator<std::_List_iterator<Point*> >, std::iterator_traits<std::reverse_iterator<std::_List_iterator<Point*> > >::difference_type) [65]
+[66]     0.0    0.00    0.00   19897         void std::advance<std::reverse_iterator<std::_List_iterator<Point*> >, long>(std::reverse_iterator<std::_List_iterator<Point*> >&, long) [66]
+                0.00    0.00   19897/19897       std::iterator_traits<std::reverse_iterator<std::_List_iterator<Point*> > >::iterator_category std::__iterator_category<std::reverse_iterator<std::_List_iterator<Point*> > >(std::reverse_iterator<std::_List_iterator<Point*> > const&) [64]
+                0.00    0.00   19897/19897       void std::__advance<std::reverse_iterator<std::_List_iterator<Point*> >, long>(std::reverse_iterator<std::_List_iterator<Point*> >&, long, std::bidirectional_iterator_tag) [67]
+-----------------------------------------------
+                0.00    0.00   19897/19897       void std::advance<std::reverse_iterator<std::_List_iterator<Point*> >, long>(std::reverse_iterator<std::_List_iterator<Point*> >&, long) [66]
+[67]     0.0    0.00    0.00   19897         void std::__advance<std::reverse_iterator<std::_List_iterator<Point*> >, long>(std::reverse_iterator<std::_List_iterator<Point*> >&, long, std::bidirectional_iterator_tag) [67]
+                0.00    0.00   19897/19897       std::reverse_iterator<std::_List_iterator<Point*> >::operator++() [62]
+-----------------------------------------------
+                0.00    0.00       1/10009       void std::advance<std::_List_iterator<Point*>, long>(std::_List_iterator<Point*>&, long) [130]
+                0.00    0.00   10008/10009       std::iterator_traits<std::_List_iterator<Point*> >::difference_type std::distance<std::_List_iterator<Point*> >(std::_List_iterator<Point*>, std::_List_iterator<Point*>) [76]
+[68]     0.0    0.00    0.00   10009         std::iterator_traits<std::_List_iterator<Point*> >::iterator_category std::__iterator_category<std::_List_iterator<Point*> >(std::_List_iterator<Point*> const&) [68]
+-----------------------------------------------
+                0.00    0.00   10008/10008       long std::__distance<Point*>(std::_List_const_iterator<Point*>, std::_List_const_iterator<Point*>, std::input_iterator_tag) [75]
+[69]     0.0    0.00    0.00   10008         std::_List_const_iterator<Point*>::operator++() [69]
+-----------------------------------------------
+                0.00    0.00   10008/10008       void std::__cxx11::list<Point*, std::allocator<Point*> >::merge<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(std::__cxx11::list<Point*, std::allocator<Point*> >&&, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [72]
+[70]     0.0    0.00    0.00   10008         std::__cxx11::list<Point*, std::allocator<Point*> >::_Finalize_merge::_Finalize_merge(std::__cxx11::list<Point*, std::allocator<Point*> >&, std::__cxx11::list<Point*, std::allocator<Point*> >&, std::_List_iterator<Point*> const&) [70]
+-----------------------------------------------
+                0.00    0.00   10008/10008       void std::__cxx11::list<Point*, std::allocator<Point*> >::merge<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(std::__cxx11::list<Point*, std::allocator<Point*> >&&, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [72]
+[71]     0.0    0.00    0.00   10008         std::__cxx11::list<Point*, std::allocator<Point*> >::_Finalize_merge::~_Finalize_merge() [71]
+                0.00    0.00   10008/89828       std::__cxx11::list<Point*, std::allocator<Point*> >::end() [21]
+                0.00    0.00   10008/10008       std::iterator_traits<std::_List_iterator<Point*> >::difference_type std::distance<std::_List_iterator<Point*> >(std::_List_iterator<Point*>, std::_List_iterator<Point*>) [76]
+                0.00    0.00   10008/69996       std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_get_size() const [23]
+                0.00    0.00   10008/40008       std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_inc_size(unsigned long) [28]
+                0.00    0.00   10008/50000       std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_set_size(unsigned long) [26]
+-----------------------------------------------
+                0.00    0.00   10008/10008       void std::__cxx11::list<Point*, std::allocator<Point*> >::merge<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(std::__cxx11::list<Point*, std::allocator<Point*> >&, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [73]
+[72]     0.0    0.00    0.00   10008         void std::__cxx11::list<Point*, std::allocator<Point*> >::merge<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(std::__cxx11::list<Point*, std::allocator<Point*> >&&, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [72]
+                0.00    0.00  272072/302080      std::operator!=(std::_List_iterator<Point*> const&, std::_List_iterator<Point*> const&) [14]
+                0.00    0.00  247130/326935      std::_List_iterator<Point*>::operator*() const [13]
+                0.00    0.00  123565/123565      convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}::operator()(Point*, Point*) const [19]
+                0.00    0.00  123565/163576      std::_List_iterator<Point*>::operator++() [17]
+                0.00    0.00   63116/73116       std::__cxx11::list<Point*, std::allocator<Point*> >::_M_transfer(std::_List_iterator<Point*>, std::_List_iterator<Point*>, std::_List_iterator<Point*>) [22]
+                0.00    0.00   20016/40021       std::__cxx11::list<Point*, std::allocator<Point*> >::begin() [27]
+                0.00    0.00   20016/89828       std::__cxx11::list<Point*, std::allocator<Point*> >::end() [21]
+                0.00    0.00   10008/20008       std::__cxx11::list<Point*, std::allocator<Point*> >* std::__addressof<std::__cxx11::list<Point*, std::allocator<Point*> > >(std::__cxx11::list<Point*, std::allocator<Point*> >&) [36]
+                0.00    0.00   10008/20008       std::__cxx11::list<Point*, std::allocator<Point*> >::_M_check_equal_allocators(std::__cxx11::list<Point*, std::allocator<Point*> >&) [35]
+                0.00    0.00   10008/10008       std::__cxx11::list<Point*, std::allocator<Point*> >::_Finalize_merge::_Finalize_merge(std::__cxx11::list<Point*, std::allocator<Point*> >&, std::__cxx11::list<Point*, std::allocator<Point*> >&, std::_List_iterator<Point*> const&) [70]
+                0.00    0.00   10008/10008       std::__cxx11::list<Point*, std::allocator<Point*> >::_Finalize_merge::~_Finalize_merge() [71]
+-----------------------------------------------
+                0.00    0.00   10008/10008       void std::__cxx11::list<Point*, std::allocator<Point*> >::sort<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [122]
+[73]     0.0    0.00    0.00   10008         void std::__cxx11::list<Point*, std::allocator<Point*> >::merge<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(std::__cxx11::list<Point*, std::allocator<Point*> >&, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [73]
+                0.00    0.00   10008/20008       std::remove_reference<std::__cxx11::list<Point*, std::allocator<Point*> >&>::type&& std::move<std::__cxx11::list<Point*, std::allocator<Point*> >&>(std::__cxx11::list<Point*, std::allocator<Point*> >&) [37]
+                0.00    0.00   10008/10008       void std::__cxx11::list<Point*, std::allocator<Point*> >::merge<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(std::__cxx11::list<Point*, std::allocator<Point*> >&&, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [72]
+-----------------------------------------------
+                0.00    0.00   10008/10008       std::iterator_traits<std::_List_iterator<Point*> >::difference_type std::distance<std::_List_iterator<Point*> >(std::_List_iterator<Point*>, std::_List_iterator<Point*>) [76]
+[74]     0.0    0.00    0.00   10008         long std::__distance<Point*>(std::_List_iterator<Point*>, std::_List_iterator<Point*>, std::input_iterator_tag) [74]
+                0.00    0.00   20016/50016       std::_List_const_iterator<Point*>::_List_const_iterator(std::_List_iterator<Point*> const&) [25]
+                0.00    0.00   10008/10008       long std::__distance<Point*>(std::_List_const_iterator<Point*>, std::_List_const_iterator<Point*>, std::input_iterator_tag) [75]
+-----------------------------------------------
+                0.00    0.00   10008/10008       long std::__distance<Point*>(std::_List_iterator<Point*>, std::_List_iterator<Point*>, std::input_iterator_tag) [74]
+[75]     0.0    0.00    0.00   10008         long std::__distance<Point*>(std::_List_const_iterator<Point*>, std::_List_const_iterator<Point*>, std::input_iterator_tag) [75]
+                0.00    0.00   10008/10008       std::_List_const_iterator<Point*>::operator++() [69]
+                0.00    0.00   10008/30008       std::operator==(std::_List_const_iterator<Point*> const&, std::_List_const_iterator<Point*> const&) [31]
+                0.00    0.00   10008/10008       std::operator!=(std::_List_const_iterator<Point*> const&, std::_List_const_iterator<Point*> const&) [77]
+-----------------------------------------------
+                0.00    0.00   10008/10008       std::__cxx11::list<Point*, std::allocator<Point*> >::_Finalize_merge::~_Finalize_merge() [71]
+[76]     0.0    0.00    0.00   10008         std::iterator_traits<std::_List_iterator<Point*> >::difference_type std::distance<std::_List_iterator<Point*> >(std::_List_iterator<Point*>, std::_List_iterator<Point*>) [76]
+                0.00    0.00   10008/10009       std::iterator_traits<std::_List_iterator<Point*> >::iterator_category std::__iterator_category<std::_List_iterator<Point*> >(std::_List_iterator<Point*> const&) [68]
+                0.00    0.00   10008/10008       long std::__distance<Point*>(std::_List_iterator<Point*>, std::_List_iterator<Point*>, std::input_iterator_tag) [74]
+-----------------------------------------------
+                0.00    0.00   10008/10008       long std::__distance<Point*>(std::_List_const_iterator<Point*>, std::_List_const_iterator<Point*>, std::input_iterator_tag) [75]
+[77]     0.0    0.00    0.00   10008         std::operator!=(std::_List_const_iterator<Point*> const&, std::_List_const_iterator<Point*> const&) [77]
+-----------------------------------------------
+                0.00    0.00       1/10001       convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&) [112]
+                0.00    0.00   10000/10001       main [6]
+[78]     0.0    0.00    0.00   10001         Point::~Point() [78]
+-----------------------------------------------
+                0.00    0.00   10000/10000       main [6]
+[79]     0.0    0.00    0.00   10000         Point::Point(float, float) [79]
+-----------------------------------------------
+                0.00    0.00   10000/10000       void std::allocator_traits<std::allocator<std::_List_node<Point*> > >::construct<Point*, Point* const&>(std::allocator<std::_List_node<Point*> >&, Point**, Point* const&) [82]
+[80]     0.0    0.00    0.00   10000         void __gnu_cxx::new_allocator<std::_List_node<Point*> >::construct<Point*, Point* const&>(Point**, Point* const&) [80]
+                0.00    0.00   10000/40000       Point* const& std::forward<Point* const&>(std::remove_reference<Point* const&>::type&) [30]
+                0.00    0.00   10000/20000       operator new(unsigned long, void*) [51]
+-----------------------------------------------
+                0.00    0.00   10000/10000       void std::allocator_traits<std::allocator<std::_List_node<Point*> > >::construct<Point*, Point*>(std::allocator<std::_List_node<Point*> >&, Point**, Point*&&) [83]
+[81]     0.0    0.00    0.00   10000         void __gnu_cxx::new_allocator<std::_List_node<Point*> >::construct<Point*, Point*>(Point**, Point*&&) [81]
+                0.00    0.00   10000/40000       Point*&& std::forward<Point*>(std::remove_reference<Point*>::type&) [29]
+                0.00    0.00   10000/20000       operator new(unsigned long, void*) [51]
+-----------------------------------------------
+                0.00    0.00   10000/10000       std::_List_node<Point*>* std::__cxx11::list<Point*, std::allocator<Point*> >::_M_create_node<Point* const&>(Point* const&) [84]
+[82]     0.0    0.00    0.00   10000         void std::allocator_traits<std::allocator<std::_List_node<Point*> > >::construct<Point*, Point* const&>(std::allocator<std::_List_node<Point*> >&, Point**, Point* const&) [82]
+                0.00    0.00   10000/40000       Point* const& std::forward<Point* const&>(std::remove_reference<Point* const&>::type&) [30]
+                0.00    0.00   10000/10000       void __gnu_cxx::new_allocator<std::_List_node<Point*> >::construct<Point*, Point* const&>(Point**, Point* const&) [80]
+-----------------------------------------------
+                0.00    0.00   10000/10000       std::_List_node<Point*>* std::__cxx11::list<Point*, std::allocator<Point*> >::_M_create_node<Point*>(Point*&&) [85]
+[83]     0.0    0.00    0.00   10000         void std::allocator_traits<std::allocator<std::_List_node<Point*> > >::construct<Point*, Point*>(std::allocator<std::_List_node<Point*> >&, Point**, Point*&&) [83]
+                0.00    0.00   10000/40000       Point*&& std::forward<Point*>(std::remove_reference<Point*>::type&) [29]
+                0.00    0.00   10000/10000       void __gnu_cxx::new_allocator<std::_List_node<Point*> >::construct<Point*, Point*>(Point**, Point*&&) [81]
+-----------------------------------------------
+                0.00    0.00   10000/10000       void std::__cxx11::list<Point*, std::allocator<Point*> >::_M_insert<Point* const&>(std::_List_iterator<Point*>, Point* const&) [88]
+[84]     0.0    0.00    0.00   10000         std::_List_node<Point*>* std::__cxx11::list<Point*, std::allocator<Point*> >::_M_create_node<Point* const&>(Point* const&) [84]
+                0.00    0.00   10000/20000       std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_get_node() [48]
+                0.00    0.00   10000/120008      std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_get_Node_allocator() [20]
+                0.00    0.00   10000/20000       std::__allocated_ptr<std::allocator<std::_List_node<Point*> > >::__allocated_ptr(std::allocator<std::_List_node<Point*> >&, std::_List_node<Point*>*) [42]
+                0.00    0.00   10000/40000       Point* const& std::forward<Point* const&>(std::remove_reference<Point* const&>::type&) [30]
+                0.00    0.00   10000/366935      std::_List_node<Point*>::_M_valptr() [12]
+                0.00    0.00   10000/10000       void std::allocator_traits<std::allocator<std::_List_node<Point*> > >::construct<Point*, Point* const&>(std::allocator<std::_List_node<Point*> >&, Point**, Point* const&) [82]
+                0.00    0.00   10000/20000       std::__allocated_ptr<std::allocator<std::_List_node<Point*> > >::operator=(decltype(nullptr)) [44]
+                0.00    0.00   10000/20000       std::__allocated_ptr<std::allocator<std::_List_node<Point*> > >::~__allocated_ptr() [43]
+-----------------------------------------------
+                0.00    0.00   10000/10000       void std::__cxx11::list<Point*, std::allocator<Point*> >::_M_insert<Point*>(std::_List_iterator<Point*>, Point*&&) [89]
+[85]     0.0    0.00    0.00   10000         std::_List_node<Point*>* std::__cxx11::list<Point*, std::allocator<Point*> >::_M_create_node<Point*>(Point*&&) [85]
+                0.00    0.00   10000/20000       std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_get_node() [48]
+                0.00    0.00   10000/120008      std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_get_Node_allocator() [20]
+                0.00    0.00   10000/20000       std::__allocated_ptr<std::allocator<std::_List_node<Point*> > >::__allocated_ptr(std::allocator<std::_List_node<Point*> >&, std::_List_node<Point*>*) [42]
+                0.00    0.00   10000/40000       Point*&& std::forward<Point*>(std::remove_reference<Point*>::type&) [29]
+                0.00    0.00   10000/366935      std::_List_node<Point*>::_M_valptr() [12]
+                0.00    0.00   10000/10000       void std::allocator_traits<std::allocator<std::_List_node<Point*> > >::construct<Point*, Point*>(std::allocator<std::_List_node<Point*> >&, Point**, Point*&&) [83]
+                0.00    0.00   10000/20000       std::__allocated_ptr<std::allocator<std::_List_node<Point*> > >::operator=(decltype(nullptr)) [44]
+                0.00    0.00   10000/20000       std::__allocated_ptr<std::allocator<std::_List_node<Point*> > >::~__allocated_ptr() [43]
+-----------------------------------------------
+                0.00    0.00   10000/10000       std::__cxx11::list<Point*, std::allocator<Point*> >::splice(std::_List_const_iterator<Point*>, std::__cxx11::list<Point*, std::allocator<Point*> >&, std::_List_const_iterator<Point*>) [87]
+[86]     0.0    0.00    0.00   10000         std::__cxx11::list<Point*, std::allocator<Point*> >::splice(std::_List_const_iterator<Point*>, std::__cxx11::list<Point*, std::allocator<Point*> >&&, std::_List_const_iterator<Point*>) [86]
+                0.00    0.00   30000/30000       std::_List_const_iterator<Point*>::_M_const_cast() const [32]
+                0.00    0.00   20000/30008       std::operator==(std::_List_const_iterator<Point*> const&, std::_List_const_iterator<Point*> const&) [31]
+                0.00    0.00   10000/163576      std::_List_iterator<Point*>::operator++() [17]
+                0.00    0.00   10000/50016       std::_List_const_iterator<Point*>::_List_const_iterator(std::_List_iterator<Point*> const&) [25]
+                0.00    0.00   10000/20008       std::__cxx11::list<Point*, std::allocator<Point*> >* std::__addressof<std::__cxx11::list<Point*, std::allocator<Point*> > >(std::__cxx11::list<Point*, std::allocator<Point*> >&) [36]
+                0.00    0.00   10000/20008       std::__cxx11::list<Point*, std::allocator<Point*> >::_M_check_equal_allocators(std::__cxx11::list<Point*, std::allocator<Point*> >&) [35]
+                0.00    0.00   10000/73116       std::__cxx11::list<Point*, std::allocator<Point*> >::_M_transfer(std::_List_iterator<Point*>, std::_List_iterator<Point*>, std::_List_iterator<Point*>) [22]
+                0.00    0.00   10000/40008       std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_inc_size(unsigned long) [28]
+                0.00    0.00   10000/19994       std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_dec_size(unsigned long) [57]
+-----------------------------------------------
+                0.00    0.00   10000/10000       void std::__cxx11::list<Point*, std::allocator<Point*> >::sort<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [122]
+[87]     0.0    0.00    0.00   10000         std::__cxx11::list<Point*, std::allocator<Point*> >::splice(std::_List_const_iterator<Point*>, std::__cxx11::list<Point*, std::allocator<Point*> >&, std::_List_const_iterator<Point*>) [87]
+                0.00    0.00   10000/20008       std::remove_reference<std::__cxx11::list<Point*, std::allocator<Point*> >&>::type&& std::move<std::__cxx11::list<Point*, std::allocator<Point*> >&>(std::__cxx11::list<Point*, std::allocator<Point*> >&) [37]
+                0.00    0.00   10000/10000       std::__cxx11::list<Point*, std::allocator<Point*> >::splice(std::_List_const_iterator<Point*>, std::__cxx11::list<Point*, std::allocator<Point*> >&&, std::_List_const_iterator<Point*>) [86]
+-----------------------------------------------
+                0.00    0.00   10000/10000       std::__cxx11::list<Point*, std::allocator<Point*> >::push_back(Point* const&) [91]
+[88]     0.0    0.00    0.00   10000         void std::__cxx11::list<Point*, std::allocator<Point*> >::_M_insert<Point* const&>(std::_List_iterator<Point*>, Point* const&) [88]
+                0.00    0.00   10000/40000       Point* const& std::forward<Point* const&>(std::remove_reference<Point* const&>::type&) [30]
+                0.00    0.00   10000/10000       std::_List_node<Point*>* std::__cxx11::list<Point*, std::allocator<Point*> >::_M_create_node<Point* const&>(Point* const&) [84]
+                0.00    0.00   10000/40008       std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_inc_size(unsigned long) [28]
+-----------------------------------------------
+                0.00    0.00   10000/10000       std::__cxx11::list<Point*, std::allocator<Point*> >::push_back(Point*&&) [90]
+[89]     0.0    0.00    0.00   10000         void std::__cxx11::list<Point*, std::allocator<Point*> >::_M_insert<Point*>(std::_List_iterator<Point*>, Point*&&) [89]
+                0.00    0.00   10000/40000       Point*&& std::forward<Point*>(std::remove_reference<Point*>::type&) [29]
+                0.00    0.00   10000/10000       std::_List_node<Point*>* std::__cxx11::list<Point*, std::allocator<Point*> >::_M_create_node<Point*>(Point*&&) [85]
+                0.00    0.00   10000/40008       std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_inc_size(unsigned long) [28]
+-----------------------------------------------
+                0.00    0.00   10000/10000       main [6]
+[90]     0.0    0.00    0.00   10000         std::__cxx11::list<Point*, std::allocator<Point*> >::push_back(Point*&&) [90]
+                0.00    0.00   10000/10000       std::remove_reference<Point*&>::type&& std::move<Point*&>(Point*&) [92]
+                0.00    0.00   10000/89828       std::__cxx11::list<Point*, std::allocator<Point*> >::end() [21]
+                0.00    0.00   10000/10000       void std::__cxx11::list<Point*, std::allocator<Point*> >::_M_insert<Point*>(std::_List_iterator<Point*>, Point*&&) [89]
+-----------------------------------------------
+                0.00    0.00   10000/10000       convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&) [112]
+[91]     0.0    0.00    0.00   10000         std::__cxx11::list<Point*, std::allocator<Point*> >::push_back(Point* const&) [91]
+                0.00    0.00   10000/89828       std::__cxx11::list<Point*, std::allocator<Point*> >::end() [21]
+                0.00    0.00   10000/10000       void std::__cxx11::list<Point*, std::allocator<Point*> >::_M_insert<Point* const&>(std::_List_iterator<Point*>, Point* const&) [88]
+-----------------------------------------------
+                0.00    0.00   10000/10000       std::__cxx11::list<Point*, std::allocator<Point*> >::push_back(Point*&&) [90]
+[92]     0.0    0.00    0.00   10000         std::remove_reference<Point*&>::type&& std::move<Point*&>(Point*&) [92]
+-----------------------------------------------
+                0.00    0.00    9999/9999        std::_List_iterator<Point*> std::__min_element<std::_List_iterator<Point*>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}> >(std::_List_iterator<Point*>, std::_List_iterator<Point*>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>) [127]
+[93]     0.0    0.00    0.00    9999         bool __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>::operator()<std::_List_iterator<Point*>, std::_List_iterator<Point*> >(std::_List_iterator<Point*>, std::_List_iterator<Point*>) [93]
+                0.00    0.00   19998/326935      std::_List_iterator<Point*>::operator*() const [13]
+                0.00    0.00    9999/9999        convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}::operator()(Point*, Point*) const [94]
+-----------------------------------------------
+                0.00    0.00    9999/9999        bool __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>::operator()<std::_List_iterator<Point*>, std::_List_iterator<Point*> >(std::_List_iterator<Point*>, std::_List_iterator<Point*>) [93]
+[94]     0.0    0.00    0.00    9999         convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}::operator()(Point*, Point*) const [94]
+                0.00    0.00   39990/613850      Point::getY() const [8]
+                0.00    0.00     188/574048      Point::getX() const [9]
+-----------------------------------------------
+                0.00    0.00    9994/9994        std::__cxx11::list<Point*, std::allocator<Point*> >::pop_back() [96]
+[95]     0.0    0.00    0.00    9994         std::__cxx11::list<Point*, std::allocator<Point*> >::_M_erase(std::_List_iterator<Point*>) [95]
+                0.00    0.00    9994/19994       std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_dec_size(unsigned long) [57]
+                0.00    0.00    9994/366935      std::_List_node<Point*>::_M_valptr() [12]
+                0.00    0.00    9994/120008      std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_get_Node_allocator() [20]
+                0.00    0.00    9994/20000       void std::allocator_traits<std::allocator<std::_List_node<Point*> > >::destroy<Point*>(std::allocator<std::_List_node<Point*> >&, Point**) [46]
+                0.00    0.00    9994/20000       std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_put_node(std::_List_node<Point*>*) [49]
+-----------------------------------------------
+                0.00    0.00    9994/9994        convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&) [112]
+[96]     0.0    0.00    0.00    9994         std::__cxx11::list<Point*, std::allocator<Point*> >::pop_back() [96]
+                0.00    0.00    9994/169843      std::_List_iterator<Point*>::_List_iterator(std::__detail::_List_node_base*) [16]
+                0.00    0.00    9994/9994        std::__cxx11::list<Point*, std::allocator<Point*> >::_M_erase(std::_List_iterator<Point*>) [95]
+-----------------------------------------------
+                0.00    0.00      68/68          std::allocator<std::_List_node<Point*> >::~allocator() [98]
+[97]     0.0    0.00    0.00      68         __gnu_cxx::new_allocator<std::_List_node<Point*> >::~new_allocator() [97]
+-----------------------------------------------
+                0.00    0.00      68/68          std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_impl::~_List_impl() [99]
+[98]     0.0    0.00    0.00      68         std::allocator<std::_List_node<Point*> >::~allocator() [98]
+                0.00    0.00      68/68          __gnu_cxx::new_allocator<std::_List_node<Point*> >::~new_allocator() [97]
+-----------------------------------------------
+                0.00    0.00      68/68          std::__cxx11::_List_base<Point*, std::allocator<Point*> >::~_List_base() [101]
+[99]     0.0    0.00    0.00      68         std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_impl::~_List_impl() [99]
+                0.00    0.00      68/68          std::allocator<std::_List_node<Point*> >::~allocator() [98]
+-----------------------------------------------
+                0.00    0.00      68/68          std::__cxx11::_List_base<Point*, std::allocator<Point*> >::~_List_base() [101]
+[100]    0.0    0.00    0.00      68         std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_clear() [100]
+                0.00    0.00   10006/366935      std::_List_node<Point*>::_M_valptr() [12]
+                0.00    0.00   10006/120008      std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_get_Node_allocator() [20]
+                0.00    0.00   10006/20000       void std::allocator_traits<std::allocator<std::_List_node<Point*> > >::destroy<Point*>(std::allocator<std::_List_node<Point*> >&, Point**) [46]
+                0.00    0.00   10006/20000       std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_put_node(std::_List_node<Point*>*) [49]
+-----------------------------------------------
+                0.00    0.00      68/68          std::__cxx11::list<Point*, std::allocator<Point*> >::~list() [102]
+[101]    0.0    0.00    0.00      68         std::__cxx11::_List_base<Point*, std::allocator<Point*> >::~_List_base() [101]
+                0.00    0.00      68/68          std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_clear() [100]
+                0.00    0.00      68/68          std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_impl::~_List_impl() [99]
+-----------------------------------------------
+                0.00    0.00       1/68          convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&) [112]
+                0.00    0.00       2/68          main [6]
+                0.00    0.00      65/68          void std::__cxx11::list<Point*, std::allocator<Point*> >::sort<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [122]
+[102]    0.0    0.00    0.00      68         std::__cxx11::list<Point*, std::allocator<Point*> >::~list() [102]
+                0.00    0.00      68/68          std::__cxx11::_List_base<Point*, std::allocator<Point*> >::~_List_base() [101]
+-----------------------------------------------
+                0.00    0.00       1/68          std::__detail::_List_node_header::_List_node_header(std::__detail::_List_node_header&&) [125]
+                0.00    0.00      67/68          std::__detail::_List_node_header::_List_node_header() [109]
+[103]    0.0    0.00    0.00      68         std::__detail::_List_node_header::_M_init() [103]
+-----------------------------------------------
+                0.00    0.00      67/67          std::allocator<std::_List_node<Point*> >::allocator() [105]
+[104]    0.0    0.00    0.00      67         __gnu_cxx::new_allocator<std::_List_node<Point*> >::new_allocator() [104]
+-----------------------------------------------
+                0.00    0.00      67/67          std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_impl::_List_impl() [106]
+[105]    0.0    0.00    0.00      67         std::allocator<std::_List_node<Point*> >::allocator() [105]
+                0.00    0.00      67/67          __gnu_cxx::new_allocator<std::_List_node<Point*> >::new_allocator() [104]
+-----------------------------------------------
+                0.00    0.00      67/67          std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_base() [107]
+[106]    0.0    0.00    0.00      67         std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_impl::_List_impl() [106]
+                0.00    0.00      67/67          std::__detail::_List_node_header::_List_node_header() [109]
+                0.00    0.00      67/67          std::allocator<std::_List_node<Point*> >::allocator() [105]
+-----------------------------------------------
+                0.00    0.00      67/67          std::__cxx11::list<Point*, std::allocator<Point*> >::list() [108]
+[107]    0.0    0.00    0.00      67         std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_base() [107]
+                0.00    0.00      67/67          std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_impl::_List_impl() [106]
+-----------------------------------------------
+                0.00    0.00       1/67          convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&) [112]
+                0.00    0.00       1/67          main [6]
+                0.00    0.00      65/67          void std::__cxx11::list<Point*, std::allocator<Point*> >::sort<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [122]
+[108]    0.0    0.00    0.00      67         std::__cxx11::list<Point*, std::allocator<Point*> >::list() [108]
+                0.00    0.00      67/67          std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_base() [107]
+-----------------------------------------------
+                0.00    0.00      67/67          std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_impl::_List_impl() [106]
+[109]    0.0    0.00    0.00      67         std::__detail::_List_node_header::_List_node_header() [109]
+                0.00    0.00      67/68          std::__detail::_List_node_header::_M_init() [103]
+-----------------------------------------------
+                0.00    0.00       3/3           std::__detail::_List_node_header::_List_node_header(std::__detail::_List_node_header&&) [125]
+[110]    0.0    0.00    0.00       3         std::__detail::_List_node_header::_M_base() [110]
+-----------------------------------------------
+                0.00    0.00       1/2           __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}> __gnu_cxx::__ops::__iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>(convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}) [118]
+                0.00    0.00       1/2           __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>::_Iter_comp_iter(convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}) [117]
+[111]    0.0    0.00    0.00       2         std::remove_reference<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}&>::type&& std::move<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}&>(convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}&) [111]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[112]    0.0    0.00    0.00       1         convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&) [112]
+                0.00    0.00   79588/574048      Point::getX() const [9]
+                0.00    0.00   79588/613850      Point::getY() const [8]
+                0.00    0.00   19995/19996       std::__cxx11::list<Point*, std::allocator<Point*> >::size() const [54]
+                0.00    0.00   19897/19898       std::__cxx11::list<Point*, std::allocator<Point*> >::back() [58]
+                0.00    0.00   19897/19897       std::__cxx11::list<Point*, std::allocator<Point*> >::rbegin() [63]
+                0.00    0.00   19897/19897       std::reverse_iterator<std::_List_iterator<Point*> > std::next<std::reverse_iterator<std::_List_iterator<Point*> > >(std::reverse_iterator<std::_List_iterator<Point*> >, std::iterator_traits<std::reverse_iterator<std::_List_iterator<Point*> > >::difference_type) [65]
+                0.00    0.00   19897/19897       std::reverse_iterator<std::_List_iterator<Point*> >::operator*() const [59]
+                0.00    0.00   10001/326935      std::_List_iterator<Point*>::operator*() const [13]
+                0.00    0.00   10001/302080      std::operator!=(std::_List_iterator<Point*> const&, std::_List_iterator<Point*> const&) [14]
+                0.00    0.00   10000/10000       std::__cxx11::list<Point*, std::allocator<Point*> >::push_back(Point* const&) [91]
+                0.00    0.00   10000/163576      std::_List_iterator<Point*>::operator++() [17]
+                0.00    0.00    9994/9994        std::__cxx11::list<Point*, std::allocator<Point*> >::pop_back() [96]
+                0.00    0.00       2/89828       std::__cxx11::list<Point*, std::allocator<Point*> >::end() [21]
+                0.00    0.00       2/40021       std::__cxx11::list<Point*, std::allocator<Point*> >::begin() [27]
+                0.00    0.00       1/1           std::_List_iterator<Point*> std::min_element<std::_List_iterator<Point*>, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>(std::_List_iterator<Point*>, std::_List_iterator<Point*>, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}) [126]
+                0.00    0.00       1/1           Point::Point(Point const&) [115]
+                0.00    0.00       1/1           void std::__cxx11::list<Point*, std::allocator<Point*> >::sort<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [122]
+                0.00    0.00       1/67          std::__cxx11::list<Point*, std::allocator<Point*> >::list() [108]
+                0.00    0.00       1/1           std::__cxx11::list<Point*, std::allocator<Point*> >::list(std::__cxx11::list<Point*, std::allocator<Point*> >&&) [124]
+                0.00    0.00       1/10001       Point::~Point() [78]
+                0.00    0.00       1/68          std::__cxx11::list<Point*, std::allocator<Point*> >::~list() [102]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[113]    0.0    0.00    0.00       1         polygonArea(std::__cxx11::list<Point*, std::allocator<Point*> >&) [113]
+                0.00    0.00      12/574048      Point::getX() const [9]
+                0.00    0.00      12/613850      Point::getY() const [8]
+                0.00    0.00      10/326935      std::_List_iterator<Point*>::operator*() const [13]
+                0.00    0.00      10/163576      std::_List_iterator<Point*>::operator++() [17]
+                0.00    0.00       6/89828       std::__cxx11::list<Point*, std::allocator<Point*> >::end() [21]
+                0.00    0.00       6/302080      std::operator!=(std::_List_iterator<Point*> const&, std::_List_iterator<Point*> const&) [14]
+                0.00    0.00       1/40021       std::__cxx11::list<Point*, std::allocator<Point*> >::begin() [27]
+                0.00    0.00       1/1           std::_List_iterator<Point*> std::next<std::_List_iterator<Point*> >(std::_List_iterator<Point*>, std::iterator_traits<std::_List_iterator<Point*> >::difference_type) [129]
+                0.00    0.00       1/19996       std::__cxx11::list<Point*, std::allocator<Point*> >::size() const [54]
+                0.00    0.00       1/1           std::__cxx11::list<Point*, std::allocator<Point*> >::front() [123]
+                0.00    0.00       1/19898       std::__cxx11::list<Point*, std::allocator<Point*> >::back() [58]
+                0.00    0.00       1/1           std::abs(float) [128]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__Z12comparePolarP5PointS0_RS_ [133]
+[114]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [114]
+-----------------------------------------------
+                0.00    0.00       1/1           convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&) [112]
+[115]    0.0    0.00    0.00       1         Point::Point(Point const&) [115]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<std::_List_node<Point*> >::allocator(std::allocator<std::_List_node<Point*> > const&) [119]
+[116]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<std::_List_node<Point*> >::new_allocator(__gnu_cxx::new_allocator<std::_List_node<Point*> > const&) [116]
+-----------------------------------------------
+                0.00    0.00       1/1           __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}> __gnu_cxx::__ops::__iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>(convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}) [118]
+[117]    0.0    0.00    0.00       1         __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>::_Iter_comp_iter(convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}) [117]
+                0.00    0.00       1/2           std::remove_reference<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}&>::type&& std::move<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}&>(convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}&) [111]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_List_iterator<Point*> std::min_element<std::_List_iterator<Point*>, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>(std::_List_iterator<Point*>, std::_List_iterator<Point*>, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}) [126]
+[118]    0.0    0.00    0.00       1         __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}> __gnu_cxx::__ops::__iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>(convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}) [118]
+                0.00    0.00       1/1           __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>::_Iter_comp_iter(convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}) [117]
+                0.00    0.00       1/2           std::remove_reference<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}&>::type&& std::move<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}&>(convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}&) [111]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_impl::_List_impl(std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_impl&&) [120]
+[119]    0.0    0.00    0.00       1         std::allocator<std::_List_node<Point*> >::allocator(std::allocator<std::_List_node<Point*> > const&) [119]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::_List_node<Point*> >::new_allocator(__gnu_cxx::new_allocator<std::_List_node<Point*> > const&) [116]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_base(std::__cxx11::_List_base<Point*, std::allocator<Point*> >&&) [121]
+[120]    0.0    0.00    0.00       1         std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_impl::_List_impl(std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_impl&&) [120]
+                0.00    0.00       1/1           std::allocator<std::_List_node<Point*> >::allocator(std::allocator<std::_List_node<Point*> > const&) [119]
+                0.00    0.00       1/1           std::__detail::_List_node_header::_List_node_header(std::__detail::_List_node_header&&) [125]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__cxx11::list<Point*, std::allocator<Point*> >::list(std::__cxx11::list<Point*, std::allocator<Point*> >&&) [124]
+[121]    0.0    0.00    0.00       1         std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_base(std::__cxx11::_List_base<Point*, std::allocator<Point*> >&&) [121]
+                0.00    0.00       1/1           std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_impl::_List_impl(std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_impl&&) [120]
+-----------------------------------------------
+                0.00    0.00       1/1           convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&) [112]
+[122]    0.0    0.00    0.00       1         void std::__cxx11::list<Point*, std::allocator<Point*> >::sort<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [122]
+                0.00    0.00   29981/29981       std::__cxx11::list<Point*, std::allocator<Point*> >::empty() const [33]
+                0.00    0.00   20000/40021       std::__cxx11::list<Point*, std::allocator<Point*> >::begin() [27]
+                0.00    0.00   20000/50016       std::_List_const_iterator<Point*>::_List_const_iterator(std::_List_iterator<Point*> const&) [25]
+                0.00    0.00   19996/19996       std::__cxx11::list<Point*, std::allocator<Point*> >::swap(std::__cxx11::list<Point*, std::allocator<Point*> >&) [55]
+                0.00    0.00   10008/10008       void std::__cxx11::list<Point*, std::allocator<Point*> >::merge<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(std::__cxx11::list<Point*, std::allocator<Point*> >&, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [73]
+                0.00    0.00   10000/10000       std::__cxx11::list<Point*, std::allocator<Point*> >::splice(std::_List_const_iterator<Point*>, std::__cxx11::list<Point*, std::allocator<Point*> >&, std::_List_const_iterator<Point*>) [87]
+                0.00    0.00      65/67          std::__cxx11::list<Point*, std::allocator<Point*> >::list() [108]
+                0.00    0.00      65/68          std::__cxx11::list<Point*, std::allocator<Point*> >::~list() [102]
+-----------------------------------------------
+                0.00    0.00       1/1           polygonArea(std::__cxx11::list<Point*, std::allocator<Point*> >&) [113]
+[123]    0.0    0.00    0.00       1         std::__cxx11::list<Point*, std::allocator<Point*> >::front() [123]
+                0.00    0.00       1/40021       std::__cxx11::list<Point*, std::allocator<Point*> >::begin() [27]
+                0.00    0.00       1/326935      std::_List_iterator<Point*>::operator*() const [13]
+-----------------------------------------------
+                0.00    0.00       1/1           convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&) [112]
+[124]    0.0    0.00    0.00       1         std::__cxx11::list<Point*, std::allocator<Point*> >::list(std::__cxx11::list<Point*, std::allocator<Point*> >&&) [124]
+                0.00    0.00       1/1           std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_base(std::__cxx11::_List_base<Point*, std::allocator<Point*> >&&) [121]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_impl::_List_impl(std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_impl&&) [120]
+[125]    0.0    0.00    0.00       1         std::__detail::_List_node_header::_List_node_header(std::__detail::_List_node_header&&) [125]
+                0.00    0.00       3/3           std::__detail::_List_node_header::_M_base() [110]
+                0.00    0.00       1/68          std::__detail::_List_node_header::_M_init() [103]
+-----------------------------------------------
+                0.00    0.00       1/1           convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&) [112]
+[126]    0.0    0.00    0.00       1         std::_List_iterator<Point*> std::min_element<std::_List_iterator<Point*>, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>(std::_List_iterator<Point*>, std::_List_iterator<Point*>, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}) [126]
+                0.00    0.00       1/1           __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}> __gnu_cxx::__ops::__iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>(convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}) [118]
+                0.00    0.00       1/1           std::_List_iterator<Point*> std::__min_element<std::_List_iterator<Point*>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}> >(std::_List_iterator<Point*>, std::_List_iterator<Point*>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>) [127]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_List_iterator<Point*> std::min_element<std::_List_iterator<Point*>, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>(std::_List_iterator<Point*>, std::_List_iterator<Point*>, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}) [126]
+[127]    0.0    0.00    0.00       1         std::_List_iterator<Point*> std::__min_element<std::_List_iterator<Point*>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}> >(std::_List_iterator<Point*>, std::_List_iterator<Point*>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>) [127]
+                0.00    0.00   10000/163576      std::_List_iterator<Point*>::operator++() [17]
+                0.00    0.00   10000/302080      std::operator!=(std::_List_iterator<Point*> const&, std::_List_iterator<Point*> const&) [14]
+                0.00    0.00    9999/9999        bool __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>::operator()<std::_List_iterator<Point*>, std::_List_iterator<Point*> >(std::_List_iterator<Point*>, std::_List_iterator<Point*>) [93]
+                0.00    0.00       1/1           std::operator==(std::_List_iterator<Point*> const&, std::_List_iterator<Point*> const&) [132]
+-----------------------------------------------
+                0.00    0.00       1/1           polygonArea(std::__cxx11::list<Point*, std::allocator<Point*> >&) [113]
+[128]    0.0    0.00    0.00       1         std::abs(float) [128]
+-----------------------------------------------
+                0.00    0.00       1/1           polygonArea(std::__cxx11::list<Point*, std::allocator<Point*> >&) [113]
+[129]    0.0    0.00    0.00       1         std::_List_iterator<Point*> std::next<std::_List_iterator<Point*> >(std::_List_iterator<Point*>, std::iterator_traits<std::_List_iterator<Point*> >::difference_type) [129]
+                0.00    0.00       1/1           void std::advance<std::_List_iterator<Point*>, long>(std::_List_iterator<Point*>&, long) [130]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_List_iterator<Point*> std::next<std::_List_iterator<Point*> >(std::_List_iterator<Point*>, std::iterator_traits<std::_List_iterator<Point*> >::difference_type) [129]
+[130]    0.0    0.00    0.00       1         void std::advance<std::_List_iterator<Point*>, long>(std::_List_iterator<Point*>&, long) [130]
+                0.00    0.00       1/10009       std::iterator_traits<std::_List_iterator<Point*> >::iterator_category std::__iterator_category<std::_List_iterator<Point*> >(std::_List_iterator<Point*> const&) [68]
+                0.00    0.00       1/1           void std::__advance<std::_List_iterator<Point*>, long>(std::_List_iterator<Point*>&, long, std::bidirectional_iterator_tag) [131]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::advance<std::_List_iterator<Point*>, long>(std::_List_iterator<Point*>&, long) [130]
+[131]    0.0    0.00    0.00       1         void std::__advance<std::_List_iterator<Point*>, long>(std::_List_iterator<Point*>&, long, std::bidirectional_iterator_tag) [131]
+                0.00    0.00       1/163576      std::_List_iterator<Point*>::operator++() [17]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_List_iterator<Point*> std::__min_element<std::_List_iterator<Point*>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}> >(std::_List_iterator<Point*>, std::_List_iterator<Point*>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>) [127]
+[132]    0.0    0.00    0.00       1         std::operator==(std::_List_iterator<Point*> const&, std::_List_iterator<Point*> const&) [132]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2022 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+ [112] convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&) [45] std::allocator_traits<std::allocator<std::_List_node<Point*> > >::deallocate(std::allocator<std::_List_node<Point*> >&, std::_List_node<Point*>*, unsigned long) [88] void std::__cxx11::list<Point*, std::allocator<Point*> >::_M_insert<Point* const&>(std::_List_iterator<Point*>, Point* const&)
+ [113] polygonArea(std::__cxx11::list<Point*, std::allocator<Point*> >&) [46] void std::allocator_traits<std::allocator<std::_List_node<Point*> > >::destroy<Point*>(std::allocator<std::_List_node<Point*> >&, Point**) [89] void std::__cxx11::list<Point*, std::allocator<Point*> >::_M_insert<Point*>(std::_List_iterator<Point*>, Point*&&)
+  [18] comparePolar(Point*, Point*, Point&) [47] std::allocator_traits<std::allocator<std::_List_node<Point*> > >::allocate(std::allocator<std::_List_node<Point*> >&, unsigned long) [90] std::__cxx11::list<Point*, std::allocator<Point*> >::push_back(Point*&&)
+ [114] __static_initialization_and_destruction_0(int, int) (Q1_list.cpp) [82] void std::allocator_traits<std::allocator<std::_List_node<Point*> > >::construct<Point*, Point* const&>(std::allocator<std::_List_node<Point*> >&, Point**, Point* const&) [91] std::__cxx11::list<Point*, std::allocator<Point*> >::push_back(Point* const&)
+  [79] Point::Point(float, float) [83] void std::allocator_traits<std::allocator<std::_List_node<Point*> > >::construct<Point*, Point*>(std::allocator<std::_List_node<Point*> >&, Point**, Point*&&) [124] std::__cxx11::list<Point*, std::allocator<Point*> >::list(std::__cxx11::list<Point*, std::allocator<Point*> >&&)
+ [115] Point::Point(Point const&) [60] std::reverse_iterator<std::_List_iterator<Point*> >::reverse_iterator(std::reverse_iterator<std::_List_iterator<Point*> > const&) [108] std::__cxx11::list<Point*, std::allocator<Point*> >::list()
+  [78] Point::~Point()        [61] std::reverse_iterator<std::_List_iterator<Point*> >::reverse_iterator(std::_List_iterator<Point*>) [102] std::__cxx11::list<Point*, std::allocator<Point*> >::~list()
+  [38] __gnu_cxx::new_allocator<std::_List_node<Point*> >::deallocate(std::_List_node<Point*>*, unsigned long) [62] std::reverse_iterator<std::_List_iterator<Point*> >::operator++() [110] std::__detail::_List_node_header::_M_base()
+  [39] void __gnu_cxx::new_allocator<std::_List_node<Point*> >::destroy<Point*>(Point**) [25] std::_List_const_iterator<Point*>::_List_const_iterator(std::_List_iterator<Point*> const&) [103] std::__detail::_List_node_header::_M_init()
+  [40] __gnu_cxx::new_allocator<std::_List_node<Point*> >::allocate(unsigned long, void const*) [69] std::_List_const_iterator<Point*>::operator++() [125] std::__detail::_List_node_header::_List_node_header(std::__detail::_List_node_header&&)
+  [80] void __gnu_cxx::new_allocator<std::_List_node<Point*> >::construct<Point*, Point* const&>(Point**, Point* const&) [120] std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_impl::_List_impl(std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_impl&&) [109] std::__detail::_List_node_header::_List_node_header()
+  [81] void __gnu_cxx::new_allocator<std::_List_node<Point*> >::construct<Point*, Point*>(Point**, Point*&&) [106] std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_impl::_List_impl() [74] long std::__distance<Point*>(std::_List_iterator<Point*>, std::_List_iterator<Point*>, std::input_iterator_tag)
+ [104] __gnu_cxx::new_allocator<std::_List_node<Point*> >::new_allocator() [99] std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_impl::~_List_impl() [75] long std::__distance<Point*>(std::_List_const_iterator<Point*>, std::_List_const_iterator<Point*>, std::input_iterator_tag)
+ [116] __gnu_cxx::new_allocator<std::_List_node<Point*> >::new_allocator(__gnu_cxx::new_allocator<std::_List_node<Point*> > const&) [57] std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_dec_size(unsigned long) [36] std::__cxx11::list<Point*, std::allocator<Point*> >* std::__addressof<std::__cxx11::list<Point*, std::allocator<Point*> > >(std::__cxx11::list<Point*, std::allocator<Point*> >&)
+  [97] __gnu_cxx::new_allocator<std::_List_node<Point*> >::~new_allocator() [48] std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_get_node() [50] std::allocator<std::_List_node<Point*> >* std::__addressof<std::allocator<std::_List_node<Point*> > >(std::allocator<std::_List_node<Point*> >&)
+  [52] __gnu_cxx::__alloc_traits<std::allocator<std::_List_node<Point*> >, std::_List_node<Point*> >::_S_on_swap(std::allocator<std::_List_node<Point*> >&, std::allocator<std::_List_node<Point*> >&) [28] std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_inc_size(unsigned long) [126] std::_List_iterator<Point*> std::min_element<std::_List_iterator<Point*>, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>(std::_List_iterator<Point*>, std::_List_iterator<Point*>, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}) (stl_algo.h)
+  [10] __gnu_cxx::__aligned_membuf<Point*>::_M_ptr() [49] std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_put_node(std::_List_node<Point*>*) [127] std::_List_iterator<Point*> std::__min_element<std::_List_iterator<Point*>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}> >(std::_List_iterator<Point*>, std::_List_iterator<Point*>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>) (stl_algo.h)
+  [11] __gnu_cxx::__aligned_membuf<Point*>::_M_addr() [26] std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_set_size(unsigned long) [56] void std::__alloc_on_swap<std::allocator<std::_List_node<Point*> > >(std::allocator<std::_List_node<Point*> >&, std::allocator<std::_List_node<Point*> >&)
+ [117] __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>::_Iter_comp_iter(convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}) (predefined_ops.h) [20] std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_get_Node_allocator() [68] std::iterator_traits<std::_List_iterator<Point*> >::iterator_category std::__iterator_category<std::_List_iterator<Point*> >(std::_List_iterator<Point*> const&)
+  [93] bool __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>::operator()<std::_List_iterator<Point*>, std::_List_iterator<Point*> >(std::_List_iterator<Point*>, std::_List_iterator<Point*>) (predefined_ops.h) [100] std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_clear() [64] std::iterator_traits<std::reverse_iterator<std::_List_iterator<Point*> > >::iterator_category std::__iterator_category<std::reverse_iterator<std::_List_iterator<Point*> > >(std::reverse_iterator<std::_List_iterator<Point*> > const&)
+ [118] __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}> __gnu_cxx::__ops::__iter_comp_iter<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>(convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}) (predefined_ops.h) [121] std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_base(std::__cxx11::_List_base<Point*, std::allocator<Point*> >&&) [128] std::abs(float)
+   [9] Point::getX() const   [107] std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_List_base() [37] std::remove_reference<std::__cxx11::list<Point*, std::allocator<Point*> >&>::type&& std::move<std::__cxx11::list<Point*, std::allocator<Point*> >&>(std::__cxx11::list<Point*, std::allocator<Point*> >&)
+   [8] Point::getY() const   [101] std::__cxx11::_List_base<Point*, std::allocator<Point*> >::~_List_base() [92] std::remove_reference<Point*&>::type&& std::move<Point*&>(Point*&)
+  [41] __gnu_cxx::new_allocator<std::_List_node<Point*> >::_M_max_size() const [22] std::__cxx11::list<Point*, std::allocator<Point*> >::_M_transfer(std::_List_iterator<Point*>, std::_List_iterator<Point*>, std::_List_iterator<Point*>) [111] std::remove_reference<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}&>::type&& std::move<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}&>(convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}&) (move.h)
+  [13] std::_List_iterator<Point*>::operator*() const [84] std::_List_node<Point*>* std::__cxx11::list<Point*, std::allocator<Point*> >::_M_create_node<Point* const&>(Point* const&) [129] std::_List_iterator<Point*> std::next<std::_List_iterator<Point*> >(std::_List_iterator<Point*>, std::iterator_traits<std::_List_iterator<Point*> >::difference_type)
+  [59] std::reverse_iterator<std::_List_iterator<Point*> >::operator*() const [85] std::_List_node<Point*>* std::__cxx11::list<Point*, std::allocator<Point*> >::_M_create_node<Point*>(Point*&&) [65] std::reverse_iterator<std::_List_iterator<Point*> > std::next<std::reverse_iterator<std::_List_iterator<Point*> > >(std::reverse_iterator<std::_List_iterator<Point*> >, std::iterator_traits<std::reverse_iterator<std::_List_iterator<Point*> > >::difference_type)
+  [32] std::_List_const_iterator<Point*>::_M_const_cast() const [70] std::__cxx11::list<Point*, std::allocator<Point*> >::_Finalize_merge::_Finalize_merge(std::__cxx11::list<Point*, std::allocator<Point*> >&, std::__cxx11::list<Point*, std::allocator<Point*> >&, std::_List_iterator<Point*> const&) [15] std::atan2(float, float)
+  [23] std::__cxx11::_List_base<Point*, std::allocator<Point*> >::_M_get_size() const [71] std::__cxx11::list<Point*, std::allocator<Point*> >::_Finalize_merge::~_Finalize_merge() [130] void std::advance<std::_List_iterator<Point*>, long>(std::_List_iterator<Point*>&, long)
+  [53] std::__cxx11::list<Point*, std::allocator<Point*> >::_M_node_count() const [35] std::__cxx11::list<Point*, std::allocator<Point*> >::_M_check_equal_allocators(std::__cxx11::list<Point*, std::allocator<Point*> >&) [66] void std::advance<std::reverse_iterator<std::_List_iterator<Point*> >, long>(std::reverse_iterator<std::_List_iterator<Point*> >&, long)
+  [54] std::__cxx11::list<Point*, std::allocator<Point*> >::size() const [21] std::__cxx11::list<Point*, std::allocator<Point*> >::end() [29] Point*&& std::forward<Point*>(std::remove_reference<Point*>::type&)
+  [33] std::__cxx11::list<Point*, std::allocator<Point*> >::empty() const [58] std::__cxx11::list<Point*, std::allocator<Point*> >::back() [30] Point* const& std::forward<Point* const&>(std::remove_reference<Point* const&>::type&)
+ [119] std::allocator<std::_List_node<Point*> >::allocator(std::allocator<std::_List_node<Point*> > const&) [122] void std::__cxx11::list<Point*, std::allocator<Point*> >::sort<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) (list.tcc) [76] std::iterator_traits<std::_List_iterator<Point*> >::difference_type std::distance<std::_List_iterator<Point*> >(std::_List_iterator<Point*>, std::_List_iterator<Point*>)
+ [105] std::allocator<std::_List_node<Point*> >::allocator() [55] std::__cxx11::list<Point*, std::allocator<Point*> >::swap(std::__cxx11::list<Point*, std::allocator<Point*> >&) [131] void std::__advance<std::_List_iterator<Point*>, long>(std::_List_iterator<Point*>&, long, std::bidirectional_iterator_tag)
+  [98] std::allocator<std::_List_node<Point*> >::~allocator() [27] std::__cxx11::list<Point*, std::allocator<Point*> >::begin() [67] void std::__advance<std::reverse_iterator<std::_List_iterator<Point*> >, long>(std::reverse_iterator<std::_List_iterator<Point*> >&, long, std::bidirectional_iterator_tag)
+  [12] std::_List_node<Point*>::_M_valptr() [123] std::__cxx11::list<Point*, std::allocator<Point*> >::front() [132] std::operator==(std::_List_iterator<Point*> const&, std::_List_iterator<Point*> const&)
+  [34] std::__alloc_neq<std::allocator<std::_List_node<Point*> >, true>::_S_do_it(std::allocator<std::_List_node<Point*> > const&, std::allocator<std::_List_node<Point*> > const&) [72] void std::__cxx11::list<Point*, std::allocator<Point*> >::merge<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(std::__cxx11::list<Point*, std::allocator<Point*> >&&, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) (list.tcc) [31] std::operator==(std::_List_const_iterator<Point*> const&, std::_List_const_iterator<Point*> const&)
+  [16] std::_List_iterator<Point*>::_List_iterator(std::__detail::_List_node_base*) [73] void std::__cxx11::list<Point*, std::allocator<Point*> >::merge<convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(std::__cxx11::list<Point*, std::allocator<Point*> >&, convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) (stl_list.h) [14] std::operator!=(std::_List_iterator<Point*> const&, std::_List_iterator<Point*> const&)
+  [24] std::_List_iterator<Point*>::operator--() [63] std::__cxx11::list<Point*, std::allocator<Point*> >::rbegin() [77] std::operator!=(std::_List_const_iterator<Point*> const&, std::_List_const_iterator<Point*> const&)
+  [17] std::_List_iterator<Point*>::operator++() [86] std::__cxx11::list<Point*, std::allocator<Point*> >::splice(std::_List_const_iterator<Point*>, std::__cxx11::list<Point*, std::allocator<Point*> >&&, std::_List_const_iterator<Point*>) [19] convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}::operator()(Point*, Point*) const (Q1_list.cpp)
+  [42] std::__allocated_ptr<std::allocator<std::_List_node<Point*> > >::__allocated_ptr(std::allocator<std::_List_node<Point*> >&, std::_List_node<Point*>*) [87] std::__cxx11::list<Point*, std::allocator<Point*> >::splice(std::_List_const_iterator<Point*>, std::__cxx11::list<Point*, std::allocator<Point*> >&, std::_List_const_iterator<Point*>) [94] convexHull(std::__cxx11::list<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}::operator()(Point*, Point*) const (Q1_list.cpp)
+  [43] std::__allocated_ptr<std::allocator<std::_List_node<Point*> > >::~__allocated_ptr() [95] std::__cxx11::list<Point*, std::allocator<Point*> >::_M_erase(std::_List_iterator<Point*>) [51] operator new(unsigned long, void*)
+  [44] std::__allocated_ptr<std::allocator<std::_List_node<Point*> > >::operator=(decltype(nullptr)) [96] std::__cxx11::list<Point*, std::allocator<Point*> >::pop_back()
+
