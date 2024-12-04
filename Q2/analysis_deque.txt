@@ -1,1 +1,1097 @@
-//
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+100.00      0.01     0.01   692336     0.00     0.00  Point::getX() const
+  0.00      0.01     0.00   732126     0.00     0.00  Point::getY() const
+  0.00      0.01     0.00   476086     0.00     0.00  std::_Deque_iterator<Point*, Point*&, Point**>::operator*() const
+  0.00      0.01     0.00   427919     0.00     0.00  std::_Deque_iterator<Point*, Point*&, Point**>::_Deque_iterator(std::_Deque_iterator<Point*, Point*&, Point**> const&)
+  0.00      0.01     0.00   306276     0.00     0.00  std::atan2(float, float)
+  0.00      0.01     0.00   153138     0.00     0.00  comparePolar(Point*, Point*, Point&)
+  0.00      0.01     0.00   153138     0.00     0.00  convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}::operator()(Point*, Point*) const
+  0.00      0.01     0.00   124736     0.00     0.00  std::remove_reference<Point*&>::type&& std::move<Point*&>(Point*&)
+  0.00      0.01     0.00   122579     0.00     0.00  bool __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>::operator()<std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>)
+  0.00      0.01     0.00   111429     0.00     0.00  std::_Deque_iterator<Point*, Point*&, Point**>::operator--()
+  0.00      0.01     0.00   108021     0.00     0.00  std::_Deque_iterator<Point*, Point*&, Point**>::operator++()
+  0.00      0.01     0.00    71759     0.00     0.00  std::__deque_buf_size(unsigned long)
+  0.00      0.01     0.00    71435     0.00     0.00  std::_Deque_iterator<Point*, Point*&, Point**>::_S_buffer_size()
+  0.00      0.01     0.00    43027     0.00     0.00  std::operator-(std::_Deque_iterator<Point*, Point*&, Point**> const&, std::_Deque_iterator<Point*, Point*&, Point**> const&)
+  0.00      0.01     0.00    40042     0.00     0.00  std::deque<Point*, std::allocator<Point*> >::size() const
+  0.00      0.01     0.00    40006     0.00     0.00  std::operator==(std::_Deque_iterator<Point*, Point*&, Point**> const&, std::_Deque_iterator<Point*, Point*&, Point**> const&)
+  0.00      0.01     0.00    40004     0.00     0.00  std::operator!=(std::_Deque_iterator<Point*, Point*&, Point**> const&, std::_Deque_iterator<Point*, Point*&, Point**> const&)
+  0.00      0.01     0.00    30559     0.00     0.00  bool __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>::operator()<Point*, std::_Deque_iterator<Point*, Point*&, Point**> >(Point*&, std::_Deque_iterator<Point*, Point*&, Point**>)
+  0.00      0.01     0.00    30156     0.00     0.00  Point*&& std::forward<Point*>(std::remove_reference<Point*>::type&)
+  0.00      0.01     0.00    29899     0.00     0.00  std::deque<Point*, std::allocator<Point*> >::end()
+  0.00      0.01     0.00    29892     0.00     0.00  std::deque<Point*, std::allocator<Point*> >::back()
+  0.00      0.01     0.00    24726     0.00     0.00  std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Point*> >, std::is_move_constructible<Point*>, std::is_move_assignable<Point*> >::value, void>::type std::swap<Point*>(Point*&, Point*&)
+  0.00      0.01     0.00    24726     0.00     0.00  void std::iter_swap<std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>)
+  0.00      0.01     0.00    24726     0.00     0.00  std::operator<(std::_Deque_iterator<Point*, Point*&, Point**> const&, std::_Deque_iterator<Point*, Point*&, Point**> const&)
+  0.00      0.01     0.00    23887     0.00     0.00  std::_Deque_iterator<Point*, Point*&, Point**>::operator+=(long)
+  0.00      0.01     0.00    22893     0.00     0.00  std::operator+(std::_Deque_iterator<Point*, Point*&, Point**> const&, long)
+  0.00      0.01     0.00    20000     0.00     0.00  Point* const& std::forward<Point* const&>(std::remove_reference<Point* const&>::type&)
+  0.00      0.01     0.00    20000     0.00     0.00  operator new(unsigned long, void*)
+  0.00      0.01     0.00    19908     0.00     0.00  std::_Deque_iterator<Point*, Point*&, Point**>::operator[](long) const
+  0.00      0.01     0.00    19908     0.00     0.00  std::deque<Point*, std::allocator<Point*> >::operator[](unsigned long)
+  0.00      0.01     0.00    10001     0.00     0.00  Point::~Point()
+  0.00      0.01     0.00    10001     0.00     0.00  std::remove_reference<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}&>::type&& std::move<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}&>(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}&)
+  0.00      0.01     0.00    10000     0.00     0.00  Point::Point(float, float)
+  0.00      0.01     0.00    10000     0.00     0.00  void __gnu_cxx::new_allocator<Point*>::construct<Point*, Point* const&>(Point**, Point* const&)
+  0.00      0.01     0.00    10000     0.00     0.00  void __gnu_cxx::new_allocator<Point*>::construct<Point*, Point*>(Point**, Point*&&)
+  0.00      0.01     0.00    10000     0.00     0.00  void std::allocator_traits<std::allocator<Point*> >::construct<Point*, Point* const&>(std::allocator<Point*>&, Point**, Point* const&)
+  0.00      0.01     0.00    10000     0.00     0.00  void std::allocator_traits<std::allocator<Point*> >::construct<Point*, Point*>(std::allocator<Point*>&, Point**, Point*&&)
+  0.00      0.01     0.00    10000     0.00     0.00  Point*& std::deque<Point*, std::allocator<Point*> >::emplace_back<Point*>(Point*&&)
+  0.00      0.01     0.00    10000     0.00     0.00  std::deque<Point*, std::allocator<Point*> >::push_back(Point*&&)
+  0.00      0.01     0.00    10000     0.00     0.00  std::deque<Point*, std::allocator<Point*> >::push_back(Point* const&)
+  0.00      0.01     0.00     9999     0.00     0.00  __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>::_Val_comp_iter(__gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>&&)
+  0.00      0.01     0.00     9999     0.00     0.00  bool __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>::operator()<std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>)
+  0.00      0.01     0.00     9999     0.00     0.00  __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> __gnu_cxx::__ops::__val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(__gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>)
+  0.00      0.01     0.00     9999     0.00     0.00  void std::__unguarded_linear_insert<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>)
+  0.00      0.01     0.00     9999     0.00     0.00  std::remove_reference<__gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>&>::type&& std::move<__gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>&>(__gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>&)
+  0.00      0.01     0.00     9999     0.00     0.00  convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}::operator()(Point*, Point*) const
+  0.00      0.01     0.00     9996     0.00     0.00  std::_Deque_base<Point*, std::allocator<Point*> >::_M_get_Tp_allocator()
+  0.00      0.01     0.00     9992     0.00     0.00  void __gnu_cxx::new_allocator<Point*>::destroy<Point*>(Point**)
+  0.00      0.01     0.00     9992     0.00     0.00  void std::allocator_traits<std::allocator<Point*> >::destroy<Point*>(std::allocator<Point*>&, Point**)
+  0.00      0.01     0.00     9992     0.00     0.00  std::deque<Point*, std::allocator<Point*> >::pop_back()
+  0.00      0.01     0.00     3678     0.00     0.00  std::_Deque_iterator<Point*, Point*&, Point**>::_M_set_node(Point***)
+  0.00      0.01     0.00      994     0.00     0.00  std::_Deque_iterator<Point*, Point*&, Point**>::operator-=(long)
+  0.00      0.01     0.00      994     0.00     0.01  std::_Deque_iterator<Point*, Point*&, Point**> std::__unguarded_partition<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>)
+  0.00      0.01     0.00      994     0.00     0.00  void std::__move_median_to_first<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>)
+  0.00      0.01     0.00      994     0.00     0.01  std::_Deque_iterator<Point*, Point*&, Point**> std::__unguarded_partition_pivot<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>)
+  0.00      0.01     0.00      994     0.00     0.00  std::operator-(std::_Deque_iterator<Point*, Point*&, Point**> const&, long)
+  0.00      0.01     0.00      315     0.00     0.00  __gnu_cxx::new_allocator<Point*>::_M_max_size() const
+  0.00      0.01     0.00      172     0.00     0.00  std::_Deque_base<Point*, std::allocator<Point*> >::_M_get_Tp_allocator() const
+  0.00      0.01     0.00      159     0.00     0.00  __gnu_cxx::new_allocator<Point*>::deallocate(Point**, unsigned long)
+  0.00      0.01     0.00      159     0.00     0.00  __gnu_cxx::new_allocator<Point*>::allocate(unsigned long, void const*)
+  0.00      0.01     0.00      159     0.00     0.00  std::_Deque_base<Point*, std::allocator<Point*> >::_M_allocate_node()
+  0.00      0.01     0.00      159     0.00     0.00  std::_Deque_base<Point*, std::allocator<Point*> >::_M_deallocate_node(Point**)
+  0.00      0.01     0.00      159     0.00     0.00  std::allocator_traits<std::allocator<Point*> >::deallocate(std::allocator<Point*>&, Point**, unsigned long)
+  0.00      0.01     0.00      159     0.00     0.00  std::allocator_traits<std::allocator<Point*> >::allocate(std::allocator<Point*>&, unsigned long)
+  0.00      0.01     0.00      156     0.00     0.00  __gnu_cxx::new_allocator<Point*>::max_size() const
+  0.00      0.01     0.00      156     0.00     0.00  std::deque<Point*, std::allocator<Point*> >::max_size() const
+  0.00      0.01     0.00      156     0.00     0.00  std::allocator_traits<std::allocator<Point*> >::max_size(std::allocator<Point*> const&)
+  0.00      0.01     0.00      156     0.00     0.00  std::deque<Point*, std::allocator<Point*> >::_S_max_size(std::allocator<Point*> const&)
+  0.00      0.01     0.00      156     0.00     0.00  void std::deque<Point*, std::allocator<Point*> >::_M_push_back_aux<Point*>(Point*&&)
+  0.00      0.01     0.00      156     0.00     0.00  std::deque<Point*, std::allocator<Point*> >::_M_reserve_map_at_back(unsigned long)
+  0.00      0.01     0.00      156     0.00     0.00  unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)
+  0.00      0.01     0.00       16     0.00     0.00  __gnu_cxx::new_allocator<Point**>::new_allocator()
+  0.00      0.01     0.00       16     0.00     0.00  __gnu_cxx::new_allocator<Point**>::~new_allocator()
+  0.00      0.01     0.00       16     0.00     0.00  std::_Deque_base<Point*, std::allocator<Point*> >::_M_get_map_allocator() const
+  0.00      0.01     0.00       16     0.00     0.00  std::allocator<Point**>::allocator<Point*>(std::allocator<Point*> const&)
+  0.00      0.01     0.00       16     0.00     0.00  std::allocator<Point**>::~allocator()
+  0.00      0.01     0.00       15     0.00     0.00  Point*** std::__niter_base<Point***>(Point***)
+  0.00      0.01     0.00       10     0.00     0.00  Point*** std::__miter_base<Point***>(Point***)
+  0.00      0.01     0.00        8     0.00     0.00  __gnu_cxx::new_allocator<Point**>::deallocate(Point***, unsigned long)
+  0.00      0.01     0.00        8     0.00     0.00  __gnu_cxx::new_allocator<Point**>::allocate(unsigned long, void const*)
+  0.00      0.01     0.00        8     0.00     0.00  __gnu_cxx::new_allocator<Point**>::_M_max_size() const
+  0.00      0.01     0.00        8     0.00     0.00  std::_Deque_base<Point*, std::allocator<Point*> >::_M_allocate_map(unsigned long)
+  0.00      0.01     0.00        8     0.00     0.00  std::_Deque_base<Point*, std::allocator<Point*> >::_M_deallocate_map(Point***, unsigned long)
+  0.00      0.01     0.00        8     0.00     0.00  std::_Deque_iterator<Point*, Point*&, Point**>::_Deque_iterator()
+  0.00      0.01     0.00        8     0.00     0.00  std::allocator_traits<std::allocator<Point**> >::deallocate(std::allocator<Point**>&, Point***, unsigned long)
+  0.00      0.01     0.00        8     0.00     0.00  std::allocator_traits<std::allocator<Point**> >::allocate(std::allocator<Point**>&, unsigned long)
+  0.00      0.01     0.00        8     0.00     0.00  unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+  0.00      0.01     0.00        7     0.00     0.00  std::deque<Point*, std::allocator<Point*> >::begin()
+  0.00      0.01     0.00        5     0.00     0.00  Point*** std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<Point**>(Point** const*, Point** const*, Point***)
+  0.00      0.01     0.00        5     0.00     0.00  std::deque<Point*, std::allocator<Point*> >::_M_reallocate_map(unsigned long, bool)
+  0.00      0.01     0.00        5     0.00     0.00  Point*** std::__niter_wrap<Point***>(Point*** const&, Point***)
+  0.00      0.01     0.00        5     0.00     0.00  Point*** std::__copy_move_a<false, Point***, Point***>(Point***, Point***, Point***)
+  0.00      0.01     0.00        5     0.00     0.00  Point*** std::__copy_move_a1<false, Point***, Point***>(Point***, Point***, Point***)
+  0.00      0.01     0.00        5     0.00     0.00  Point*** std::__copy_move_a2<false, Point***, Point***>(Point***, Point***, Point***)
+  0.00      0.01     0.00        5     0.00     0.00  Point*** std::copy<Point***, Point***>(Point***, Point***, Point***)
+  0.00      0.01     0.00        4     0.00     0.00  std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data::_Deque_impl_data()
+  0.00      0.01     0.00        3     0.00     0.00  __gnu_cxx::new_allocator<Point*>::~new_allocator()
+  0.00      0.01     0.00        3     0.00     0.00  std::allocator<Point*>::~allocator()
+  0.00      0.01     0.00        3     0.00     0.00  std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl::~_Deque_impl()
+  0.00      0.01     0.00        3     0.00     0.00  std::_Deque_base<Point*, std::allocator<Point*> >::_M_create_nodes(Point***, Point***)
+  0.00      0.01     0.00        3     0.00     0.00  std::_Deque_base<Point*, std::allocator<Point*> >::_M_destroy_nodes(Point***, Point***)
+  0.00      0.01     0.00        3     0.00     0.00  std::_Deque_base<Point*, std::allocator<Point*> >::_M_initialize_map(unsigned long)
+  0.00      0.01     0.00        3     0.00     0.00  std::_Deque_base<Point*, std::allocator<Point*> >::~_Deque_base()
+  0.00      0.01     0.00        3     0.00     0.00  std::deque<Point*, std::allocator<Point*> >::_M_destroy_data(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, std::allocator<Point*> const&)
+  0.00      0.01     0.00        3     0.00     0.00  std::deque<Point*, std::allocator<Point*> >::~deque()
+  0.00      0.01     0.00        3     0.00     0.00  std::remove_reference<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&>::type&& std::move<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&>(std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&)
+  0.00      0.01     0.00        2     0.00     0.00  __gnu_cxx::new_allocator<Point*>::new_allocator()
+  0.00      0.01     0.00        2     0.00     0.00  std::allocator<Point*>::allocator()
+  0.00      0.01     0.00        2     0.00     0.00  std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl::_Deque_impl()
+  0.00      0.01     0.00        2     0.00     0.00  std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_base()
+  0.00      0.01     0.00        2     0.00     0.00  std::deque<Point*, std::allocator<Point*> >::deque()
+  0.00      0.01     0.00        2     0.00     0.00  std::remove_reference<std::allocator<Point*>&>::type&& std::move<std::allocator<Point*>&>(std::allocator<Point*>&)
+  0.00      0.01     0.00        2     0.00     0.00  std::remove_reference<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}&>::type&& std::move<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}&>(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}&)
+  0.00      0.01     0.00        1     0.00    10.00  convexHull(std::deque<Point*, std::allocator<Point*> >&)
+  0.00      0.01     0.00        1     0.00     0.00  polygonArea(std::deque<Point*, std::allocator<Point*> >&)
+  0.00      0.01     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.01     0.00        1     0.00     0.00  Point::Point(Point const&)
+  0.00      0.01     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<Point*>::new_allocator(__gnu_cxx::new_allocator<Point*> const&)
+  0.00      0.01     0.00        1     0.00     0.00  __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>::_Iter_comp_iter(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2})
+  0.00      0.01     0.00        1     0.00     0.00  __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>::_Iter_comp_iter(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1})
+  0.00      0.01     0.00        1     0.00     0.00  __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> __gnu_cxx::__ops::__iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2})
+  0.00      0.01     0.00        1     0.00     0.00  __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}> __gnu_cxx::__ops::__iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1})
+  0.00      0.01     0.00        1     0.00     0.00  std::allocator<Point*>::allocator(std::allocator<Point*> const&)
+  0.00      0.01     0.00        1     0.00     0.00  std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl::_Deque_impl(std::allocator<Point*>&&)
+  0.00      0.01     0.00        1     0.00     0.00  std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data::_M_swap_data(std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&)
+  0.00      0.01     0.00        1     0.00     0.00  std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data::_Deque_impl_data(std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&&)
+  0.00      0.01     0.00        1     0.00     0.00  std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data::_Deque_impl_data(std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data const&)
+  0.00      0.01     0.00        1     0.00     0.00  std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_base(std::_Deque_base<Point*, std::allocator<Point*> >&&)
+  0.00      0.01     0.00        1     0.00     0.00  std::deque<Point*, std::allocator<Point*> >::deque(std::deque<Point*, std::allocator<Point*> >&&)
+  0.00      0.01     0.00        1     0.00     0.00  std::_Deque_iterator<Point*, Point*&, Point**> std::min_element<std::_Deque_iterator<Point*, Point*&, Point**>, convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1})
+  0.00      0.01     0.00        1     0.00     0.00  std::_Deque_iterator<Point*, Point*&, Point**> std::__min_element<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>)
+  0.00      0.01     0.00        1     0.00     0.00  void std::__insertion_sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>)
+  0.00      0.01     0.00        1     0.00     7.08  void std::__introsort_loop<std::_Deque_iterator<Point*, Point*&, Point**>, long, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, long, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>)
+  0.00      0.01     0.00        1     0.00     1.77  void std::__final_insertion_sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>)
+  0.00      0.01     0.00        1     0.00     1.76  void std::__unguarded_insertion_sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>)
+  0.00      0.01     0.00        1     0.00     0.00  std::abs(float)
+  0.00      0.01     0.00        1     0.00     0.00  std::__lg(long)
+  0.00      0.01     0.00        1     0.00     8.85  void std::sort<std::_Deque_iterator<Point*, Point*&, Point**>, convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2})
+  0.00      0.01     0.00        1     0.00     0.00  std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data> >, std::is_move_constructible<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data>, std::is_move_assignable<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data> >::value, void>::type std::swap<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data>(std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&, std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&)
+  0.00      0.01     0.00        1     0.00     8.85  void std::__sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2022 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 100.00% of 0.01 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.00    0.01                 main [1]
+                0.00    0.01       1/1           convexHull(std::deque<Point*, std::allocator<Point*> >&) [3]
+                0.00    0.00       1/1           polygonArea(std::deque<Point*, std::allocator<Point*> >&) [22]
+                0.00    0.00   10001/40004       std::operator!=(std::_Deque_iterator<Point*, Point*&, Point**> const&, std::_Deque_iterator<Point*, Point*&, Point**> const&) [41]
+                0.00    0.00   10000/10000       Point::Point(float, float) [56]
+                0.00    0.00   10000/10000       std::deque<Point*, std::allocator<Point*> >::push_back(Point*&&) [62]
+                0.00    0.00   10000/476086      std::_Deque_iterator<Point*, Point*&, Point**>::operator*() const [30]
+                0.00    0.00   10000/10001       Point::~Point() [54]
+                0.00    0.00   10000/108021      std::_Deque_iterator<Point*, Point*&, Point**>::operator++() [35]
+                0.00    0.00       2/3           std::deque<Point*, std::allocator<Point*> >::~deque() [122]
+                0.00    0.00       1/2           std::deque<Point*, std::allocator<Point*> >::deque() [128]
+                0.00    0.00       1/7           std::deque<Point*, std::allocator<Point*> >::begin() [105]
+                0.00    0.00       1/29899       std::deque<Point*, std::allocator<Point*> >::end() [43]
+-----------------------------------------------
+                0.00    0.00      16/692336      polygonArea(std::deque<Point*, std::allocator<Point*> >&) [22]
+                0.00    0.00     200/692336      convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}::operator()(Point*, Point*) const [19]
+                0.00    0.00   79568/692336      convexHull(std::deque<Point*, std::allocator<Point*> >&) [3]
+                0.01    0.00  612552/692336      comparePolar(Point*, Point*, Point&) [4]
+[2]    100.0    0.01    0.00  692336         Point::getX() const [2]
+-----------------------------------------------
+                0.00    0.01       1/1           main [1]
+[3]    100.0    0.00    0.01       1         convexHull(std::deque<Point*, std::allocator<Point*> >&) [3]
+                0.00    0.01       1/1           void std::sort<std::_Deque_iterator<Point*, Point*&, Point**>, convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [6]
+                0.00    0.00   79568/692336      Point::getX() const [2]
+                0.00    0.00       1/1           std::_Deque_iterator<Point*, Point*&, Point**> std::min_element<std::_Deque_iterator<Point*, Point*&, Point**>, convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}) [20]
+                0.00    0.00   79568/732126      Point::getY() const [29]
+                0.00    0.00   39885/40042       std::deque<Point*, std::allocator<Point*> >::size() const [39]
+                0.00    0.00   19892/29892       std::deque<Point*, std::allocator<Point*> >::back() [44]
+                0.00    0.00   19892/19908       std::deque<Point*, std::allocator<Point*> >::operator[](unsigned long) [53]
+                0.00    0.00   10001/476086      std::_Deque_iterator<Point*, Point*&, Point**>::operator*() const [30]
+                0.00    0.00   10001/40004       std::operator!=(std::_Deque_iterator<Point*, Point*&, Point**> const&, std::_Deque_iterator<Point*, Point*&, Point**> const&) [41]
+                0.00    0.00   10000/10000       std::deque<Point*, std::allocator<Point*> >::push_back(Point* const&) [63]
+                0.00    0.00   10000/108021      std::_Deque_iterator<Point*, Point*&, Point**>::operator++() [35]
+                0.00    0.00    9992/9992        std::deque<Point*, std::allocator<Point*> >::pop_back() [70]
+                0.00    0.00       3/29899       std::deque<Point*, std::allocator<Point*> >::end() [43]
+                0.00    0.00       3/7           std::deque<Point*, std::allocator<Point*> >::begin() [105]
+                0.00    0.00       1/1           Point::Point(Point const&) [132]
+                0.00    0.00       1/2           std::deque<Point*, std::allocator<Point*> >::deque() [128]
+                0.00    0.00       1/1           std::deque<Point*, std::allocator<Point*> >::deque(std::deque<Point*, std::allocator<Point*> >&&) [144]
+                0.00    0.00       1/3           std::deque<Point*, std::allocator<Point*> >::~deque() [122]
+                0.00    0.00       1/10001       Point::~Point() [54]
+-----------------------------------------------
+                0.00    0.01  153138/153138      convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}::operator()(Point*, Point*) const [5]
+[4]     88.5    0.00    0.01  153138         comparePolar(Point*, Point*, Point&) [4]
+                0.01    0.00  612552/692336      Point::getX() const [2]
+                0.00    0.00  612552/732126      Point::getY() const [29]
+                0.00    0.00  306276/306276      std::atan2(float, float) [32]
+-----------------------------------------------
+                0.00    0.00   30559/153138      bool __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>::operator()<Point*, std::_Deque_iterator<Point*, Point*&, Point**> >(Point*&, std::_Deque_iterator<Point*, Point*&, Point**>) [13]
+                0.00    0.01  122579/153138      bool __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>::operator()<std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>) [8]
+[5]     88.5    0.00    0.01  153138         convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}::operator()(Point*, Point*) const [5]
+                0.00    0.01  153138/153138      comparePolar(Point*, Point*, Point&) [4]
+-----------------------------------------------
+                0.00    0.01       1/1           convexHull(std::deque<Point*, std::allocator<Point*> >&) [3]
+[6]     88.5    0.00    0.01       1         void std::sort<std::_Deque_iterator<Point*, Point*&, Point**>, convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [6]
+                0.00    0.01       1/1           void std::__sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [7]
+                0.00    0.00       2/427919      std::_Deque_iterator<Point*, Point*&, Point**>::_Deque_iterator(std::_Deque_iterator<Point*, Point*&, Point**> const&) [31]
+                0.00    0.00       1/1           __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> __gnu_cxx::__ops::__iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [136]
+-----------------------------------------------
+                0.00    0.01       1/1           void std::sort<std::_Deque_iterator<Point*, Point*&, Point**>, convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [6]
+[7]     88.5    0.00    0.01       1         void std::__sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [7]
+                0.00    0.01       1/1           void std::__introsort_loop<std::_Deque_iterator<Point*, Point*&, Point**>, long, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, long, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [10]
+                0.00    0.00       1/1           void std::__final_insertion_sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [12]
+                0.00    0.00       4/427919      std::_Deque_iterator<Point*, Point*&, Point**>::_Deque_iterator(std::_Deque_iterator<Point*, Point*&, Point**> const&) [31]
+                0.00    0.00       1/40004       std::operator!=(std::_Deque_iterator<Point*, Point*&, Point**> const&, std::_Deque_iterator<Point*, Point*&, Point**> const&) [41]
+                0.00    0.00       1/43027       std::operator-(std::_Deque_iterator<Point*, Point*&, Point**> const&, std::_Deque_iterator<Point*, Point*&, Point**> const&) [38]
+                0.00    0.00       1/1           std::__lg(long) [146]
+-----------------------------------------------
+                0.00    0.00      15/122579      void std::__insertion_sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [17]
+                0.00    0.00    2570/122579      void std::__move_median_to_first<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [16]
+                0.00    0.01  119994/122579      std::_Deque_iterator<Point*, Point*&, Point**> std::__unguarded_partition<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [11]
+[8]     70.8    0.00    0.01  122579         bool __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>::operator()<std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>) [8]
+                0.00    0.01  122579/153138      convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}::operator()(Point*, Point*) const [5]
+                0.00    0.00  245158/476086      std::_Deque_iterator<Point*, Point*&, Point**>::operator*() const [30]
+-----------------------------------------------
+                0.00    0.01     994/994         void std::__introsort_loop<std::_Deque_iterator<Point*, Point*&, Point**>, long, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, long, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [10]
+[9]     70.8    0.00    0.01     994         std::_Deque_iterator<Point*, Point*&, Point**> std::__unguarded_partition_pivot<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [9]
+                0.00    0.01     994/994         std::_Deque_iterator<Point*, Point*&, Point**> std::__unguarded_partition<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [11]
+                0.00    0.00     994/994         void std::__move_median_to_first<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [16]
+                0.00    0.00    3976/427919      std::_Deque_iterator<Point*, Point*&, Point**>::_Deque_iterator(std::_Deque_iterator<Point*, Point*&, Point**> const&) [31]
+                0.00    0.00    2982/22893       std::operator+(std::_Deque_iterator<Point*, Point*&, Point**> const&, long) [49]
+                0.00    0.00     994/43027       std::operator-(std::_Deque_iterator<Point*, Point*&, Point**> const&, std::_Deque_iterator<Point*, Point*&, Point**> const&) [38]
+                0.00    0.00     994/994         std::operator-(std::_Deque_iterator<Point*, Point*&, Point**> const&, long) [73]
+-----------------------------------------------
+                                 994             void std::__introsort_loop<std::_Deque_iterator<Point*, Point*&, Point**>, long, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, long, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [10]
+                0.00    0.01       1/1           void std::__sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [7]
+[10]    70.8    0.00    0.01       1+994     void std::__introsort_loop<std::_Deque_iterator<Point*, Point*&, Point**>, long, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, long, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [10]
+                0.00    0.01     994/994         std::_Deque_iterator<Point*, Point*&, Point**> std::__unguarded_partition_pivot<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [9]
+                0.00    0.00    3976/427919      std::_Deque_iterator<Point*, Point*&, Point**>::_Deque_iterator(std::_Deque_iterator<Point*, Point*&, Point**> const&) [31]
+                0.00    0.00    1989/43027       std::operator-(std::_Deque_iterator<Point*, Point*&, Point**> const&, std::_Deque_iterator<Point*, Point*&, Point**> const&) [38]
+                                 994             void std::__introsort_loop<std::_Deque_iterator<Point*, Point*&, Point**>, long, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, long, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [10]
+-----------------------------------------------
+                0.00    0.01     994/994         std::_Deque_iterator<Point*, Point*&, Point**> std::__unguarded_partition_pivot<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [9]
+[11]    69.3    0.00    0.01     994         std::_Deque_iterator<Point*, Point*&, Point**> std::__unguarded_partition<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [11]
+                0.00    0.01  119994/122579      bool __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>::operator()<std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>) [8]
+                0.00    0.00  288446/427919      std::_Deque_iterator<Point*, Point*&, Point**>::_Deque_iterator(std::_Deque_iterator<Point*, Point*&, Point**> const&) [31]
+                0.00    0.00   68022/108021      std::_Deque_iterator<Point*, Point*&, Point**>::operator++() [35]
+                0.00    0.00   50978/111429      std::_Deque_iterator<Point*, Point*&, Point**>::operator--() [34]
+                0.00    0.00   24726/24726       std::operator<(std::_Deque_iterator<Point*, Point*&, Point**> const&, std::_Deque_iterator<Point*, Point*&, Point**> const&) [47]
+                0.00    0.00   23732/24726       void std::iter_swap<std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>) [46]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::__sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [7]
+[12]    17.7    0.00    0.00       1         void std::__final_insertion_sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [12]
+                0.00    0.00       1/1           void std::__unguarded_insertion_sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [15]
+                0.00    0.00       1/1           void std::__insertion_sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [17]
+                0.00    0.00       2/22893       std::operator+(std::_Deque_iterator<Point*, Point*&, Point**> const&, long) [49]
+                0.00    0.00       2/427919      std::_Deque_iterator<Point*, Point*&, Point**>::_Deque_iterator(std::_Deque_iterator<Point*, Point*&, Point**> const&) [31]
+                0.00    0.00       1/43027       std::operator-(std::_Deque_iterator<Point*, Point*&, Point**> const&, std::_Deque_iterator<Point*, Point*&, Point**> const&) [38]
+-----------------------------------------------
+                0.00    0.00   30559/30559       void std::__unguarded_linear_insert<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [14]
+[13]    17.7    0.00    0.00   30559         bool __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>::operator()<Point*, std::_Deque_iterator<Point*, Point*&, Point**> >(Point*&, std::_Deque_iterator<Point*, Point*&, Point**>) [13]
+                0.00    0.00   30559/153138      convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}::operator()(Point*, Point*) const [5]
+                0.00    0.00   30559/476086      std::_Deque_iterator<Point*, Point*&, Point**>::operator*() const [30]
+-----------------------------------------------
+                0.00    0.00      15/9999        void std::__insertion_sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [17]
+                0.00    0.00    9984/9999        void std::__unguarded_insertion_sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [15]
+[14]    17.7    0.00    0.00    9999         void std::__unguarded_linear_insert<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [14]
+                0.00    0.00   30559/30559       bool __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>::operator()<Point*, std::_Deque_iterator<Point*, Point*&, Point**> >(Point*&, std::_Deque_iterator<Point*, Point*&, Point**>) [13]
+                0.00    0.00   61118/476086      std::_Deque_iterator<Point*, Point*&, Point**>::operator*() const [30]
+                0.00    0.00   40558/124736      std::remove_reference<Point*&>::type&& std::move<Point*&>(Point*&) [33]
+                0.00    0.00   40558/427919      std::_Deque_iterator<Point*, Point*&, Point**>::_Deque_iterator(std::_Deque_iterator<Point*, Point*&, Point**> const&) [31]
+                0.00    0.00   30559/111429      std::_Deque_iterator<Point*, Point*&, Point**>::operator--() [34]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::__final_insertion_sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [12]
+[15]    17.6    0.00    0.00       1         void std::__unguarded_insertion_sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [15]
+                0.00    0.00    9984/9999        void std::__unguarded_linear_insert<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [14]
+                0.00    0.00    9985/427919      std::_Deque_iterator<Point*, Point*&, Point**>::_Deque_iterator(std::_Deque_iterator<Point*, Point*&, Point**> const&) [31]
+                0.00    0.00    9985/40004       std::operator!=(std::_Deque_iterator<Point*, Point*&, Point**> const&, std::_Deque_iterator<Point*, Point*&, Point**> const&) [41]
+                0.00    0.00    9984/9999        __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> __gnu_cxx::__ops::__val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(__gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [65]
+                0.00    0.00    9984/108021      std::_Deque_iterator<Point*, Point*&, Point**>::operator++() [35]
+-----------------------------------------------
+                0.00    0.00     994/994         std::_Deque_iterator<Point*, Point*&, Point**> std::__unguarded_partition_pivot<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [9]
+[16]     1.5    0.00    0.00     994         void std::__move_median_to_first<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [16]
+                0.00    0.00    2570/122579      bool __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>::operator()<std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>) [8]
+                0.00    0.00    7128/427919      std::_Deque_iterator<Point*, Point*&, Point**>::_Deque_iterator(std::_Deque_iterator<Point*, Point*&, Point**> const&) [31]
+                0.00    0.00     994/24726       void std::iter_swap<std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>) [46]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::__final_insertion_sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [12]
+[17]     0.0    0.00    0.00       1         void std::__insertion_sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [17]
+                0.00    0.00      15/9999        void std::__unguarded_linear_insert<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [14]
+                0.00    0.00      15/122579      bool __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>::operator()<std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>) [8]
+                0.00    0.00      45/427919      std::_Deque_iterator<Point*, Point*&, Point**>::_Deque_iterator(std::_Deque_iterator<Point*, Point*&, Point**> const&) [31]
+                0.00    0.00      16/40004       std::operator!=(std::_Deque_iterator<Point*, Point*&, Point**> const&, std::_Deque_iterator<Point*, Point*&, Point**> const&) [41]
+                0.00    0.00      15/9999        __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> __gnu_cxx::__ops::__val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(__gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [65]
+                0.00    0.00      15/108021      std::_Deque_iterator<Point*, Point*&, Point**>::operator++() [35]
+                0.00    0.00       1/40006       std::operator==(std::_Deque_iterator<Point*, Point*&, Point**> const&, std::_Deque_iterator<Point*, Point*&, Point**> const&) [40]
+                0.00    0.00       1/22893       std::operator+(std::_Deque_iterator<Point*, Point*&, Point**> const&, long) [49]
+-----------------------------------------------
+                0.00    0.00    9999/9999        std::_Deque_iterator<Point*, Point*&, Point**> std::__min_element<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>) [21]
+[18]     0.0    0.00    0.00    9999         bool __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>::operator()<std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>) [18]
+                0.00    0.00    9999/9999        convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}::operator()(Point*, Point*) const [19]
+                0.00    0.00   19998/476086      std::_Deque_iterator<Point*, Point*&, Point**>::operator*() const [30]
+-----------------------------------------------
+                0.00    0.00    9999/9999        bool __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>::operator()<std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>) [18]
+[19]     0.0    0.00    0.00    9999         convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}::operator()(Point*, Point*) const [19]
+                0.00    0.00     200/692336      Point::getX() const [2]
+                0.00    0.00   39990/732126      Point::getY() const [29]
+-----------------------------------------------
+                0.00    0.00       1/1           convexHull(std::deque<Point*, std::allocator<Point*> >&) [3]
+[20]     0.0    0.00    0.00       1         std::_Deque_iterator<Point*, Point*&, Point**> std::min_element<std::_Deque_iterator<Point*, Point*&, Point**>, convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}) [20]
+                0.00    0.00       1/1           std::_Deque_iterator<Point*, Point*&, Point**> std::__min_element<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>) [21]
+                0.00    0.00       2/427919      std::_Deque_iterator<Point*, Point*&, Point**>::_Deque_iterator(std::_Deque_iterator<Point*, Point*&, Point**> const&) [31]
+                0.00    0.00       1/1           __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}> __gnu_cxx::__ops::__iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}) [137]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Deque_iterator<Point*, Point*&, Point**> std::min_element<std::_Deque_iterator<Point*, Point*&, Point**>, convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}) [20]
+[21]     0.0    0.00    0.00       1         std::_Deque_iterator<Point*, Point*&, Point**> std::__min_element<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>) [21]
+                0.00    0.00    9999/9999        bool __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>::operator()<std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>) [18]
+                0.00    0.00   20000/427919      std::_Deque_iterator<Point*, Point*&, Point**>::_Deque_iterator(std::_Deque_iterator<Point*, Point*&, Point**> const&) [31]
+                0.00    0.00   10000/108021      std::_Deque_iterator<Point*, Point*&, Point**>::operator++() [35]
+                0.00    0.00   10000/40004       std::operator!=(std::_Deque_iterator<Point*, Point*&, Point**> const&, std::_Deque_iterator<Point*, Point*&, Point**> const&) [41]
+                0.00    0.00       1/40006       std::operator==(std::_Deque_iterator<Point*, Point*&, Point**> const&, std::_Deque_iterator<Point*, Point*&, Point**> const&) [40]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[22]     0.0    0.00    0.00       1         polygonArea(std::deque<Point*, std::allocator<Point*> >&) [22]
+                0.00    0.00      16/692336      Point::getX() const [2]
+                0.00    0.00      16/19908       std::deque<Point*, std::allocator<Point*> >::operator[](unsigned long) [53]
+                0.00    0.00      16/732126      Point::getY() const [29]
+                0.00    0.00       1/40042       std::deque<Point*, std::allocator<Point*> >::size() const [39]
+                0.00    0.00       1/1           std::abs(float) [145]
+-----------------------------------------------
+                0.00    0.00      16/732126      polygonArea(std::deque<Point*, std::allocator<Point*> >&) [22]
+                0.00    0.00   39990/732126      convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}::operator()(Point*, Point*) const [19]
+                0.00    0.00   79568/732126      convexHull(std::deque<Point*, std::allocator<Point*> >&) [3]
+                0.00    0.00  612552/732126      comparePolar(Point*, Point*, Point&) [4]
+[29]     0.0    0.00    0.00  732126         Point::getY() const [29]
+-----------------------------------------------
+                0.00    0.00   10000/476086      main [1]
+                0.00    0.00   10001/476086      convexHull(std::deque<Point*, std::allocator<Point*> >&) [3]
+                0.00    0.00   19908/476086      std::_Deque_iterator<Point*, Point*&, Point**>::operator[](long) const [52]
+                0.00    0.00   19998/476086      bool __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>::operator()<std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>) [18]
+                0.00    0.00   29892/476086      std::deque<Point*, std::allocator<Point*> >::back() [44]
+                0.00    0.00   30559/476086      bool __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>::operator()<Point*, std::_Deque_iterator<Point*, Point*&, Point**> >(Point*&, std::_Deque_iterator<Point*, Point*&, Point**>) [13]
+                0.00    0.00   49452/476086      void std::iter_swap<std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>) [46]
+                0.00    0.00   61118/476086      void std::__unguarded_linear_insert<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [14]
+                0.00    0.00  245158/476086      bool __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>::operator()<std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>) [8]
+[30]     0.0    0.00    0.00  476086         std::_Deque_iterator<Point*, Point*&, Point**>::operator*() const [30]
+-----------------------------------------------
+                0.00    0.00       2/427919      std::_Deque_iterator<Point*, Point*&, Point**> std::min_element<std::_Deque_iterator<Point*, Point*&, Point**>, convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}) [20]
+                0.00    0.00       2/427919      void std::sort<std::_Deque_iterator<Point*, Point*&, Point**>, convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [6]
+                0.00    0.00       2/427919      void std::__final_insertion_sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [12]
+                0.00    0.00       2/427919      std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data::_Deque_impl_data(std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data const&) [142]
+                0.00    0.00       4/427919      void std::__sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [7]
+                0.00    0.00       7/427919      std::deque<Point*, std::allocator<Point*> >::begin() [105]
+                0.00    0.00      45/427919      void std::__insertion_sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [17]
+                0.00    0.00     994/427919      std::operator-(std::_Deque_iterator<Point*, Point*&, Point**> const&, long) [73]
+                0.00    0.00    3976/427919      void std::__introsort_loop<std::_Deque_iterator<Point*, Point*&, Point**>, long, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, long, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [10]
+                0.00    0.00    3976/427919      std::_Deque_iterator<Point*, Point*&, Point**> std::__unguarded_partition_pivot<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [9]
+                0.00    0.00    7128/427919      void std::__move_median_to_first<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [16]
+                0.00    0.00    9985/427919      void std::__unguarded_insertion_sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [15]
+                0.00    0.00   20000/427919      std::_Deque_iterator<Point*, Point*&, Point**> std::__min_element<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>) [21]
+                0.00    0.00   22893/427919      std::operator+(std::_Deque_iterator<Point*, Point*&, Point**> const&, long) [49]
+                0.00    0.00   29899/427919      std::deque<Point*, std::allocator<Point*> >::end() [43]
+                0.00    0.00   40558/427919      void std::__unguarded_linear_insert<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [14]
+                0.00    0.00  288446/427919      std::_Deque_iterator<Point*, Point*&, Point**> std::__unguarded_partition<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [11]
+[31]     0.0    0.00    0.00  427919         std::_Deque_iterator<Point*, Point*&, Point**>::_Deque_iterator(std::_Deque_iterator<Point*, Point*&, Point**> const&) [31]
+-----------------------------------------------
+                0.00    0.00  306276/306276      comparePolar(Point*, Point*, Point&) [4]
+[32]     0.0    0.00    0.00  306276         std::atan2(float, float) [32]
+-----------------------------------------------
+                0.00    0.00   10000/124736      std::deque<Point*, std::allocator<Point*> >::push_back(Point*&&) [62]
+                0.00    0.00   40558/124736      void std::__unguarded_linear_insert<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [14]
+                0.00    0.00   74178/124736      std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Point*> >, std::is_move_constructible<Point*>, std::is_move_assignable<Point*> >::value, void>::type std::swap<Point*>(Point*&, Point*&) [45]
+[33]     0.0    0.00    0.00  124736         std::remove_reference<Point*&>::type&& std::move<Point*&>(Point*&) [33]
+-----------------------------------------------
+                0.00    0.00   29892/111429      std::deque<Point*, std::allocator<Point*> >::back() [44]
+                0.00    0.00   30559/111429      void std::__unguarded_linear_insert<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [14]
+                0.00    0.00   50978/111429      std::_Deque_iterator<Point*, Point*&, Point**> std::__unguarded_partition<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [11]
+[34]     0.0    0.00    0.00  111429         std::_Deque_iterator<Point*, Point*&, Point**>::operator--() [34]
+                0.00    0.00    1399/3678        std::_Deque_iterator<Point*, Point*&, Point**>::_M_set_node(Point***) [71]
+-----------------------------------------------
+                0.00    0.00      15/108021      void std::__insertion_sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [17]
+                0.00    0.00    9984/108021      void std::__unguarded_insertion_sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [15]
+                0.00    0.00   10000/108021      convexHull(std::deque<Point*, std::allocator<Point*> >&) [3]
+                0.00    0.00   10000/108021      main [1]
+                0.00    0.00   10000/108021      std::_Deque_iterator<Point*, Point*&, Point**> std::__min_element<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>) [21]
+                0.00    0.00   68022/108021      std::_Deque_iterator<Point*, Point*&, Point**> std::__unguarded_partition<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [11]
+[35]     0.0    0.00    0.00  108021         std::_Deque_iterator<Point*, Point*&, Point**>::operator++() [35]
+                0.00    0.00    1675/3678        std::_Deque_iterator<Point*, Point*&, Point**>::_M_set_node(Point***) [71]
+-----------------------------------------------
+                0.00    0.00       6/71759       std::_Deque_base<Point*, std::allocator<Point*> >::_M_initialize_map(unsigned long) [119]
+                0.00    0.00     159/71759       std::_Deque_base<Point*, std::allocator<Point*> >::_M_deallocate_node(Point**) [79]
+                0.00    0.00     159/71759       std::_Deque_base<Point*, std::allocator<Point*> >::_M_allocate_node() [78]
+                0.00    0.00   71435/71759       std::_Deque_iterator<Point*, Point*&, Point**>::_S_buffer_size() [37]
+[36]     0.0    0.00    0.00   71759         std::__deque_buf_size(unsigned long) [36]
+-----------------------------------------------
+                0.00    0.00    3678/71435       std::_Deque_iterator<Point*, Point*&, Point**>::_M_set_node(Point***) [71]
+                0.00    0.00   24730/71435       std::_Deque_iterator<Point*, Point*&, Point**>::operator+=(long) [48]
+                0.00    0.00   43027/71435       std::operator-(std::_Deque_iterator<Point*, Point*&, Point**> const&, std::_Deque_iterator<Point*, Point*&, Point**> const&) [38]
+[37]     0.0    0.00    0.00   71435         std::_Deque_iterator<Point*, Point*&, Point**>::_S_buffer_size() [37]
+                0.00    0.00   71435/71759       std::__deque_buf_size(unsigned long) [36]
+-----------------------------------------------
+                0.00    0.00       1/43027       void std::__sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [7]
+                0.00    0.00       1/43027       void std::__final_insertion_sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [12]
+                0.00    0.00     994/43027       std::_Deque_iterator<Point*, Point*&, Point**> std::__unguarded_partition_pivot<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [9]
+                0.00    0.00    1989/43027       void std::__introsort_loop<std::_Deque_iterator<Point*, Point*&, Point**>, long, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, long, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [10]
+                0.00    0.00   40042/43027       std::deque<Point*, std::allocator<Point*> >::size() const [39]
+[38]     0.0    0.00    0.00   43027         std::operator-(std::_Deque_iterator<Point*, Point*&, Point**> const&, std::_Deque_iterator<Point*, Point*&, Point**> const&) [38]
+                0.00    0.00   43027/71435       std::_Deque_iterator<Point*, Point*&, Point**>::_S_buffer_size() [37]
+-----------------------------------------------
+                0.00    0.00       1/40042       polygonArea(std::deque<Point*, std::allocator<Point*> >&) [22]
+                0.00    0.00     156/40042       void std::deque<Point*, std::allocator<Point*> >::_M_push_back_aux<Point*>(Point*&&) [86]
+                0.00    0.00   39885/40042       convexHull(std::deque<Point*, std::allocator<Point*> >&) [3]
+[39]     0.0    0.00    0.00   40042         std::deque<Point*, std::allocator<Point*> >::size() const [39]
+                0.00    0.00   40042/43027       std::operator-(std::_Deque_iterator<Point*, Point*&, Point**> const&, std::_Deque_iterator<Point*, Point*&, Point**> const&) [38]
+-----------------------------------------------
+                0.00    0.00       1/40006       std::_Deque_iterator<Point*, Point*&, Point**> std::__min_element<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>) [21]
+                0.00    0.00       1/40006       void std::__insertion_sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [17]
+                0.00    0.00   40004/40006       std::operator!=(std::_Deque_iterator<Point*, Point*&, Point**> const&, std::_Deque_iterator<Point*, Point*&, Point**> const&) [41]
+[40]     0.0    0.00    0.00   40006         std::operator==(std::_Deque_iterator<Point*, Point*&, Point**> const&, std::_Deque_iterator<Point*, Point*&, Point**> const&) [40]
+-----------------------------------------------
+                0.00    0.00       1/40004       void std::__sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [7]
+                0.00    0.00      16/40004       void std::__insertion_sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [17]
+                0.00    0.00    9985/40004       void std::__unguarded_insertion_sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [15]
+                0.00    0.00   10000/40004       std::_Deque_iterator<Point*, Point*&, Point**> std::__min_element<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>) [21]
+                0.00    0.00   10001/40004       convexHull(std::deque<Point*, std::allocator<Point*> >&) [3]
+                0.00    0.00   10001/40004       main [1]
+[41]     0.0    0.00    0.00   40004         std::operator!=(std::_Deque_iterator<Point*, Point*&, Point**> const&, std::_Deque_iterator<Point*, Point*&, Point**> const&) [41]
+                0.00    0.00   40004/40006       std::operator==(std::_Deque_iterator<Point*, Point*&, Point**> const&, std::_Deque_iterator<Point*, Point*&, Point**> const&) [40]
+-----------------------------------------------
+                0.00    0.00     156/30156       void std::deque<Point*, std::allocator<Point*> >::_M_push_back_aux<Point*>(Point*&&) [86]
+                0.00    0.00   10000/30156       Point*& std::deque<Point*, std::allocator<Point*> >::emplace_back<Point*>(Point*&&) [61]
+                0.00    0.00   10000/30156       void std::allocator_traits<std::allocator<Point*> >::construct<Point*, Point*>(std::allocator<Point*>&, Point**, Point*&&) [60]
+                0.00    0.00   10000/30156       void __gnu_cxx::new_allocator<Point*>::construct<Point*, Point*>(Point**, Point*&&) [58]
+[42]     0.0    0.00    0.00   30156         Point*&& std::forward<Point*>(std::remove_reference<Point*>::type&) [42]
+-----------------------------------------------
+                0.00    0.00       1/29899       main [1]
+                0.00    0.00       3/29899       convexHull(std::deque<Point*, std::allocator<Point*> >&) [3]
+                0.00    0.00       3/29899       std::deque<Point*, std::allocator<Point*> >::~deque() [122]
+                0.00    0.00   29892/29899       std::deque<Point*, std::allocator<Point*> >::back() [44]
+[43]     0.0    0.00    0.00   29899         std::deque<Point*, std::allocator<Point*> >::end() [43]
+                0.00    0.00   29899/427919      std::_Deque_iterator<Point*, Point*&, Point**>::_Deque_iterator(std::_Deque_iterator<Point*, Point*&, Point**> const&) [31]
+-----------------------------------------------
+                0.00    0.00   10000/29892       Point*& std::deque<Point*, std::allocator<Point*> >::emplace_back<Point*>(Point*&&) [61]
+                0.00    0.00   19892/29892       convexHull(std::deque<Point*, std::allocator<Point*> >&) [3]
+[44]     0.0    0.00    0.00   29892         std::deque<Point*, std::allocator<Point*> >::back() [44]
+                0.00    0.00   29892/29899       std::deque<Point*, std::allocator<Point*> >::end() [43]
+                0.00    0.00   29892/476086      std::_Deque_iterator<Point*, Point*&, Point**>::operator*() const [30]
+                0.00    0.00   29892/111429      std::_Deque_iterator<Point*, Point*&, Point**>::operator--() [34]
+-----------------------------------------------
+                0.00    0.00   24726/24726       void std::iter_swap<std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>) [46]
+[45]     0.0    0.00    0.00   24726         std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Point*> >, std::is_move_constructible<Point*>, std::is_move_assignable<Point*> >::value, void>::type std::swap<Point*>(Point*&, Point*&) [45]
+                0.00    0.00   74178/124736      std::remove_reference<Point*&>::type&& std::move<Point*&>(Point*&) [33]
+-----------------------------------------------
+                0.00    0.00     994/24726       void std::__move_median_to_first<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [16]
+                0.00    0.00   23732/24726       std::_Deque_iterator<Point*, Point*&, Point**> std::__unguarded_partition<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [11]
+[46]     0.0    0.00    0.00   24726         void std::iter_swap<std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>) [46]
+                0.00    0.00   49452/476086      std::_Deque_iterator<Point*, Point*&, Point**>::operator*() const [30]
+                0.00    0.00   24726/24726       std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Point*> >, std::is_move_constructible<Point*>, std::is_move_assignable<Point*> >::value, void>::type std::swap<Point*>(Point*&, Point*&) [45]
+-----------------------------------------------
+                0.00    0.00   24726/24726       std::_Deque_iterator<Point*, Point*&, Point**> std::__unguarded_partition<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [11]
+[47]     0.0    0.00    0.00   24726         std::operator<(std::_Deque_iterator<Point*, Point*&, Point**> const&, std::_Deque_iterator<Point*, Point*&, Point**> const&) [47]
+-----------------------------------------------
+                0.00    0.00     994/23887       std::_Deque_iterator<Point*, Point*&, Point**>::operator-=(long) [72]
+                0.00    0.00   22893/23887       std::operator+(std::_Deque_iterator<Point*, Point*&, Point**> const&, long) [49]
+[48]     0.0    0.00    0.00   23887         std::_Deque_iterator<Point*, Point*&, Point**>::operator+=(long) [48]
+                0.00    0.00   24730/71435       std::_Deque_iterator<Point*, Point*&, Point**>::_S_buffer_size() [37]
+                0.00    0.00     432/3678        std::_Deque_iterator<Point*, Point*&, Point**>::_M_set_node(Point***) [71]
+-----------------------------------------------
+                0.00    0.00       1/22893       void std::__insertion_sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [17]
+                0.00    0.00       2/22893       void std::__final_insertion_sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [12]
+                0.00    0.00    2982/22893       std::_Deque_iterator<Point*, Point*&, Point**> std::__unguarded_partition_pivot<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [9]
+                0.00    0.00   19908/22893       std::_Deque_iterator<Point*, Point*&, Point**>::operator[](long) const [52]
+[49]     0.0    0.00    0.00   22893         std::operator+(std::_Deque_iterator<Point*, Point*&, Point**> const&, long) [49]
+                0.00    0.00   22893/427919      std::_Deque_iterator<Point*, Point*&, Point**>::_Deque_iterator(std::_Deque_iterator<Point*, Point*&, Point**> const&) [31]
+                0.00    0.00   22893/23887       std::_Deque_iterator<Point*, Point*&, Point**>::operator+=(long) [48]
+-----------------------------------------------
+                0.00    0.00   10000/20000       void std::allocator_traits<std::allocator<Point*> >::construct<Point*, Point* const&>(std::allocator<Point*>&, Point**, Point* const&) [59]
+                0.00    0.00   10000/20000       void __gnu_cxx::new_allocator<Point*>::construct<Point*, Point* const&>(Point**, Point* const&) [57]
+[50]     0.0    0.00    0.00   20000         Point* const& std::forward<Point* const&>(std::remove_reference<Point* const&>::type&) [50]
+-----------------------------------------------
+                0.00    0.00   10000/20000       void __gnu_cxx::new_allocator<Point*>::construct<Point*, Point* const&>(Point**, Point* const&) [57]
+                0.00    0.00   10000/20000       void __gnu_cxx::new_allocator<Point*>::construct<Point*, Point*>(Point**, Point*&&) [58]
+[51]     0.0    0.00    0.00   20000         operator new(unsigned long, void*) [51]
+-----------------------------------------------
+                0.00    0.00   19908/19908       std::deque<Point*, std::allocator<Point*> >::operator[](unsigned long) [53]
+[52]     0.0    0.00    0.00   19908         std::_Deque_iterator<Point*, Point*&, Point**>::operator[](long) const [52]
+                0.00    0.00   19908/22893       std::operator+(std::_Deque_iterator<Point*, Point*&, Point**> const&, long) [49]
+                0.00    0.00   19908/476086      std::_Deque_iterator<Point*, Point*&, Point**>::operator*() const [30]
+-----------------------------------------------
+                0.00    0.00      16/19908       polygonArea(std::deque<Point*, std::allocator<Point*> >&) [22]
+                0.00    0.00   19892/19908       convexHull(std::deque<Point*, std::allocator<Point*> >&) [3]
+[53]     0.0    0.00    0.00   19908         std::deque<Point*, std::allocator<Point*> >::operator[](unsigned long) [53]
+                0.00    0.00   19908/19908       std::_Deque_iterator<Point*, Point*&, Point**>::operator[](long) const [52]
+-----------------------------------------------
+                0.00    0.00       1/10001       convexHull(std::deque<Point*, std::allocator<Point*> >&) [3]
+                0.00    0.00   10000/10001       main [1]
+[54]     0.0    0.00    0.00   10001         Point::~Point() [54]
+-----------------------------------------------
+                0.00    0.00       1/10001       __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> __gnu_cxx::__ops::__iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [136]
+                0.00    0.00       1/10001       __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>::_Iter_comp_iter(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [134]
+                0.00    0.00    9999/10001       __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>::_Val_comp_iter(__gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>&&) [64]
+[55]     0.0    0.00    0.00   10001         std::remove_reference<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}&>::type&& std::move<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}&>(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}&) [55]
+-----------------------------------------------
+                0.00    0.00   10000/10000       main [1]
+[56]     0.0    0.00    0.00   10000         Point::Point(float, float) [56]
+-----------------------------------------------
+                0.00    0.00   10000/10000       void std::allocator_traits<std::allocator<Point*> >::construct<Point*, Point* const&>(std::allocator<Point*>&, Point**, Point* const&) [59]
+[57]     0.0    0.00    0.00   10000         void __gnu_cxx::new_allocator<Point*>::construct<Point*, Point* const&>(Point**, Point* const&) [57]
+                0.00    0.00   10000/20000       Point* const& std::forward<Point* const&>(std::remove_reference<Point* const&>::type&) [50]
+                0.00    0.00   10000/20000       operator new(unsigned long, void*) [51]
+-----------------------------------------------
+                0.00    0.00   10000/10000       void std::allocator_traits<std::allocator<Point*> >::construct<Point*, Point*>(std::allocator<Point*>&, Point**, Point*&&) [60]
+[58]     0.0    0.00    0.00   10000         void __gnu_cxx::new_allocator<Point*>::construct<Point*, Point*>(Point**, Point*&&) [58]
+                0.00    0.00   10000/30156       Point*&& std::forward<Point*>(std::remove_reference<Point*>::type&) [42]
+                0.00    0.00   10000/20000       operator new(unsigned long, void*) [51]
+-----------------------------------------------
+                0.00    0.00   10000/10000       std::deque<Point*, std::allocator<Point*> >::push_back(Point* const&) [63]
+[59]     0.0    0.00    0.00   10000         void std::allocator_traits<std::allocator<Point*> >::construct<Point*, Point* const&>(std::allocator<Point*>&, Point**, Point* const&) [59]
+                0.00    0.00   10000/20000       Point* const& std::forward<Point* const&>(std::remove_reference<Point* const&>::type&) [50]
+                0.00    0.00   10000/10000       void __gnu_cxx::new_allocator<Point*>::construct<Point*, Point* const&>(Point**, Point* const&) [57]
+-----------------------------------------------
+                0.00    0.00     156/10000       void std::deque<Point*, std::allocator<Point*> >::_M_push_back_aux<Point*>(Point*&&) [86]
+                0.00    0.00    9844/10000       Point*& std::deque<Point*, std::allocator<Point*> >::emplace_back<Point*>(Point*&&) [61]
+[60]     0.0    0.00    0.00   10000         void std::allocator_traits<std::allocator<Point*> >::construct<Point*, Point*>(std::allocator<Point*>&, Point**, Point*&&) [60]
+                0.00    0.00   10000/30156       Point*&& std::forward<Point*>(std::remove_reference<Point*>::type&) [42]
+                0.00    0.00   10000/10000       void __gnu_cxx::new_allocator<Point*>::construct<Point*, Point*>(Point**, Point*&&) [58]
+-----------------------------------------------
+                0.00    0.00   10000/10000       std::deque<Point*, std::allocator<Point*> >::push_back(Point*&&) [62]
+[61]     0.0    0.00    0.00   10000         Point*& std::deque<Point*, std::allocator<Point*> >::emplace_back<Point*>(Point*&&) [61]
+                0.00    0.00   10000/30156       Point*&& std::forward<Point*>(std::remove_reference<Point*>::type&) [42]
+                0.00    0.00   10000/29892       std::deque<Point*, std::allocator<Point*> >::back() [44]
+                0.00    0.00    9844/10000       void std::allocator_traits<std::allocator<Point*> >::construct<Point*, Point*>(std::allocator<Point*>&, Point**, Point*&&) [60]
+                0.00    0.00     156/156         void std::deque<Point*, std::allocator<Point*> >::_M_push_back_aux<Point*>(Point*&&) [86]
+-----------------------------------------------
+                0.00    0.00   10000/10000       main [1]
+[62]     0.0    0.00    0.00   10000         std::deque<Point*, std::allocator<Point*> >::push_back(Point*&&) [62]
+                0.00    0.00   10000/124736      std::remove_reference<Point*&>::type&& std::move<Point*&>(Point*&) [33]
+                0.00    0.00   10000/10000       Point*& std::deque<Point*, std::allocator<Point*> >::emplace_back<Point*>(Point*&&) [61]
+-----------------------------------------------
+                0.00    0.00   10000/10000       convexHull(std::deque<Point*, std::allocator<Point*> >&) [3]
+[63]     0.0    0.00    0.00   10000         std::deque<Point*, std::allocator<Point*> >::push_back(Point* const&) [63]
+                0.00    0.00   10000/10000       void std::allocator_traits<std::allocator<Point*> >::construct<Point*, Point* const&>(std::allocator<Point*>&, Point**, Point* const&) [59]
+-----------------------------------------------
+                0.00    0.00    9999/9999        __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> __gnu_cxx::__ops::__val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(__gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [65]
+[64]     0.0    0.00    0.00    9999         __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>::_Val_comp_iter(__gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>&&) [64]
+                0.00    0.00    9999/10001       std::remove_reference<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}&>::type&& std::move<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}&>(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}&) [55]
+-----------------------------------------------
+                0.00    0.00      15/9999        void std::__insertion_sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [17]
+                0.00    0.00    9984/9999        void std::__unguarded_insertion_sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [15]
+[65]     0.0    0.00    0.00    9999         __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> __gnu_cxx::__ops::__val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(__gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [65]
+                0.00    0.00    9999/9999        std::remove_reference<__gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>&>::type&& std::move<__gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>&>(__gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>&) [66]
+                0.00    0.00    9999/9999        __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>::_Val_comp_iter(__gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>&&) [64]
+-----------------------------------------------
+                0.00    0.00    9999/9999        __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> __gnu_cxx::__ops::__val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(__gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [65]
+[66]     0.0    0.00    0.00    9999         std::remove_reference<__gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>&>::type&& std::move<__gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>&>(__gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>&) [66]
+-----------------------------------------------
+                0.00    0.00       1/9996        std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_base(std::_Deque_base<Point*, std::allocator<Point*> >&&) [143]
+                0.00    0.00       3/9996        std::deque<Point*, std::allocator<Point*> >::~deque() [122]
+                0.00    0.00    9992/9996        std::deque<Point*, std::allocator<Point*> >::pop_back() [70]
+[67]     0.0    0.00    0.00    9996         std::_Deque_base<Point*, std::allocator<Point*> >::_M_get_Tp_allocator() [67]
+-----------------------------------------------
+                0.00    0.00    9992/9992        void std::allocator_traits<std::allocator<Point*> >::destroy<Point*>(std::allocator<Point*>&, Point**) [69]
+[68]     0.0    0.00    0.00    9992         void __gnu_cxx::new_allocator<Point*>::destroy<Point*>(Point**) [68]
+-----------------------------------------------
+                0.00    0.00    9992/9992        std::deque<Point*, std::allocator<Point*> >::pop_back() [70]
+[69]     0.0    0.00    0.00    9992         void std::allocator_traits<std::allocator<Point*> >::destroy<Point*>(std::allocator<Point*>&, Point**) [69]
+                0.00    0.00    9992/9992        void __gnu_cxx::new_allocator<Point*>::destroy<Point*>(Point**) [68]
+-----------------------------------------------
+                0.00    0.00    9992/9992        convexHull(std::deque<Point*, std::allocator<Point*> >&) [3]
+[70]     0.0    0.00    0.00    9992         std::deque<Point*, std::allocator<Point*> >::pop_back() [70]
+                0.00    0.00    9992/9996        std::_Deque_base<Point*, std::allocator<Point*> >::_M_get_Tp_allocator() [67]
+                0.00    0.00    9992/9992        void std::allocator_traits<std::allocator<Point*> >::destroy<Point*>(std::allocator<Point*>&, Point**) [69]
+-----------------------------------------------
+                0.00    0.00       6/3678        std::_Deque_base<Point*, std::allocator<Point*> >::_M_initialize_map(unsigned long) [119]
+                0.00    0.00      10/3678        std::deque<Point*, std::allocator<Point*> >::_M_reallocate_map(unsigned long, bool) [107]
+                0.00    0.00     156/3678        void std::deque<Point*, std::allocator<Point*> >::_M_push_back_aux<Point*>(Point*&&) [86]
+                0.00    0.00     432/3678        std::_Deque_iterator<Point*, Point*&, Point**>::operator+=(long) [48]
+                0.00    0.00    1399/3678        std::_Deque_iterator<Point*, Point*&, Point**>::operator--() [34]
+                0.00    0.00    1675/3678        std::_Deque_iterator<Point*, Point*&, Point**>::operator++() [35]
+[71]     0.0    0.00    0.00    3678         std::_Deque_iterator<Point*, Point*&, Point**>::_M_set_node(Point***) [71]
+                0.00    0.00    3678/71435       std::_Deque_iterator<Point*, Point*&, Point**>::_S_buffer_size() [37]
+-----------------------------------------------
+                0.00    0.00     994/994         std::operator-(std::_Deque_iterator<Point*, Point*&, Point**> const&, long) [73]
+[72]     0.0    0.00    0.00     994         std::_Deque_iterator<Point*, Point*&, Point**>::operator-=(long) [72]
+                0.00    0.00     994/23887       std::_Deque_iterator<Point*, Point*&, Point**>::operator+=(long) [48]
+-----------------------------------------------
+                0.00    0.00     994/994         std::_Deque_iterator<Point*, Point*&, Point**> std::__unguarded_partition_pivot<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [9]
+[73]     0.0    0.00    0.00     994         std::operator-(std::_Deque_iterator<Point*, Point*&, Point**> const&, long) [73]
+                0.00    0.00     994/427919      std::_Deque_iterator<Point*, Point*&, Point**>::_Deque_iterator(std::_Deque_iterator<Point*, Point*&, Point**> const&) [31]
+                0.00    0.00     994/994         std::_Deque_iterator<Point*, Point*&, Point**>::operator-=(long) [72]
+-----------------------------------------------
+                0.00    0.00     156/315         __gnu_cxx::new_allocator<Point*>::max_size() const [82]
+                0.00    0.00     159/315         __gnu_cxx::new_allocator<Point*>::allocate(unsigned long, void const*) [77]
+[74]     0.0    0.00    0.00     315         __gnu_cxx::new_allocator<Point*>::_M_max_size() const [74]
+-----------------------------------------------
+                0.00    0.00      16/172         std::_Deque_base<Point*, std::allocator<Point*> >::_M_get_map_allocator() const [91]
+                0.00    0.00     156/172         std::deque<Point*, std::allocator<Point*> >::max_size() const [83]
+[75]     0.0    0.00    0.00     172         std::_Deque_base<Point*, std::allocator<Point*> >::_M_get_Tp_allocator() const [75]
+-----------------------------------------------
+                0.00    0.00     159/159         std::allocator_traits<std::allocator<Point*> >::deallocate(std::allocator<Point*>&, Point**, unsigned long) [80]
+[76]     0.0    0.00    0.00     159         __gnu_cxx::new_allocator<Point*>::deallocate(Point**, unsigned long) [76]
+-----------------------------------------------
+                0.00    0.00     159/159         std::allocator_traits<std::allocator<Point*> >::allocate(std::allocator<Point*>&, unsigned long) [81]
+[77]     0.0    0.00    0.00     159         __gnu_cxx::new_allocator<Point*>::allocate(unsigned long, void const*) [77]
+                0.00    0.00     159/315         __gnu_cxx::new_allocator<Point*>::_M_max_size() const [74]
+-----------------------------------------------
+                0.00    0.00       3/159         std::_Deque_base<Point*, std::allocator<Point*> >::_M_create_nodes(Point***, Point***) [117]
+                0.00    0.00     156/159         void std::deque<Point*, std::allocator<Point*> >::_M_push_back_aux<Point*>(Point*&&) [86]
+[78]     0.0    0.00    0.00     159         std::_Deque_base<Point*, std::allocator<Point*> >::_M_allocate_node() [78]
+                0.00    0.00     159/71759       std::__deque_buf_size(unsigned long) [36]
+                0.00    0.00     159/159         std::allocator_traits<std::allocator<Point*> >::allocate(std::allocator<Point*>&, unsigned long) [81]
+-----------------------------------------------
+                0.00    0.00     159/159         std::_Deque_base<Point*, std::allocator<Point*> >::_M_destroy_nodes(Point***, Point***) [118]
+[79]     0.0    0.00    0.00     159         std::_Deque_base<Point*, std::allocator<Point*> >::_M_deallocate_node(Point**) [79]
+                0.00    0.00     159/71759       std::__deque_buf_size(unsigned long) [36]
+                0.00    0.00     159/159         std::allocator_traits<std::allocator<Point*> >::deallocate(std::allocator<Point*>&, Point**, unsigned long) [80]
+-----------------------------------------------
+                0.00    0.00     159/159         std::_Deque_base<Point*, std::allocator<Point*> >::_M_deallocate_node(Point**) [79]
+[80]     0.0    0.00    0.00     159         std::allocator_traits<std::allocator<Point*> >::deallocate(std::allocator<Point*>&, Point**, unsigned long) [80]
+                0.00    0.00     159/159         __gnu_cxx::new_allocator<Point*>::deallocate(Point**, unsigned long) [76]
+-----------------------------------------------
+                0.00    0.00     159/159         std::_Deque_base<Point*, std::allocator<Point*> >::_M_allocate_node() [78]
+[81]     0.0    0.00    0.00     159         std::allocator_traits<std::allocator<Point*> >::allocate(std::allocator<Point*>&, unsigned long) [81]
+                0.00    0.00     159/159         __gnu_cxx::new_allocator<Point*>::allocate(unsigned long, void const*) [77]
+-----------------------------------------------
+                0.00    0.00     156/156         std::allocator_traits<std::allocator<Point*> >::max_size(std::allocator<Point*> const&) [84]
+[82]     0.0    0.00    0.00     156         __gnu_cxx::new_allocator<Point*>::max_size() const [82]
+                0.00    0.00     156/315         __gnu_cxx::new_allocator<Point*>::_M_max_size() const [74]
+-----------------------------------------------
+                0.00    0.00     156/156         void std::deque<Point*, std::allocator<Point*> >::_M_push_back_aux<Point*>(Point*&&) [86]
+[83]     0.0    0.00    0.00     156         std::deque<Point*, std::allocator<Point*> >::max_size() const [83]
+                0.00    0.00     156/172         std::_Deque_base<Point*, std::allocator<Point*> >::_M_get_Tp_allocator() const [75]
+                0.00    0.00     156/156         std::deque<Point*, std::allocator<Point*> >::_S_max_size(std::allocator<Point*> const&) [85]
+-----------------------------------------------
+                0.00    0.00     156/156         std::deque<Point*, std::allocator<Point*> >::_S_max_size(std::allocator<Point*> const&) [85]
+[84]     0.0    0.00    0.00     156         std::allocator_traits<std::allocator<Point*> >::max_size(std::allocator<Point*> const&) [84]
+                0.00    0.00     156/156         __gnu_cxx::new_allocator<Point*>::max_size() const [82]
+-----------------------------------------------
+                0.00    0.00     156/156         std::deque<Point*, std::allocator<Point*> >::max_size() const [83]
+[85]     0.0    0.00    0.00     156         std::deque<Point*, std::allocator<Point*> >::_S_max_size(std::allocator<Point*> const&) [85]
+                0.00    0.00     156/156         std::allocator_traits<std::allocator<Point*> >::max_size(std::allocator<Point*> const&) [84]
+                0.00    0.00     156/156         unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [88]
+-----------------------------------------------
+                0.00    0.00     156/156         Point*& std::deque<Point*, std::allocator<Point*> >::emplace_back<Point*>(Point*&&) [61]
+[86]     0.0    0.00    0.00     156         void std::deque<Point*, std::allocator<Point*> >::_M_push_back_aux<Point*>(Point*&&) [86]
+                0.00    0.00     156/40042       std::deque<Point*, std::allocator<Point*> >::size() const [39]
+                0.00    0.00     156/156         std::deque<Point*, std::allocator<Point*> >::max_size() const [83]
+                0.00    0.00     156/156         std::deque<Point*, std::allocator<Point*> >::_M_reserve_map_at_back(unsigned long) [87]
+                0.00    0.00     156/159         std::_Deque_base<Point*, std::allocator<Point*> >::_M_allocate_node() [78]
+                0.00    0.00     156/30156       Point*&& std::forward<Point*>(std::remove_reference<Point*>::type&) [42]
+                0.00    0.00     156/10000       void std::allocator_traits<std::allocator<Point*> >::construct<Point*, Point*>(std::allocator<Point*>&, Point**, Point*&&) [60]
+                0.00    0.00     156/3678        std::_Deque_iterator<Point*, Point*&, Point**>::_M_set_node(Point***) [71]
+-----------------------------------------------
+                0.00    0.00     156/156         void std::deque<Point*, std::allocator<Point*> >::_M_push_back_aux<Point*>(Point*&&) [86]
+[87]     0.0    0.00    0.00     156         std::deque<Point*, std::allocator<Point*> >::_M_reserve_map_at_back(unsigned long) [87]
+                0.00    0.00       5/5           std::deque<Point*, std::allocator<Point*> >::_M_reallocate_map(unsigned long, bool) [107]
+-----------------------------------------------
+                0.00    0.00     156/156         std::deque<Point*, std::allocator<Point*> >::_S_max_size(std::allocator<Point*> const&) [85]
+[88]     0.0    0.00    0.00     156         unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [88]
+-----------------------------------------------
+                0.00    0.00      16/16          std::allocator<Point**>::allocator<Point*>(std::allocator<Point*> const&) [92]
+[89]     0.0    0.00    0.00      16         __gnu_cxx::new_allocator<Point**>::new_allocator() [89]
+-----------------------------------------------
+                0.00    0.00      16/16          std::allocator<Point**>::~allocator() [93]
+[90]     0.0    0.00    0.00      16         __gnu_cxx::new_allocator<Point**>::~new_allocator() [90]
+-----------------------------------------------
+                0.00    0.00       8/16          std::_Deque_base<Point*, std::allocator<Point*> >::_M_deallocate_map(Point***, unsigned long) [100]
+                0.00    0.00       8/16          std::_Deque_base<Point*, std::allocator<Point*> >::_M_allocate_map(unsigned long) [99]
+[91]     0.0    0.00    0.00      16         std::_Deque_base<Point*, std::allocator<Point*> >::_M_get_map_allocator() const [91]
+                0.00    0.00      16/172         std::_Deque_base<Point*, std::allocator<Point*> >::_M_get_Tp_allocator() const [75]
+                0.00    0.00      16/16          std::allocator<Point**>::allocator<Point*>(std::allocator<Point*> const&) [92]
+-----------------------------------------------
+                0.00    0.00      16/16          std::_Deque_base<Point*, std::allocator<Point*> >::_M_get_map_allocator() const [91]
+[92]     0.0    0.00    0.00      16         std::allocator<Point**>::allocator<Point*>(std::allocator<Point*> const&) [92]
+                0.00    0.00      16/16          __gnu_cxx::new_allocator<Point**>::new_allocator() [89]
+-----------------------------------------------
+                0.00    0.00       8/16          std::_Deque_base<Point*, std::allocator<Point*> >::_M_deallocate_map(Point***, unsigned long) [100]
+                0.00    0.00       8/16          std::_Deque_base<Point*, std::allocator<Point*> >::_M_allocate_map(unsigned long) [99]
+[93]     0.0    0.00    0.00      16         std::allocator<Point**>::~allocator() [93]
+                0.00    0.00      16/16          __gnu_cxx::new_allocator<Point**>::~new_allocator() [90]
+-----------------------------------------------
+                0.00    0.00      15/15          Point*** std::__copy_move_a<false, Point***, Point***>(Point***, Point***, Point***) [109]
+[94]     0.0    0.00    0.00      15         Point*** std::__niter_base<Point***>(Point***) [94]
+-----------------------------------------------
+                0.00    0.00      10/10          Point*** std::copy<Point***, Point***>(Point***, Point***, Point***) [112]
+[95]     0.0    0.00    0.00      10         Point*** std::__miter_base<Point***>(Point***) [95]
+-----------------------------------------------
+                0.00    0.00       8/8           std::allocator_traits<std::allocator<Point**> >::deallocate(std::allocator<Point**>&, Point***, unsigned long) [102]
+[96]     0.0    0.00    0.00       8         __gnu_cxx::new_allocator<Point**>::deallocate(Point***, unsigned long) [96]
+-----------------------------------------------
+                0.00    0.00       8/8           std::allocator_traits<std::allocator<Point**> >::allocate(std::allocator<Point**>&, unsigned long) [103]
+[97]     0.0    0.00    0.00       8         __gnu_cxx::new_allocator<Point**>::allocate(unsigned long, void const*) [97]
+                0.00    0.00       8/8           __gnu_cxx::new_allocator<Point**>::_M_max_size() const [98]
+-----------------------------------------------
+                0.00    0.00       8/8           __gnu_cxx::new_allocator<Point**>::allocate(unsigned long, void const*) [97]
+[98]     0.0    0.00    0.00       8         __gnu_cxx::new_allocator<Point**>::_M_max_size() const [98]
+-----------------------------------------------
+                0.00    0.00       3/8           std::_Deque_base<Point*, std::allocator<Point*> >::_M_initialize_map(unsigned long) [119]
+                0.00    0.00       5/8           std::deque<Point*, std::allocator<Point*> >::_M_reallocate_map(unsigned long, bool) [107]
+[99]     0.0    0.00    0.00       8         std::_Deque_base<Point*, std::allocator<Point*> >::_M_allocate_map(unsigned long) [99]
+                0.00    0.00       8/16          std::_Deque_base<Point*, std::allocator<Point*> >::_M_get_map_allocator() const [91]
+                0.00    0.00       8/8           std::allocator_traits<std::allocator<Point**> >::allocate(std::allocator<Point**>&, unsigned long) [103]
+                0.00    0.00       8/16          std::allocator<Point**>::~allocator() [93]
+-----------------------------------------------
+                0.00    0.00       3/8           std::_Deque_base<Point*, std::allocator<Point*> >::~_Deque_base() [120]
+                0.00    0.00       5/8           std::deque<Point*, std::allocator<Point*> >::_M_reallocate_map(unsigned long, bool) [107]
+[100]    0.0    0.00    0.00       8         std::_Deque_base<Point*, std::allocator<Point*> >::_M_deallocate_map(Point***, unsigned long) [100]
+                0.00    0.00       8/16          std::_Deque_base<Point*, std::allocator<Point*> >::_M_get_map_allocator() const [91]
+                0.00    0.00       8/8           std::allocator_traits<std::allocator<Point**> >::deallocate(std::allocator<Point**>&, Point***, unsigned long) [102]
+                0.00    0.00       8/16          std::allocator<Point**>::~allocator() [93]
+-----------------------------------------------
+                0.00    0.00       8/8           std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data::_Deque_impl_data() [113]
+[101]    0.0    0.00    0.00       8         std::_Deque_iterator<Point*, Point*&, Point**>::_Deque_iterator() [101]
+-----------------------------------------------
+                0.00    0.00       8/8           std::_Deque_base<Point*, std::allocator<Point*> >::_M_deallocate_map(Point***, unsigned long) [100]
+[102]    0.0    0.00    0.00       8         std::allocator_traits<std::allocator<Point**> >::deallocate(std::allocator<Point**>&, Point***, unsigned long) [102]
+                0.00    0.00       8/8           __gnu_cxx::new_allocator<Point**>::deallocate(Point***, unsigned long) [96]
+-----------------------------------------------
+                0.00    0.00       8/8           std::_Deque_base<Point*, std::allocator<Point*> >::_M_allocate_map(unsigned long) [99]
+[103]    0.0    0.00    0.00       8         std::allocator_traits<std::allocator<Point**> >::allocate(std::allocator<Point**>&, unsigned long) [103]
+                0.00    0.00       8/8           __gnu_cxx::new_allocator<Point**>::allocate(unsigned long, void const*) [97]
+-----------------------------------------------
+                0.00    0.00       3/8           std::_Deque_base<Point*, std::allocator<Point*> >::_M_initialize_map(unsigned long) [119]
+                0.00    0.00       5/8           std::deque<Point*, std::allocator<Point*> >::_M_reallocate_map(unsigned long, bool) [107]
+[104]    0.0    0.00    0.00       8         unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [104]
+-----------------------------------------------
+                0.00    0.00       1/7           main [1]
+                0.00    0.00       3/7           convexHull(std::deque<Point*, std::allocator<Point*> >&) [3]
+                0.00    0.00       3/7           std::deque<Point*, std::allocator<Point*> >::~deque() [122]
+[105]    0.0    0.00    0.00       7         std::deque<Point*, std::allocator<Point*> >::begin() [105]
+                0.00    0.00       7/427919      std::_Deque_iterator<Point*, Point*&, Point**>::_Deque_iterator(std::_Deque_iterator<Point*, Point*&, Point**> const&) [31]
+-----------------------------------------------
+                0.00    0.00       5/5           Point*** std::__copy_move_a2<false, Point***, Point***>(Point***, Point***, Point***) [111]
+[106]    0.0    0.00    0.00       5         Point*** std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<Point**>(Point** const*, Point** const*, Point***) [106]
+-----------------------------------------------
+                0.00    0.00       5/5           std::deque<Point*, std::allocator<Point*> >::_M_reserve_map_at_back(unsigned long) [87]
+[107]    0.0    0.00    0.00       5         std::deque<Point*, std::allocator<Point*> >::_M_reallocate_map(unsigned long, bool) [107]
+                0.00    0.00      10/3678        std::_Deque_iterator<Point*, Point*&, Point**>::_M_set_node(Point***) [71]
+                0.00    0.00       5/8           unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [104]
+                0.00    0.00       5/8           std::_Deque_base<Point*, std::allocator<Point*> >::_M_allocate_map(unsigned long) [99]
+                0.00    0.00       5/5           Point*** std::copy<Point***, Point***>(Point***, Point***, Point***) [112]
+                0.00    0.00       5/8           std::_Deque_base<Point*, std::allocator<Point*> >::_M_deallocate_map(Point***, unsigned long) [100]
+-----------------------------------------------
+                0.00    0.00       5/5           Point*** std::__copy_move_a<false, Point***, Point***>(Point***, Point***, Point***) [109]
+[108]    0.0    0.00    0.00       5         Point*** std::__niter_wrap<Point***>(Point*** const&, Point***) [108]
+-----------------------------------------------
+                0.00    0.00       5/5           Point*** std::copy<Point***, Point***>(Point***, Point***, Point***) [112]
+[109]    0.0    0.00    0.00       5         Point*** std::__copy_move_a<false, Point***, Point***>(Point***, Point***, Point***) [109]
+                0.00    0.00      15/15          Point*** std::__niter_base<Point***>(Point***) [94]
+                0.00    0.00       5/5           Point*** std::__copy_move_a1<false, Point***, Point***>(Point***, Point***, Point***) [110]
+                0.00    0.00       5/5           Point*** std::__niter_wrap<Point***>(Point*** const&, Point***) [108]
+-----------------------------------------------
+                0.00    0.00       5/5           Point*** std::__copy_move_a<false, Point***, Point***>(Point***, Point***, Point***) [109]
+[110]    0.0    0.00    0.00       5         Point*** std::__copy_move_a1<false, Point***, Point***>(Point***, Point***, Point***) [110]
+                0.00    0.00       5/5           Point*** std::__copy_move_a2<false, Point***, Point***>(Point***, Point***, Point***) [111]
+-----------------------------------------------
+                0.00    0.00       5/5           Point*** std::__copy_move_a1<false, Point***, Point***>(Point***, Point***, Point***) [110]
+[111]    0.0    0.00    0.00       5         Point*** std::__copy_move_a2<false, Point***, Point***>(Point***, Point***, Point***) [111]
+                0.00    0.00       5/5           Point*** std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<Point**>(Point** const*, Point** const*, Point***) [106]
+-----------------------------------------------
+                0.00    0.00       5/5           std::deque<Point*, std::allocator<Point*> >::_M_reallocate_map(unsigned long, bool) [107]
+[112]    0.0    0.00    0.00       5         Point*** std::copy<Point***, Point***>(Point***, Point***, Point***) [112]
+                0.00    0.00      10/10          Point*** std::__miter_base<Point***>(Point***) [95]
+                0.00    0.00       5/5           Point*** std::__copy_move_a<false, Point***, Point***>(Point***, Point***, Point***) [109]
+-----------------------------------------------
+                0.00    0.00       1/4           std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl::_Deque_impl(std::allocator<Point*>&&) [139]
+                0.00    0.00       1/4           std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data::_Deque_impl_data(std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&&) [141]
+                0.00    0.00       2/4           std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl::_Deque_impl() [126]
+[113]    0.0    0.00    0.00       4         std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data::_Deque_impl_data() [113]
+                0.00    0.00       8/8           std::_Deque_iterator<Point*, Point*&, Point**>::_Deque_iterator() [101]
+-----------------------------------------------
+                0.00    0.00       3/3           std::allocator<Point*>::~allocator() [115]
+[114]    0.0    0.00    0.00       3         __gnu_cxx::new_allocator<Point*>::~new_allocator() [114]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl::~_Deque_impl() [116]
+[115]    0.0    0.00    0.00       3         std::allocator<Point*>::~allocator() [115]
+                0.00    0.00       3/3           __gnu_cxx::new_allocator<Point*>::~new_allocator() [114]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Deque_base<Point*, std::allocator<Point*> >::~_Deque_base() [120]
+[116]    0.0    0.00    0.00       3         std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl::~_Deque_impl() [116]
+                0.00    0.00       3/3           std::allocator<Point*>::~allocator() [115]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Deque_base<Point*, std::allocator<Point*> >::_M_initialize_map(unsigned long) [119]
+[117]    0.0    0.00    0.00       3         std::_Deque_base<Point*, std::allocator<Point*> >::_M_create_nodes(Point***, Point***) [117]
+                0.00    0.00       3/159         std::_Deque_base<Point*, std::allocator<Point*> >::_M_allocate_node() [78]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Deque_base<Point*, std::allocator<Point*> >::~_Deque_base() [120]
+[118]    0.0    0.00    0.00       3         std::_Deque_base<Point*, std::allocator<Point*> >::_M_destroy_nodes(Point***, Point***) [118]
+                0.00    0.00     159/159         std::_Deque_base<Point*, std::allocator<Point*> >::_M_deallocate_node(Point**) [79]
+-----------------------------------------------
+                0.00    0.00       1/3           std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_base(std::_Deque_base<Point*, std::allocator<Point*> >&&) [143]
+                0.00    0.00       2/3           std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_base() [127]
+[119]    0.0    0.00    0.00       3         std::_Deque_base<Point*, std::allocator<Point*> >::_M_initialize_map(unsigned long) [119]
+                0.00    0.00       6/71759       std::__deque_buf_size(unsigned long) [36]
+                0.00    0.00       6/3678        std::_Deque_iterator<Point*, Point*&, Point**>::_M_set_node(Point***) [71]
+                0.00    0.00       3/8           unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [104]
+                0.00    0.00       3/8           std::_Deque_base<Point*, std::allocator<Point*> >::_M_allocate_map(unsigned long) [99]
+                0.00    0.00       3/3           std::_Deque_base<Point*, std::allocator<Point*> >::_M_create_nodes(Point***, Point***) [117]
+-----------------------------------------------
+                0.00    0.00       3/3           std::deque<Point*, std::allocator<Point*> >::~deque() [122]
+[120]    0.0    0.00    0.00       3         std::_Deque_base<Point*, std::allocator<Point*> >::~_Deque_base() [120]
+                0.00    0.00       3/3           std::_Deque_base<Point*, std::allocator<Point*> >::_M_destroy_nodes(Point***, Point***) [118]
+                0.00    0.00       3/8           std::_Deque_base<Point*, std::allocator<Point*> >::_M_deallocate_map(Point***, unsigned long) [100]
+                0.00    0.00       3/3           std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl::~_Deque_impl() [116]
+-----------------------------------------------
+                0.00    0.00       3/3           std::deque<Point*, std::allocator<Point*> >::~deque() [122]
+[121]    0.0    0.00    0.00       3         std::deque<Point*, std::allocator<Point*> >::_M_destroy_data(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, std::allocator<Point*> const&) [121]
+-----------------------------------------------
+                0.00    0.00       1/3           convexHull(std::deque<Point*, std::allocator<Point*> >&) [3]
+                0.00    0.00       2/3           main [1]
+[122]    0.0    0.00    0.00       3         std::deque<Point*, std::allocator<Point*> >::~deque() [122]
+                0.00    0.00       3/9996        std::_Deque_base<Point*, std::allocator<Point*> >::_M_get_Tp_allocator() [67]
+                0.00    0.00       3/29899       std::deque<Point*, std::allocator<Point*> >::end() [43]
+                0.00    0.00       3/7           std::deque<Point*, std::allocator<Point*> >::begin() [105]
+                0.00    0.00       3/3           std::deque<Point*, std::allocator<Point*> >::_M_destroy_data(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, std::allocator<Point*> const&) [121]
+                0.00    0.00       3/3           std::_Deque_base<Point*, std::allocator<Point*> >::~_Deque_base() [120]
+-----------------------------------------------
+                0.00    0.00       3/3           std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data> >, std::is_move_constructible<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data>, std::is_move_assignable<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data> >::value, void>::type std::swap<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data>(std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&, std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&) [147]
+[123]    0.0    0.00    0.00       3         std::remove_reference<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&>::type&& std::move<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&>(std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&) [123]
+-----------------------------------------------
+                0.00    0.00       2/2           std::allocator<Point*>::allocator() [125]
+[124]    0.0    0.00    0.00       2         __gnu_cxx::new_allocator<Point*>::new_allocator() [124]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl::_Deque_impl() [126]
+[125]    0.0    0.00    0.00       2         std::allocator<Point*>::allocator() [125]
+                0.00    0.00       2/2           __gnu_cxx::new_allocator<Point*>::new_allocator() [124]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_base() [127]
+[126]    0.0    0.00    0.00       2         std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl::_Deque_impl() [126]
+                0.00    0.00       2/2           std::allocator<Point*>::allocator() [125]
+                0.00    0.00       2/4           std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data::_Deque_impl_data() [113]
+-----------------------------------------------
+                0.00    0.00       2/2           std::deque<Point*, std::allocator<Point*> >::deque() [128]
+[127]    0.0    0.00    0.00       2         std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_base() [127]
+                0.00    0.00       2/2           std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl::_Deque_impl() [126]
+                0.00    0.00       2/3           std::_Deque_base<Point*, std::allocator<Point*> >::_M_initialize_map(unsigned long) [119]
+-----------------------------------------------
+                0.00    0.00       1/2           convexHull(std::deque<Point*, std::allocator<Point*> >&) [3]
+                0.00    0.00       1/2           main [1]
+[128]    0.0    0.00    0.00       2         std::deque<Point*, std::allocator<Point*> >::deque() [128]
+                0.00    0.00       2/2           std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_base() [127]
+-----------------------------------------------
+                0.00    0.00       1/2           std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_base(std::_Deque_base<Point*, std::allocator<Point*> >&&) [143]
+                0.00    0.00       1/2           std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl::_Deque_impl(std::allocator<Point*>&&) [139]
+[129]    0.0    0.00    0.00       2         std::remove_reference<std::allocator<Point*>&>::type&& std::move<std::allocator<Point*>&>(std::allocator<Point*>&) [129]
+-----------------------------------------------
+                0.00    0.00       1/2           __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}> __gnu_cxx::__ops::__iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}) [137]
+                0.00    0.00       1/2           __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>::_Iter_comp_iter(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}) [135]
+[130]    0.0    0.00    0.00       2         std::remove_reference<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}&>::type&& std::move<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}&>(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}&) [130]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__Z12comparePolarP5PointS0_RS_ [148]
+[131]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [131]
+-----------------------------------------------
+                0.00    0.00       1/1           convexHull(std::deque<Point*, std::allocator<Point*> >&) [3]
+[132]    0.0    0.00    0.00       1         Point::Point(Point const&) [132]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<Point*>::allocator(std::allocator<Point*> const&) [138]
+[133]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<Point*>::new_allocator(__gnu_cxx::new_allocator<Point*> const&) [133]
+-----------------------------------------------
+                0.00    0.00       1/1           __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> __gnu_cxx::__ops::__iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [136]
+[134]    0.0    0.00    0.00       1         __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>::_Iter_comp_iter(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [134]
+                0.00    0.00       1/10001       std::remove_reference<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}&>::type&& std::move<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}&>(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}&) [55]
+-----------------------------------------------
+                0.00    0.00       1/1           __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}> __gnu_cxx::__ops::__iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}) [137]
+[135]    0.0    0.00    0.00       1         __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>::_Iter_comp_iter(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}) [135]
+                0.00    0.00       1/2           std::remove_reference<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}&>::type&& std::move<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}&>(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}&) [130]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::sort<std::_Deque_iterator<Point*, Point*&, Point**>, convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [6]
+[136]    0.0    0.00    0.00       1         __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> __gnu_cxx::__ops::__iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [136]
+                0.00    0.00       1/10001       std::remove_reference<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}&>::type&& std::move<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}&>(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}&) [55]
+                0.00    0.00       1/1           __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>::_Iter_comp_iter(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) [134]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Deque_iterator<Point*, Point*&, Point**> std::min_element<std::_Deque_iterator<Point*, Point*&, Point**>, convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}) [20]
+[137]    0.0    0.00    0.00       1         __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}> __gnu_cxx::__ops::__iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}) [137]
+                0.00    0.00       1/1           __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>::_Iter_comp_iter(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}) [135]
+                0.00    0.00       1/2           std::remove_reference<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}&>::type&& std::move<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}&>(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}&) [130]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl::_Deque_impl(std::allocator<Point*>&&) [139]
+[138]    0.0    0.00    0.00       1         std::allocator<Point*>::allocator(std::allocator<Point*> const&) [138]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<Point*>::new_allocator(__gnu_cxx::new_allocator<Point*> const&) [133]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_base(std::_Deque_base<Point*, std::allocator<Point*> >&&) [143]
+[139]    0.0    0.00    0.00       1         std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl::_Deque_impl(std::allocator<Point*>&&) [139]
+                0.00    0.00       1/2           std::remove_reference<std::allocator<Point*>&>::type&& std::move<std::allocator<Point*>&>(std::allocator<Point*>&) [129]
+                0.00    0.00       1/1           std::allocator<Point*>::allocator(std::allocator<Point*> const&) [138]
+                0.00    0.00       1/4           std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data::_Deque_impl_data() [113]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_base(std::_Deque_base<Point*, std::allocator<Point*> >&&) [143]
+[140]    0.0    0.00    0.00       1         std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data::_M_swap_data(std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&) [140]
+                0.00    0.00       1/1           std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data> >, std::is_move_constructible<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data>, std::is_move_assignable<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data> >::value, void>::type std::swap<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data>(std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&, std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&) [147]
+-----------------------------------------------
+                0.00    0.00       1/1           std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data> >, std::is_move_constructible<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data>, std::is_move_assignable<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data> >::value, void>::type std::swap<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data>(std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&, std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&) [147]
+[141]    0.0    0.00    0.00       1         std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data::_Deque_impl_data(std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&&) [141]
+                0.00    0.00       1/4           std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data::_Deque_impl_data() [113]
+                0.00    0.00       1/1           std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data::_Deque_impl_data(std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data const&) [142]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data::_Deque_impl_data(std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&&) [141]
+[142]    0.0    0.00    0.00       1         std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data::_Deque_impl_data(std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data const&) [142]
+                0.00    0.00       2/427919      std::_Deque_iterator<Point*, Point*&, Point**>::_Deque_iterator(std::_Deque_iterator<Point*, Point*&, Point**> const&) [31]
+-----------------------------------------------
+                0.00    0.00       1/1           std::deque<Point*, std::allocator<Point*> >::deque(std::deque<Point*, std::allocator<Point*> >&&) [144]
+[143]    0.0    0.00    0.00       1         std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_base(std::_Deque_base<Point*, std::allocator<Point*> >&&) [143]
+                0.00    0.00       1/9996        std::_Deque_base<Point*, std::allocator<Point*> >::_M_get_Tp_allocator() [67]
+                0.00    0.00       1/2           std::remove_reference<std::allocator<Point*>&>::type&& std::move<std::allocator<Point*>&>(std::allocator<Point*>&) [129]
+                0.00    0.00       1/1           std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl::_Deque_impl(std::allocator<Point*>&&) [139]
+                0.00    0.00       1/3           std::_Deque_base<Point*, std::allocator<Point*> >::_M_initialize_map(unsigned long) [119]
+                0.00    0.00       1/1           std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data::_M_swap_data(std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&) [140]
+-----------------------------------------------
+                0.00    0.00       1/1           convexHull(std::deque<Point*, std::allocator<Point*> >&) [3]
+[144]    0.0    0.00    0.00       1         std::deque<Point*, std::allocator<Point*> >::deque(std::deque<Point*, std::allocator<Point*> >&&) [144]
+                0.00    0.00       1/1           std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_base(std::_Deque_base<Point*, std::allocator<Point*> >&&) [143]
+-----------------------------------------------
+                0.00    0.00       1/1           polygonArea(std::deque<Point*, std::allocator<Point*> >&) [22]
+[145]    0.0    0.00    0.00       1         std::abs(float) [145]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::__sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) [7]
+[146]    0.0    0.00    0.00       1         std::__lg(long) [146]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data::_M_swap_data(std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&) [140]
+[147]    0.0    0.00    0.00       1         std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data> >, std::is_move_constructible<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data>, std::is_move_assignable<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data> >::value, void>::type std::swap<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data>(std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&, std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&) [147]
+                0.00    0.00       3/3           std::remove_reference<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&>::type&& std::move<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&>(std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&) [123]
+                0.00    0.00       1/1           std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data::_Deque_impl_data(std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&&) [141]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2022 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+   [3] convexHull(std::deque<Point*, std::allocator<Point*> >&) [99] std::_Deque_base<Point*, std::allocator<Point*> >::_M_allocate_map(unsigned long) [53] std::deque<Point*, std::allocator<Point*> >::operator[](unsigned long)
+  [22] polygonArea(std::deque<Point*, std::allocator<Point*> >&) [117] std::_Deque_base<Point*, std::allocator<Point*> >::_M_create_nodes(Point***, Point***) [20] std::_Deque_iterator<Point*, Point*&, Point**> std::min_element<std::_Deque_iterator<Point*, Point*&, Point**>, convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}) (stl_algo.h)
+   [4] comparePolar(Point*, Point*, Point&) [140] std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data::_M_swap_data(std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&) [95] Point*** std::__miter_base<Point***>(Point***)
+ [131] __static_initialization_and_destruction_0(int, int) (Q1_deque.cpp) [141] std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data::_Deque_impl_data(std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&&) [94] Point*** std::__niter_base<Point***>(Point***)
+  [56] Point::Point(float, float) [113] std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data::_Deque_impl_data() [108] Point*** std::__niter_wrap<Point***>(Point*** const&, Point***)
+ [132] Point::Point(Point const&) [142] std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data::_Deque_impl_data(std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data const&) [109] Point*** std::__copy_move_a<false, Point***, Point***>(Point***, Point***, Point***)
+  [54] Point::~Point()        [78] std::_Deque_base<Point*, std::allocator<Point*> >::_M_allocate_node() [21] std::_Deque_iterator<Point*, Point*&, Point**> std::__min_element<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>) (stl_algo.h)
+  [76] __gnu_cxx::new_allocator<Point*>::deallocate(Point**, unsigned long) [118] std::_Deque_base<Point*, std::allocator<Point*> >::_M_destroy_nodes(Point***, Point***) [110] Point*** std::__copy_move_a1<false, Point***, Point***>(Point***, Point***, Point***)
+  [68] void __gnu_cxx::new_allocator<Point*>::destroy<Point*>(Point**) [100] std::_Deque_base<Point*, std::allocator<Point*> >::_M_deallocate_map(Point***, unsigned long) [111] Point*** std::__copy_move_a2<false, Point***, Point***>(Point***, Point***, Point***)
+  [77] __gnu_cxx::new_allocator<Point*>::allocate(unsigned long, void const*) [119] std::_Deque_base<Point*, std::allocator<Point*> >::_M_initialize_map(unsigned long) [36] std::__deque_buf_size(unsigned long)
+  [57] void __gnu_cxx::new_allocator<Point*>::construct<Point*, Point* const&>(Point**, Point* const&) [79] std::_Deque_base<Point*, std::allocator<Point*> >::_M_deallocate_node(Point**) [17] void std::__insertion_sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) (stl_algo.h)
+  [58] void __gnu_cxx::new_allocator<Point*>::construct<Point*, Point*>(Point**, Point*&&) [67] std::_Deque_base<Point*, std::allocator<Point*> >::_M_get_Tp_allocator() [10] void std::__introsort_loop<std::_Deque_iterator<Point*, Point*&, Point**>, long, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, long, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) (stl_algo.h)
+ [133] __gnu_cxx::new_allocator<Point*>::new_allocator(__gnu_cxx::new_allocator<Point*> const&) [143] std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_base(std::_Deque_base<Point*, std::allocator<Point*> >&&) [11] std::_Deque_iterator<Point*, Point*&, Point**> std::__unguarded_partition<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) (stl_algo.h)
+ [124] __gnu_cxx::new_allocator<Point*>::new_allocator() [127] std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_base() [12] void std::__final_insertion_sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) (stl_algo.h)
+ [114] __gnu_cxx::new_allocator<Point*>::~new_allocator() [120] std::_Deque_base<Point*, std::allocator<Point*> >::~_Deque_base() [16] void std::__move_median_to_first<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) (stl_algo.h)
+  [96] __gnu_cxx::new_allocator<Point**>::deallocate(Point***, unsigned long) [106] Point*** std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<Point**>(Point** const*, Point** const*, Point***) [14] void std::__unguarded_linear_insert<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) (stl_algo.h)
+  [97] __gnu_cxx::new_allocator<Point**>::allocate(unsigned long, void const*) [71] std::_Deque_iterator<Point*, Point*&, Point**>::_M_set_node(Point***) [15] void std::__unguarded_insertion_sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) (stl_algo.h)
+  [89] __gnu_cxx::new_allocator<Point**>::new_allocator() [37] std::_Deque_iterator<Point*, Point*&, Point**>::_S_buffer_size() [9] std::_Deque_iterator<Point*, Point*&, Point**> std::__unguarded_partition_pivot<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) (stl_algo.h)
+  [90] __gnu_cxx::new_allocator<Point**>::~new_allocator() [31] std::_Deque_iterator<Point*, Point*&, Point**>::_Deque_iterator(std::_Deque_iterator<Point*, Point*&, Point**> const&) [145] std::abs(float)
+  [64] __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>::_Val_comp_iter(__gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>&&) (predefined_ops.h) [101] std::_Deque_iterator<Point*, Point*&, Point**>::_Deque_iterator() [104] unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+  [13] bool __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>::operator()<Point*, std::_Deque_iterator<Point*, Point*&, Point**> >(Point*&, std::_Deque_iterator<Point*, Point*&, Point**>) (predefined_ops.h) [72] std::_Deque_iterator<Point*, Point*&, Point**>::operator-=(long) [88] unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)
+ [134] __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>::_Iter_comp_iter(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) (predefined_ops.h) [34] std::_Deque_iterator<Point*, Point*&, Point**>::operator--() [146] std::__lg(long)
+   [8] bool __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>::operator()<std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>) (predefined_ops.h) [48] std::_Deque_iterator<Point*, Point*&, Point**>::operator+=(long) [112] Point*** std::copy<Point***, Point***>(Point***, Point***, Point***)
+ [135] __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>::_Iter_comp_iter(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}) (predefined_ops.h) [35] std::_Deque_iterator<Point*, Point*&, Point**>::operator++() [66] std::remove_reference<__gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>&>::type&& std::move<__gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>&>(__gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>&) (move.h)
+  [18] bool __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>::operator()<std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>) (predefined_ops.h) [80] std::allocator_traits<std::allocator<Point*> >::deallocate(std::allocator<Point*>&, Point**, unsigned long) [123] std::remove_reference<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&>::type&& std::move<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&>(std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&)
+  [65] __gnu_cxx::__ops::_Val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> __gnu_cxx::__ops::__val_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(__gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) (predefined_ops.h) [69] void std::allocator_traits<std::allocator<Point*> >::destroy<Point*>(std::allocator<Point*>&, Point**) [33] std::remove_reference<Point*&>::type&& std::move<Point*&>(Point*&)
+ [136] __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> __gnu_cxx::__ops::__iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) (predefined_ops.h) [81] std::allocator_traits<std::allocator<Point*> >::allocate(std::allocator<Point*>&, unsigned long) [129] std::remove_reference<std::allocator<Point*>&>::type&& std::move<std::allocator<Point*>&>(std::allocator<Point*>&)
+ [137] __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}> __gnu_cxx::__ops::__iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}>(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}) (predefined_ops.h) [84] std::allocator_traits<std::allocator<Point*> >::max_size(std::allocator<Point*> const&) [55] std::remove_reference<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}&>::type&& std::move<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}&>(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}&) (move.h)
+   [2] Point::getX() const    [59] void std::allocator_traits<std::allocator<Point*> >::construct<Point*, Point* const&>(std::allocator<Point*>&, Point**, Point* const&) [130] std::remove_reference<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}&>::type&& std::move<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}&>(convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}&) (move.h)
+  [29] Point::getY() const    [60] void std::allocator_traits<std::allocator<Point*> >::construct<Point*, Point*>(std::allocator<Point*>&, Point**, Point*&&) [6] void std::sort<std::_Deque_iterator<Point*, Point*&, Point**>, convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}) (stl_algo.h)
+  [74] __gnu_cxx::new_allocator<Point*>::_M_max_size() const [102] std::allocator_traits<std::allocator<Point**> >::deallocate(std::allocator<Point**>&, Point***, unsigned long) [147] std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data> >, std::is_move_constructible<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data>, std::is_move_assignable<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data> >::value, void>::type std::swap<std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data>(std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&, std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl_data&)
+  [82] __gnu_cxx::new_allocator<Point*>::max_size() const [103] std::allocator_traits<std::allocator<Point**> >::allocate(std::allocator<Point**>&, unsigned long) [45] std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Point*> >, std::is_move_constructible<Point*>, std::is_move_assignable<Point*> >::value, void>::type std::swap<Point*>(Point*&, Point*&)
+  [98] __gnu_cxx::new_allocator<Point**>::_M_max_size() const [85] std::deque<Point*, std::allocator<Point*> >::_S_max_size(std::allocator<Point*> const&) [32] std::atan2(float, float)
+  [75] std::_Deque_base<Point*, std::allocator<Point*> >::_M_get_Tp_allocator() const [61] Point*& std::deque<Point*, std::allocator<Point*> >::emplace_back<Point*>(Point*&&) [7] void std::__sort<std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, __gnu_cxx::__ops::_Iter_comp_iter<convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}>) (stl_algo.h)
+  [91] std::_Deque_base<Point*, std::allocator<Point*> >::_M_get_map_allocator() const [121] std::deque<Point*, std::allocator<Point*> >::_M_destroy_data(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>, std::allocator<Point*> const&) [42] Point*&& std::forward<Point*>(std::remove_reference<Point*>::type&)
+  [30] std::_Deque_iterator<Point*, Point*&, Point**>::operator*() const [86] void std::deque<Point*, std::allocator<Point*> >::_M_push_back_aux<Point*>(Point*&&) [50] Point* const& std::forward<Point* const&>(std::remove_reference<Point* const&>::type&)
+  [52] std::_Deque_iterator<Point*, Point*&, Point**>::operator[](long) const [107] std::deque<Point*, std::allocator<Point*> >::_M_reallocate_map(unsigned long, bool) [46] void std::iter_swap<std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**> >(std::_Deque_iterator<Point*, Point*&, Point**>, std::_Deque_iterator<Point*, Point*&, Point**>)
+  [39] std::deque<Point*, std::allocator<Point*> >::size() const [87] std::deque<Point*, std::allocator<Point*> >::_M_reserve_map_at_back(unsigned long) [40] std::operator==(std::_Deque_iterator<Point*, Point*&, Point**> const&, std::_Deque_iterator<Point*, Point*&, Point**> const&)
+  [83] std::deque<Point*, std::allocator<Point*> >::max_size() const [43] std::deque<Point*, std::allocator<Point*> >::end() [47] std::operator<(std::_Deque_iterator<Point*, Point*&, Point**> const&, std::_Deque_iterator<Point*, Point*&, Point**> const&)
+ [125] std::allocator<Point*>::allocator() [44] std::deque<Point*, std::allocator<Point*> >::back() [38] std::operator-(std::_Deque_iterator<Point*, Point*&, Point**> const&, std::_Deque_iterator<Point*, Point*&, Point**> const&)
+ [138] std::allocator<Point*>::allocator(std::allocator<Point*> const&) [105] std::deque<Point*, std::allocator<Point*> >::begin() [73] std::operator-(std::_Deque_iterator<Point*, Point*&, Point**> const&, long)
+ [115] std::allocator<Point*>::~allocator() [70] std::deque<Point*, std::allocator<Point*> >::pop_back() [41] std::operator!=(std::_Deque_iterator<Point*, Point*&, Point**> const&, std::_Deque_iterator<Point*, Point*&, Point**> const&)
+  [92] std::allocator<Point**>::allocator<Point*>(std::allocator<Point*> const&) [62] std::deque<Point*, std::allocator<Point*> >::push_back(Point*&&) [49] std::operator+(std::_Deque_iterator<Point*, Point*&, Point**> const&, long)
+  [93] std::allocator<Point**>::~allocator() [63] std::deque<Point*, std::allocator<Point*> >::push_back(Point* const&) [5] convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#2}::operator()(Point*, Point*) const (Q1_deque.cpp)
+ [139] std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl::_Deque_impl(std::allocator<Point*>&&) [144] std::deque<Point*, std::allocator<Point*> >::deque(std::deque<Point*, std::allocator<Point*> >&&) [19] convexHull(std::deque<Point*, std::allocator<Point*> >&)::{lambda(Point*, Point*)#1}::operator()(Point*, Point*) const (Q1_deque.cpp)
+ [126] std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl::_Deque_impl() [128] std::deque<Point*, std::allocator<Point*> >::deque() [51] operator new(unsigned long, void*)
+ [116] std::_Deque_base<Point*, std::allocator<Point*> >::_Deque_impl::~_Deque_impl() [122] std::deque<Point*, std::allocator<Point*> >::~deque()
