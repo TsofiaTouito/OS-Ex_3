@@ -1,16 +1,28 @@
-# Makefile for server and client
-
+# Compiler and flags
 CXX = g++
-CXXFLAGS = -Wall -std=c++17
-TARGETS = server client
+CXXFLAGS = -std=c++17 -Wall -Wextra -pedantic -g
 
-all: $(TARGETS)
+# Target executable
+TARGET = server
 
-server: server.cpp
-	$(CXX) $(CXXFLAGS) -o server server.cpp
+# Source files
+SRCS = Graph.cpp Server.cpp
 
-client: client.cpp
-	$(CXX) $(CXXFLAGS) -o client client.cpp
+# Header files
+HDRS = Graph.hpp Point.hpp
 
+# Object files
+OBJS = $(SRCS:.cpp=.o)
+
+# Build target
+$(TARGET): $(OBJS)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJS)
+
+# Compile source files
+%.o: %.cpp $(HDRS)
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+# Clean up
+.PHONY: clean
 clean:
-	rm -f $(TARGETS)
+	rm -f $(OBJS) $(TARGET)
